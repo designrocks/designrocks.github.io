@@ -1,30 +1,692 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Design Patterns Rocks!</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<html>
+<head>
+<title itemprop="name">Design Patterns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="design patterns, Gang of Four, Enterprise, integration, microservice, javascript" />
+<meta name="description" content="A collection of various design patterns.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="search" title="Search" href="/" />
+<link rel="copyright" title="About" href="/about.html" />
+<link rel="author" title="About" href="/about.html" />
+<link rel="home" title="" href="/" id="homelink" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="canonical" href="http://design.patterns.rocks/" />
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/flatly/bootstrap.min.css" rel="stylesheet">
+<!-- Font CSS (Via CDN) -->
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'>
 
-  </head>
-  <body>
+<!-- Core CSS -->
+<link rel="stylesheet" type="text/css" href="min2.css">
+<!--<link rel="stylesheet" type="text/css" href="theme.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="awesomplete.css">
+<link rel="stylesheet" type="text/css" href="st.css">-->
 
-    <div id="maincontainer" class="container-fluid">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<script src="awesomplete.min.js"></script>
+</head>
+<body>
 
-      <p></p>
-      <p></p>
-      <code>//design patterns rocks!</code>
+    <nav class="navbar bg-light docs-navbar" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="container">
+        <div class="navbar-header" itemprop="name">
+            <a class="navbar-brand" href="index.html" hreflang="en"><b>Design Patterns</b></a>
+        </div>
 
+        <div class="collapse navbar-collapse" id="navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="mi active"><a href="index.html" hreflang="en" title="Design Patterns" itemprop="url name">Index</a></li>
+                    <li class="mp"><a href="categories.html" hreflang="en" title="Patterns" itemprop="url name">Patterns</a></li>
+                    <li class="mc"><a href="changelog.html" hreflang="en" title="Changelog" itemprop="url name">Changelog</a></li>
+                    <li class="ma"><a href="about.html" hreflang="en" title="About" itemprop="url name">About</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container-fluid box">
+        <div class="row text-center" itemscope itemtype="https://schema.org/Organization">
+            <a href="index.html" hreflang="en" title="Design Patterns" itemprop="url" class="np">
+            <img src="logo.png" alt="Design Patterns" itemprop="logo" class="logosm"/>
+            <h1 itemprop="name legalName">Design Patterns</h1>
+            </a>
+        </div>
+
+        <div class="row text-center">
+
+            <div class="hidden-sm hidden-xs col-md-2">
+            </div>
+
+            <div class="col-md-8 text-center">
+                <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+                    <input id="searchField" placeholder="I'm looking for..." />
+                    <datalist id="designpatterns">
+                    <option>Gang of Four / Creational patterns / Abstract factory pattern</option>
+                    <option>Gang of Four / Creational patterns / Builder pattern</option>
+                    <option>Gang of Four / Creational patterns / Factory method pattern</option>
+                    <option>Gang of Four / Creational patterns / Prototype pattern</option>
+                    <option>Gang of Four / Creational patterns / Singleton pattern</option>
+                    <option>Gang of Four / Structural patterns / Adapter pattern</option>
+                    <option>Gang of Four / Structural patterns / Bridge pattern</option>
+                    <option>Gang of Four / Structural patterns / Composite pattern</option>
+                    <option>Gang of Four / Structural patterns / Decorator pattern</option>
+                    <option>Gang of Four / Structural patterns / Facade pattern</option>
+                    <option>Gang of Four / Structural patterns / Flyweight pattern</option>
+                    <option>Gang of Four / Structural patterns / Proxy pattern</option>
+                    <option>Gang of Four / Behavioral patterns / Chain of responsibility pattern</option>
+                    <option>Gang of Four / Behavioral patterns / Command pattern</option>
+                    <option>Gang of Four / Behavioral patterns / Interpreter pattern</option>
+                    <option>Gang of Four / Behavioral patterns / Iterator pattern</option>
+                    <option>Gang of Four / Behavioral patterns / Mediator pattern</option>
+                    <option>Gang of Four / Behavioral patterns / Memento pattern</option>
+                    <option>Gang of Four / Behavioral patterns / Observer pattern</option>
+                    <option>Gang of Four / Behavioral patterns / State pattern</option>
+                    <option>Gang of Four / Behavioral patterns / Strategy pattern</option>
+                    <option>Gang of Four / Behavioral patterns / Template method pattern</option>
+                    <option>Gang of Four / Behavioral patterns / Visitor pattern</option>
+                    <option>Enterprise Integration / Integration Style patterns / File Transfer pattern</option>
+                    <option>Enterprise Integration / Integration Style patterns / Shared Database pattern</option>
+                    <option>Enterprise Integration / Integration Style patterns / Remote Procedure Invocation pattern</option>
+                    <option>Enterprise Integration / Integration Style patterns / Messaging pattern</option>
+                    <option>Enterprise Integration / Messaging System patterns / Message Channel pattern</option>
+                    <option>Enterprise Integration / Messaging System patterns / Message pattern</option>
+                    <option>Enterprise Integration / Messaging System patterns / Pipes and Filters pattern</option>
+                    <option>Enterprise Integration / Messaging System patterns / Message Router pattern</option>
+                    <option>Enterprise Integration / Messaging System patterns / Message Router pattern</option>
+                    <option>Enterprise Integration / Messaging System patterns / Message Endpoint pattern</option>
+                    <option>Enterprise Integration / Messaging Channel patterns / Point-to-Point Channel pattern</option>
+                    <option>Enterprise Integration / Messaging Channel patterns / Publish-Subscribe Channel pattern</option>
+                    <option>Enterprise Integration / Messaging Channel patterns / Datatype Channel pattern</option>
+                    <option>Enterprise Integration / Messaging Channel patterns / Invalid Message Channel pattern</option>
+                    <option>Enterprise Integration / Messaging Channel patterns / Dead Letter Channel pattern</option>
+                    <option>Enterprise Integration / Messaging Channel patterns / Guaranteed Delivery pattern</option>
+                    <option>Enterprise Integration / Messaging Channel patterns / Channel Adapter pattern</option>
+                    <option>Enterprise Integration / Messaging Channel patterns / Messaging Bridge pattern</option>
+                    <option>Enterprise Integration / Messaging Channel patterns / Message Bus pattern</option>
+                    <option>Enterprise Integration / Message Construction patterns / Command Message pattern</option>
+                    <option>Enterprise Integration / Message Construction patterns / Document Message pattern</option>
+                    <option>Enterprise Integration / Message Construction patterns / Event Message pattern</option>
+                    <option>Enterprise Integration / Message Construction patterns / Request-Reply pattern</option>
+                    <option>Enterprise Integration / Message Construction patterns / Return Address pattern</option>
+                    <option>Enterprise Integration / Message Construction patterns / Correlation Identifier pattern</option>
+                    <option>Enterprise Integration / Message Construction patterns / Message Sequence pattern</option>
+                    <option>Enterprise Integration / Message Construction patterns / Message Expiration pattern</option>
+                    <option>Enterprise Integration / Message Construction patterns / Format Indicator pattern</option>
+                    <option>Enterprise Integration / Message Routing patterns / Content-Based Router pattern</option>
+                    <option>Enterprise Integration / Message Routing patterns / Message Filter pattern</option>
+                    <option>Enterprise Integration / Message Routing patterns / Dynamic Router pattern</option>
+                    <option>Enterprise Integration / Message Routing patterns / Recipient List pattern</option>
+                    <option>Enterprise Integration / Message Routing patterns / Splitter pattern</option>
+                    <option>Enterprise Integration / Message Routing patterns / Aggregator pattern</option>
+                    <option>Enterprise Integration / Message Routing patterns / Resequencer pattern</option>
+                    <option>Enterprise Integration / Message Routing patterns / Composed Message Processor pattern</option>
+                    <option>Enterprise Integration / Message Routing patterns / Scatter-Gather pattern</option>
+                    <option>Enterprise Integration / Message Routing patterns / Routing Slip pattern</option>
+                    <option>Enterprise Integration / Message Routing patterns / Process Manager pattern</option>
+                    <option>Enterprise Integration / Message Routing patterns / Message Broker pattern</option>
+                    <option>Enterprise Integration / Message Transformation patterns / Envelope Wrapper pattern</option>
+                    <option>Enterprise Integration / Message Transformation patterns / Content Enricher pattern</option>
+                    <option>Enterprise Integration / Message Transformation patterns / Content Enricher pattern</option>
+                    <option>Enterprise Integration / Message Transformation patterns / Content Filter pattern</option>
+                    <option>Enterprise Integration / Message Transformation patterns / Claim Check pattern</option>
+                    <option>Enterprise Integration / Message Transformation patterns / Normalizer pattern</option>
+                    <option>Enterprise Integration / Message Transformation patterns / Canonical Data Model pattern</option>
+                    <option>Enterprise Integration / Messaging Endpoint patterns / Messaging Gateway pattern</option>
+                    <option>Enterprise Integration / Messaging Endpoint patterns / Messaging Mapper pattern</option>
+                    <option>Enterprise Integration / Messaging Endpoint patterns / Transactional Client pattern</option>
+                    <option>Enterprise Integration / Messaging Endpoint patterns / Polling Consumer pattern</option>
+                    <option>Enterprise Integration / Messaging Endpoint patterns / Event-Driven Consumer pattern</option>
+                    <option>Enterprise Integration / Messaging Endpoint patterns / Competing Consumers pattern</option>
+                    <option>Enterprise Integration / Messaging Endpoint patterns / Message Dispatcher pattern</option>
+                    <option>Enterprise Integration / Messaging Endpoint patterns / Selective Consumer pattern</option>
+                    <option>Enterprise Integration / Messaging Endpoint patterns / Durable Subscriber pattern</option>
+                    <option>Enterprise Integration / Messaging Endpoint patterns / Idempotent Receiver pattern</option>
+                    <option>Enterprise Integration / Messaging Endpoint patterns / Service Activator pattern</option>
+                    <option>Enterprise Integration / System Management patterns / Control Bus pattern</option>
+                    <option>Enterprise Integration / System Management patterns / Detour pattern</option>
+                    <option>Enterprise Integration / System Management patterns / Wire Tap pattern</option>
+                    <option>Enterprise Integration / System Management patterns / Message History pattern</option>
+                    <option>Enterprise Integration / System Management patterns / Message Store pattern</option>
+                    <option>Enterprise Integration / System Management patterns / Smart Proxy pattern</option>
+                    <option>Enterprise Integration / System Management patterns / Test Message pattern</option>
+                    <option>Enterprise Integration / System Management patterns / Channel Purger pattern</option>
+                    <option>Enterprise Application Architecture / Base patterns / Gateway pattern</option>
+                    <option>Enterprise Application Architecture / Base patterns / Mapper pattern</option>
+                    <option>Enterprise Application Architecture / Base patterns / Layer Supertype pattern</option>
+                    <option>Enterprise Application Architecture / Base patterns / Separated Interface pattern</option>
+                    <option>Enterprise Application Architecture / Base patterns / Registry pattern</option>
+                    <option>Enterprise Application Architecture / Base patterns / Value Object pattern</option>
+                    <option>Enterprise Application Architecture / Base patterns / Money pattern</option>
+                    <option>Enterprise Application Architecture / Base patterns / Special Case pattern</option>
+                    <option>Enterprise Application Architecture / Base patterns / Plugin pattern</option>
+                    <option>Enterprise Application Architecture / Base patterns / Service Stub pattern</option>
+                    <option>Enterprise Application Architecture / Base patterns / Record Set pattern</option>
+                    <option>Enterprise Application Architecture / Domain Logic patterns / Transaction Script pattern</option>
+                    <option>Enterprise Application Architecture / Domain Logic patterns / Domain Model pattern</option>
+                    <option>Enterprise Application Architecture / Domain Logic patterns / Table Module pattern</option>
+                    <option>Enterprise Application Architecture / Domain Logic patterns / Service Layer pattern</option>
+                    <option>Enterprise Application Architecture / Data Source Architectural patterns / Table Data Gateway pattern</option>
+                    <option>Enterprise Application Architecture / Data Source Architectural patterns / Row Data Gateway pattern</option>
+                    <option>Enterprise Application Architecture / Data Source Architectural patterns / Active Record pattern</option>
+                    <option>Enterprise Application Architecture / Data Source Architectural patterns / Data Mapper pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Behavioral patterns / Unit of Work pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Behavioral patterns / Identity Map pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Behavioral patterns / Lazy Load pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Structural patterns / Identity Field pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Structural patterns / Foreign Key Mapping pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Structural patterns / Association Table Mapping pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Structural patterns / Dependent Mapping pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Structural patterns / Embedded Value pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Structural patterns / Serialized LOB pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Structural patterns / Single Table Inheritance pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Structural patterns / Class Table Inheritance pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Structural patterns / Concrete Table Inheritance pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Structural patterns / Inheritance Mappers pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Metadata Mapping patterns / Metadata Mapping pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Metadata Mapping patterns / Query Object pattern</option>
+                    <option>Enterprise Application Architecture / Object-Relational Metadata Mapping patterns / Repository pattern</option>
+                    <option>Enterprise Application Architecture / Web Presentation patterns / Model View Controller pattern</option>
+                    <option>Enterprise Application Architecture / Web Presentation patterns / Page Controller pattern</option>
+                    <option>Enterprise Application Architecture / Web Presentation patterns / Front Controller pattern</option>
+                    <option>Enterprise Application Architecture / Web Presentation patterns / Template View pattern</option>
+                    <option>Enterprise Application Architecture / Web Presentation patterns / Transform View pattern</option>
+                    <option>Enterprise Application Architecture / Web Presentation patterns / Two-Step View pattern</option>
+                    <option>Enterprise Application Architecture / Web Presentation patterns / Application Controller pattern</option>
+                    <option>Enterprise Application Architecture / Distribution patterns / Remote Facade pattern</option>
+                    <option>Enterprise Application Architecture / Distribution patterns / Data Transfer Object pattern</option>
+                    <option>Enterprise Application Architecture / Offline Concurrency patterns / Optimistic Offline Lock pattern</option>
+                    <option>Enterprise Application Architecture / Offline Concurrency patterns / Pessimistic Offline Lock pattern</option>
+                    <option>Enterprise Application Architecture / Offline Concurrency patterns / Coarse Grained Lock pattern</option>
+                    <option>Enterprise Application Architecture / Offline Concurrency patterns / Implicit Lock pattern</option>
+                    <option>Enterprise Application Architecture / Session State patterns / Client Session State pattern</option>
+                    <option>Enterprise Application Architecture / Session State patterns / Server Session State pattern</option>
+                    <option>Enterprise Application Architecture / Session State patterns / Database Session State pattern</option>
+                    <option>Concurrency / Concurrency patterns / Active Object pattern</option>
+                    <option>Concurrency / Concurrency patterns / Balking pattern</option>
+                    <option>Concurrency / Concurrency patterns / Barrier pattern</option>
+                    <option>Concurrency / Concurrency patterns / Disruptor pattern</option>
+                    <option>Concurrency / Concurrency patterns / Double-checked locking pattern</option>
+                    <option>Concurrency / Concurrency patterns / Guarded suspension pattern</option>
+                    <option>Concurrency / Concurrency patterns / Leaders/followers pattern</option>
+                    <option>Concurrency / Concurrency patterns / Monitor pattern</option>
+                    <option>Concurrency / Concurrency patterns / Reactor pattern</option>
+                    <option>Concurrency / Concurrency patterns / Readers-writer lock pattern</option>
+                    <option>Concurrency / Concurrency patterns / Scheduler pattern</option>
+                    <option>Concurrency / Concurrency patterns / Thread pool pattern</option>
+                    <option>Concurrency / Concurrency patterns / Thread-local storage pattern</option>
+                    <option>Microservice / Core patterns / Microservices Architecture pattern</option>
+                    <option>Microservice / Core patterns / API Gateway pattern</option>
+                    <option>Microservice / Deployment patterns / Multiple service instances per host pattern</option>
+                    <option>Microservice / Deployment patterns / Single Service Instance per Host pattern</option>
+                    <option>Microservice / Deployment patterns / Service Instance per VM pattern</option>
+                    <option>Microservice / Deployment patterns / Service instance per container pattern</option>
+                    <option>Microservice / Service discovery patterns / Client-side service discovery pattern</option>
+                    <option>Microservice / Service discovery patterns / Server-side service discovery pattern</option>
+                    <option>Microservice / Service discovery patterns / Service registry pattern</option>
+                    <option>Microservice / Service discovery patterns / Self Registration pattern</option>
+                    <option>Microservice / Service discovery patterns / 3rd Party Registration pattern</option>
+                    <option>Microservice / Collaboration patterns / Aggregator Microservice pattern</option>
+                    <option>Microservice / Collaboration patterns / Proxy Microservice pattern</option>
+                    <option>Microservice / Collaboration patterns / Chained Microservice pattern</option>
+                    <option>Microservice / Collaboration patterns / Branch Microservice pattern</option>
+                    <option>Microservice / Collaboration patterns / Shared Data Microservice pattern</option>
+                    <option>Microservice / Collaboration patterns / Asynchronous Messaging Microservice pattern</option>
+                    <option>JavaScript / General patterns / Function Declaration pattern</option>
+                    <option>JavaScript / General patterns / Conditionals pattern</option>
+                    <option>JavaScript / General patterns / Access to the Global Object pattern</option>
+                    <option>JavaScript / General patterns / Single var pattern</option>
+                    <option>JavaScript / General patterns / Hoisting pattern</option>
+                    <option>JavaScript / General patterns / For loops pattern</option>
+                    <option>JavaScript / General patterns / (Not) Augmenting Built-in Prototypes pattern</option>
+                    <option>JavaScript / General patterns / Switch pattern</option>
+                    <option>JavaScript / General patterns / Implied Typecasting pattern</option>
+                    <option>JavaScript / General patterns / Avoiding eval() pattern</option>
+                    <option>JavaScript / General patterns / Number Conversions with parseInt() pattern</option>
+                    <option>JavaScript / General patterns / Minimizing Globals pattern</option>
+                    <option>JavaScript / General patterns / The Problem with Globals pattern</option>
+                    <option>JavaScript / General patterns / The Module pattern</option>
+                    <option>JavaScript / General patterns / The Revealing Module pattern</option>
+                    <option>JavaScript / jQuery patterns / Requery pattern</option>
+                    <option>JavaScript / jQuery patterns / Append pattern</option>
+                    <option>JavaScript / jQuery patterns / Data pattern</option>
+                    <option>JavaScript / jQuery patterns / Context and find pattern</option>
+                    <option>JavaScript / jQuery patterns / Detach pattern</option>
+                    <option>JavaScript / jQuery patterns / Event delegation pattern</option>
+                    <option>JavaScript / jQuery patterns / Selector cache pattern</option>
+                    <option>JavaScript / jQuery patterns / Window scroll event pattern</option>
+                    <option>JavaScript / jQuery patterns / Left and Right pattern</option>
+                    <option>JavaScript / jQuery patterns / Decending from id pattern</option>
+                    <option>JavaScript / jQuery patterns / Universal Selector pattern</option>
+                    <option>JavaScript / jQuery patterns / Be Specific when Needed pattern</option>
+                    <option>JavaScript / jQuery plugin patterns / Basic pattern</option>
+                    <option>JavaScript / jQuery plugin patterns / Extend pattern</option>
+                    <option>JavaScript / jQuery plugin patterns / Lightweight pattern</option>
+                    <option>JavaScript / jQuery plugin patterns / Namespaced pattern</option>
+                    <option>JavaScript / jQuery plugin patterns / Prototypal inheritance pattern</option>
+                    <option>JavaScript / jQuery plugin patterns / Best options pattern</option>
+                    <option>JavaScript / jQuery plugin patterns / Custom events (Pseudo Pub/Sub) pattern</option>
+                    <option>JavaScript / jQuery plugin patterns / Highly configurable mutable pattern</option>
+                    <option>JavaScript / jQuery plugin patterns / UI Widget factory pattern</option>
+                    <option>JavaScript / jQuery plugin patterns / UI Widget factory \"bridge\" pattern</option>
+                    <option>JavaScript / jQuery plugin patterns / UI Widget factory for jQuery mobile pattern</option>
+                    <option>JavaScript / jQuery plugin patterns / UI Widget + RequireJS module pattern</option>
+                    <option>JavaScript / jQuery plugin patterns / Universal Module Definition pattern</option>
+                    <option>JavaScript / Literals and Constructors patterns / Object literal pattern</option>
+                    <option>JavaScript / Literals and Constructors patterns / Enforcing \"new\" pattern</option>
+                    <option>JavaScript / Literals and Constructors patterns / Array literal pattern</option>
+                    <option>JavaScript / Literals and Constructors patterns / Working with JSON pattern</option>
+                    <option>JavaScript / Literals and Constructors patterns / Primitive wrappers pattern</option>
+                    <option>JavaScript / Function patterns / Callback pattern</option>
+                    <option>JavaScript / Function patterns / Configuration objects pattern</option>
+                    <option>JavaScript / Function patterns / Returning functions pattern</option>
+                    <option>JavaScript / Function patterns / Currying pattern</option>
+                    <option>JavaScript / Function patterns / Partial application pattern</option>
+                    <option>JavaScript / Function patterns / Immediate functions pattern</option>
+                    <option>JavaScript / Function patterns / Immediate object initialization pattern</option>
+                    <option>JavaScript / Function patterns / Init-time branching pattern</option>
+                    <option>JavaScript / Function patterns / Memoization pattern</option>
+                    <option>JavaScript / Function patterns / Self-defining functions pattern</option>
+                    <option>JavaScript / Object Creation patterns / Namespace pattern</option>
+                    <option>JavaScript / Object Creation patterns / Declaring Dependencies pattern</option>
+                    <option>JavaScript / Object Creation patterns / Private Properties and Methods pattern</option>
+                    <option>JavaScript / Object Creation patterns / Revelation pattern</option>
+                    <option>JavaScript / Object Creation patterns / Module pattern</option>
+                    <option>JavaScript / Object Creation patterns / Sandbox pattern</option>
+                    <option>JavaScript / Object Creation patterns / Static Members pattern</option>
+                    <option>JavaScript / Object Creation patterns / Object Constants pattern</option>
+                    <option>JavaScript / Object Creation patterns / Chaining pattern</option>
+                    <option>JavaScript / Object Creation patterns / method() Method pattern</option>
+                    <option>JavaScript / Code Reuse patterns / The default pattern</option>
+                    <option>JavaScript / Code Reuse patterns / Rent a constructor pattern</option>
+                    <option>JavaScript / Code Reuse patterns / Rent and Set Prototype pattern</option>
+                    <option>JavaScript / Code Reuse patterns / Share the Prototype pattern</option>
+                    <option>JavaScript / Code Reuse patterns / A Temporary Constructor pattern</option>
+                    <option>JavaScript / Code Reuse patterns / Klass pattern</option>
+                    <option>JavaScript / Code Reuse patterns / Prototypal Inheritance pattern</option>
+                    <option>JavaScript / Code Reuse patterns / Inheritance by Copying Properties pattern</option>
+                    <option>JavaScript / Code Reuse patterns / Mix-ins pattern</option>
+                    <option>JavaScript / Code Reuse patterns / Borrowing Methods pattern</option>
+                    <option>JavaScript / GoF design patterns / Builder pattern</option>
+                    <option>JavaScript / GoF design patterns / Factory method pattern</option>
+                    <option>JavaScript / GoF design patterns / Singleton pattern</option>
+                    <option>JavaScript / GoF design patterns / Decorator pattern</option>
+                    <option>JavaScript / GoF design patterns / Facade pattern</option>
+                    <option>JavaScript / GoF design patterns / Proxy pattern</option>
+                    <option>JavaScript / GoF design patterns / Chain of responsibility pattern</option>
+                    <option>JavaScript / GoF design patterns / Command pattern</option>
+                    <option>JavaScript / GoF design patterns / Iterator pattern</option>
+                    <option>JavaScript / GoF design patterns / Mediator pattern</option>
+                    <option>JavaScript / GoF design patterns / Observer pattern</option>
+                    <option>JavaScript / GoF design patterns / Strategy pattern</option>
+                    </datalist>
+                </form>
+            </div>
+
+            <div class="hidden-sm hidden-xs col-md-2">
+            </div>
+
+        </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <div class="container-fluid box gr" itemprop="mainContentOfPage">
+        <div class="row text-center">
 
-    <!-- The theme saved from: http://bootswatch.com/flatly/ -->
-    <!-- Thanks! -->
+            <h2 itemprop="name headline">Explore</h2>
+            <p itemprop="description">Browse for design patterns and best practices!</p>
+  
+            <div class="col-md-4 col-xs-6 text-center">
+                <a class="np" href="gang-of-four/index.html" itemprop="url" title="Gang of Four" hreflang="en">
+                    <div class="bg-primary light">
+                        <div class="bg-primary light pv15 text-white fw600 text-center mt10 category">
+                            <h3 class="alert-link" itemprop="name">Gang of Four</h3>
+                        </div>
+                        <div class="bg-primary pv15 text-white fw600 mt10 sfi" itemprop="description keywords">
+                            factory, singleton, proxy, observer, iterator ...
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-xs-6 text-center">
+                <a class="np" href="integration/index.html" itemprop="url" title="Enterprise Integration" hreflang="en">
+                    <div class="bg-success light">
+                        <div class="bg-success light pv15 text-white fw600 text-center mt10 category">
+                            <h3 class="alert-link" itemprop="name">Enterprise Integration</h3>
+                        </div>
+                        <div class="bg-success pv15 text-white fw600 mt10 sfi" itemprop="description keywords">
+                            message channel, router, gateway ...
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-xs-6 text-center">
+                <a class="np" href="eap-architecture/index.html" itemprop="url" title="Enterprise Application Architecture" hreflang="en">
+                    <div class="bg-alert light">
+                        <div class="bg-alert light pv15 text-white fw600 text-center mt10 category">
+                            <h3 class="alert-link" itemprop="name">Enterprise Application Architecture</h3>
+                        </div>
+                        <div class="bg-alert pv15 text-white fw600 mt10 sfi" itemprop="description keywords">
+                            service layer, active record, query object ...
+                        </div>
+                    </div>
+                </a>
+            </div>
 
+        </div>
+
+        <div class="row text-center gr">
+
+            <a href="categories.html" itemprop="url" title="Patterns" hreflang="en"><h3>Show all...</h3></a>
+
+        </div>
+    </div>
+
+    <div class="container-fluid box" itemscope itemtype="http://schema.org/WPFooter">
+        <div class="row text-center">
+            &nbsp;
+        </div>
+    </div>
+
+<script>
+
+      var patterns = [
+            {name: "Gang of Four / Creational patterns / Abstract factory pattern", link: "gang-of-four/index.html#creational"},
+            {name: "Gang of Four / Creational patterns / Builder pattern", link: "gang-of-four/index.html#creational"},
+            {name: "Gang of Four / Creational patterns / Factory method pattern", link: "gang-of-four/index.html#creational"},
+            {name: "Gang of Four / Creational patterns / Prototype pattern", link: "gang-of-four/index.html#creational"},
+            {name: "Gang of Four / Creational patterns / Singleton pattern", link: "gang-of-four/index.html#creational"},
+            {name: "Gang of Four / Structural patterns / Adapter pattern", link: "gang-of-four/index.html#structural"},
+            {name: "Gang of Four / Structural patterns / Bridge pattern", link: "gang-of-four/index.html#structural"},
+            {name: "Gang of Four / Structural patterns / Composite pattern", link: "gang-of-four/index.html#structural"},
+            {name: "Gang of Four / Structural patterns / Decorator pattern", link: "gang-of-four/index.html#structural"},
+            {name: "Gang of Four / Structural patterns / Facade pattern", link: "gang-of-four/index.html#structural"},
+            {name: "Gang of Four / Structural patterns / Flyweight pattern", link: "gang-of-four/index.html#structural"},
+            {name: "Gang of Four / Structural patterns / Proxy pattern", link: "gang-of-four/index.html#structural"},
+            {name: "Gang of Four / Behavioral patterns / Chain of responsibility pattern", link: "gang-of-four/index.html#behavioral"},
+            {name: "Gang of Four / Behavioral patterns / Command pattern", link: "gang-of-four/index.html#behavioral"},
+            {name: "Gang of Four / Behavioral patterns / Interpreter pattern", link: "gang-of-four/index.html#behavioral"},
+            {name: "Gang of Four / Behavioral patterns / Iterator pattern", link: "gang-of-four/index.html#behavioral"},
+            {name: "Gang of Four / Behavioral patterns / Mediator pattern", link: "gang-of-four/index.html#behavioral"},
+            {name: "Gang of Four / Behavioral patterns / Memento pattern", link: "gang-of-four/index.html#behavioral"},
+            {name: "Gang of Four / Behavioral patterns / Observer pattern", link: "gang-of-four/index.html#behavioral"},
+            {name: "Gang of Four / Behavioral patterns / State pattern", link: "gang-of-four/index.html#behavioral"},
+            {name: "Gang of Four / Behavioral patterns / Strategy pattern", link: "gang-of-four/index.html#behavioral"},
+            {name: "Gang of Four / Behavioral patterns / Template method pattern", link: "gang-of-four/index.html#behavioral"},
+            {name: "Gang of Four / Behavioral patterns / Visitor pattern", link: "gang-of-four/index.html#behavioral"},
+            {name: "Enterprise Integration / Integration Style patterns / File Transfer pattern", link: "integration/index.html#integration"},
+            {name: "Enterprise Integration / Integration Style patterns / Shared Database pattern", link: "integration/index.html#integration"},
+            {name: "Enterprise Integration / Integration Style patterns / Remote Procedure Invocation pattern", link: "integration/index.html#integration"},
+            {name: "Enterprise Integration / Integration Style patterns / Messaging pattern", link: "integration/index.html#integration"},
+            {name: "Enterprise Integration / Messaging System patterns / Message Channel pattern", link: "integration/index.html#messagingsystems"},
+            {name: "Enterprise Integration / Messaging System patterns / Message pattern", link: "integration/index.html#messagingsystems"},
+            {name: "Enterprise Integration / Messaging System patterns / Pipes and Filters pattern", link: "integration/index.html#messagingsystems"},
+            {name: "Enterprise Integration / Messaging System patterns / Message Router pattern", link: "integration/index.html#messagingsystems"},
+            {name: "Enterprise Integration / Messaging System patterns / Message Router pattern", link: "integration/index.html#messagingsystems"},
+            {name: "Enterprise Integration / Messaging System patterns / Message Endpoint pattern", link: "integration/index.html#messagingsystems"},
+            {name: "Enterprise Integration / Messaging Channel patterns / Point-to-Point Channel pattern", link: "integration/index.html#messagingchannel"},
+            {name: "Enterprise Integration / Messaging Channel patterns / Publish-Subscribe Channel pattern", link: "integration/index.html#messagingchannel"},
+            {name: "Enterprise Integration / Messaging Channel patterns / Datatype Channel pattern", link: "integration/index.html#messagingchannel"},
+            {name: "Enterprise Integration / Messaging Channel patterns / Invalid Message Channel pattern", link: "integration/index.html#messagingchannel"},
+            {name: "Enterprise Integration / Messaging Channel patterns / Dead Letter Channel pattern", link: "integration/index.html#messagingchannel"},
+            {name: "Enterprise Integration / Messaging Channel patterns / Guaranteed Delivery pattern", link: "integration/index.html#messagingchannel"},
+            {name: "Enterprise Integration / Messaging Channel patterns / Channel Adapter pattern", link: "integration/index.html#messagingchannel"},
+            {name: "Enterprise Integration / Messaging Channel patterns / Messaging Bridge pattern", link: "integration/index.html#messagingchannel"},
+            {name: "Enterprise Integration / Messaging Channel patterns / Message Bus pattern", link: "integration/index.html#messagingchannel"},
+            {name: "Enterprise Integration / Message Construction patterns / Command Message pattern", link: "integration/index.html#messageconstruction"},
+            {name: "Enterprise Integration / Message Construction patterns / Document Message pattern", link: "integration/index.html#messageconstruction"},
+            {name: "Enterprise Integration / Message Construction patterns / Event Message pattern", link: "integration/index.html#messageconstruction"},
+            {name: "Enterprise Integration / Message Construction patterns / Request-Reply pattern", link: "integration/index.html#messageconstruction"},
+            {name: "Enterprise Integration / Message Construction patterns / Return Address pattern", link: "integration/index.html#messageconstruction"},
+            {name: "Enterprise Integration / Message Construction patterns / Correlation Identifier pattern", link: "integration/index.html#messageconstruction"},
+            {name: "Enterprise Integration / Message Construction patterns / Message Sequence pattern", link: "integration/index.html#messageconstruction"},
+            {name: "Enterprise Integration / Message Construction patterns / Message Expiration pattern", link: "integration/index.html#messageconstruction"},
+            {name: "Enterprise Integration / Message Construction patterns / Format Indicator pattern", link: "integration/index.html#messageconstruction"},
+            {name: "Enterprise Integration / Message Routing patterns / Content-Based Router pattern", link: "integration/index.html#messagerouting"},
+            {name: "Enterprise Integration / Message Routing patterns / Message Filter pattern", link: "integration/index.html#messagerouting"},
+            {name: "Enterprise Integration / Message Routing patterns / Dynamic Router pattern", link: "integration/index.html#messagerouting"},
+            {name: "Enterprise Integration / Message Routing patterns / Recipient List pattern", link: "integration/index.html#messagerouting"},
+            {name: "Enterprise Integration / Message Routing patterns / Splitter pattern", link: "integration/index.html#messagerouting"},
+            {name: "Enterprise Integration / Message Routing patterns / Aggregator pattern", link: "integration/index.html#messagerouting"},
+            {name: "Enterprise Integration / Message Routing patterns / Resequencer pattern", link: "integration/index.html#messagerouting"},
+            {name: "Enterprise Integration / Message Routing patterns / Composed Message Processor pattern", link: "integration/index.html#messagerouting"},
+            {name: "Enterprise Integration / Message Routing patterns / Scatter-Gather pattern", link: "integration/index.html#messagerouting"},
+            {name: "Enterprise Integration / Message Routing patterns / Routing Slip pattern", link: "integration/index.html#messagerouting"},
+            {name: "Enterprise Integration / Message Routing patterns / Process Manager pattern", link: "integration/index.html#messagerouting"},
+            {name: "Enterprise Integration / Message Routing patterns / Message Broker pattern", link: "integration/index.html#messagerouting"},
+            {name: "Enterprise Integration / Message Transformation patterns / Envelope Wrapper pattern", link: "integration/index.html#messagetransformation"},
+            {name: "Enterprise Integration / Message Transformation patterns / Content Enricher pattern", link: "integration/index.html#messagetransformation"},
+            {name: "Enterprise Integration / Message Transformation patterns / Content Enricher pattern", link: "integration/index.html#messagetransformation"},
+            {name: "Enterprise Integration / Message Transformation patterns / Content Filter pattern", link: "integration/index.html#messagetransformation"},
+            {name: "Enterprise Integration / Message Transformation patterns / Claim Check pattern", link: "integration/index.html#messagetransformation"},
+            {name: "Enterprise Integration / Message Transformation patterns / Normalizer pattern", link: "integration/index.html#messagetransformation"},
+            {name: "Enterprise Integration / Message Transformation patterns / Canonical Data Model pattern", link: "integration/index.html#messagetransformation"},
+            {name: "Enterprise Integration / Messaging Endpoint patterns / Messaging Gateway pattern", link: "integration/index.html#messagingendpoints"},
+            {name: "Enterprise Integration / Messaging Endpoint patterns / Messaging Mapper pattern", link: "integration/index.html#messagingendpoints"},
+            {name: "Enterprise Integration / Messaging Endpoint patterns / Transactional Client pattern", link: "integration/index.html#messagingendpoints"},
+            {name: "Enterprise Integration / Messaging Endpoint patterns / Polling Consumer pattern", link: "integration/index.html#messagingendpoints"},
+            {name: "Enterprise Integration / Messaging Endpoint patterns / Event-Driven Consumer pattern", link: "integration/index.html#messagingendpoints"},
+            {name: "Enterprise Integration / Messaging Endpoint patterns / Competing Consumers pattern", link: "integration/index.html#messagingendpoints"},
+            {name: "Enterprise Integration / Messaging Endpoint patterns / Message Dispatcher pattern", link: "integration/index.html#messagingendpoints"},
+            {name: "Enterprise Integration / Messaging Endpoint patterns / Selective Consumer pattern", link: "integration/index.html#messagingendpoints"},
+            {name: "Enterprise Integration / Messaging Endpoint patterns / Durable Subscriber pattern", link: "integration/index.html#messagingendpoints"},
+            {name: "Enterprise Integration / Messaging Endpoint patterns / Idempotent Receiver pattern", link: "integration/index.html#messagingendpoints"},
+            {name: "Enterprise Integration / Messaging Endpoint patterns / Service Activator pattern", link: "integration/index.html#messagingendpoints"},
+            {name: "Enterprise Integration / System Management patterns / Control Bus pattern", link: "integration/index.html#systemmanagement"},
+            {name: "Enterprise Integration / System Management patterns / Detour pattern", link: "integration/index.html#systemmanagement"},
+            {name: "Enterprise Integration / System Management patterns / Wire Tap pattern", link: "integration/index.html#systemmanagement"},
+            {name: "Enterprise Integration / System Management patterns / Message History pattern", link: "integration/index.html#systemmanagement"},
+            {name: "Enterprise Integration / System Management patterns / Message Store pattern", link: "integration/index.html#systemmanagement"},
+            {name: "Enterprise Integration / System Management patterns / Smart Proxy pattern", link: "integration/index.html#systemmanagement"},
+            {name: "Enterprise Integration / System Management patterns / Test Message pattern", link: "integration/index.html#systemmanagement"},
+            {name: "Enterprise Integration / System Management patterns / Channel Purger pattern", link: "integration/index.html#systemmanagement"},
+            {name: "Enterprise Application Architecture / Base patterns / Gateway pattern", link: "eap-architecture/index.html#base"},
+            {name: "Enterprise Application Architecture / Base patterns / Mapper pattern", link: "eap-architecture/index.html#base"},
+            {name: "Enterprise Application Architecture / Base patterns / Layer Supertype pattern", link: "eap-architecture/index.html#base"},
+            {name: "Enterprise Application Architecture / Base patterns / Separated Interface pattern", link: "eap-architecture/index.html#base"},
+            {name: "Enterprise Application Architecture / Base patterns / Registry pattern", link: "eap-architecture/index.html#base"},
+            {name: "Enterprise Application Architecture / Base patterns / Value Object pattern", link: "eap-architecture/index.html#base"},
+            {name: "Enterprise Application Architecture / Base patterns / Money pattern", link: "eap-architecture/index.html#base"},
+            {name: "Enterprise Application Architecture / Base patterns / Special Case pattern", link: "eap-architecture/index.html#base"},
+            {name: "Enterprise Application Architecture / Base patterns / Plugin pattern", link: "eap-architecture/index.html#base"},
+            {name: "Enterprise Application Architecture / Base patterns / Service Stub pattern", link: "eap-architecture/index.html#base"},
+            {name: "Enterprise Application Architecture / Base patterns / Record Set pattern", link: "eap-architecture/index.html#base"},
+            {name: "Enterprise Application Architecture / Domain Logic patterns / Transaction Script pattern", link: "eap-architecture/index.html#domainlogic"},
+            {name: "Enterprise Application Architecture / Domain Logic patterns / Domain Model pattern", link: "eap-architecture/index.html#domainlogic"},
+            {name: "Enterprise Application Architecture / Domain Logic patterns / Table Module pattern", link: "eap-architecture/index.html#domainlogic"},
+            {name: "Enterprise Application Architecture / Domain Logic patterns / Service Layer pattern", link: "eap-architecture/index.html#domainlogic"},
+            {name: "Enterprise Application Architecture / Data Source Architectural patterns / Table Data Gateway pattern", link: "eap-architecture/index.html#datasource"},
+            {name: "Enterprise Application Architecture / Data Source Architectural patterns / Row Data Gateway pattern", link: "eap-architecture/index.html#datasource"},
+            {name: "Enterprise Application Architecture / Data Source Architectural patterns / Active Record pattern", link: "eap-architecture/index.html#datasource"},
+            {name: "Enterprise Application Architecture / Data Source Architectural patterns / Data Mapper pattern", link: "eap-architecture/index.html#datasource"},
+            {name: "Enterprise Application Architecture / Object-Relational Behavioral patterns / Unit of Work pattern", link: "eap-architecture/index.html#objrelbehavioral"},
+            {name: "Enterprise Application Architecture / Object-Relational Behavioral patterns / Identity Map pattern", link: "eap-architecture/index.html#objrelbehavioral"},
+            {name: "Enterprise Application Architecture / Object-Relational Behavioral patterns / Lazy Load pattern", link: "eap-architecture/index.html#objrelbehavioral"},
+            {name: "Enterprise Application Architecture / Object-Relational Structural patterns / Identity Field pattern", link: "eap-architecture/index.html#objrelstructural"},
+            {name: "Enterprise Application Architecture / Object-Relational Structural patterns / Foreign Key Mapping pattern", link: "eap-architecture/index.html#objrelstructural"},
+            {name: "Enterprise Application Architecture / Object-Relational Structural patterns / Association Table Mapping pattern", link: "eap-architecture/index.html#objrelstructural"},
+            {name: "Enterprise Application Architecture / Object-Relational Structural patterns / Dependent Mapping pattern", link: "eap-architecture/index.html#objrelstructural"},
+            {name: "Enterprise Application Architecture / Object-Relational Structural patterns / Embedded Value pattern", link: "eap-architecture/index.html#objrelstructural"},
+            {name: "Enterprise Application Architecture / Object-Relational Structural patterns / Serialized LOB pattern", link: "eap-architecture/index.html#objrelstructural"},
+            {name: "Enterprise Application Architecture / Object-Relational Structural patterns / Single Table Inheritance pattern", link: "eap-architecture/index.html#objrelstructural"},
+            {name: "Enterprise Application Architecture / Object-Relational Structural patterns / Class Table Inheritance pattern", link: "eap-architecture/index.html#objrelstructural"},
+            {name: "Enterprise Application Architecture / Object-Relational Structural patterns / Concrete Table Inheritance pattern", link: "eap-architecture/index.html#objrelstructural"},
+            {name: "Enterprise Application Architecture / Object-Relational Structural patterns / Inheritance Mappers pattern", link: "eap-architecture/index.html#objrelstructural"},
+            {name: "Enterprise Application Architecture / Object-Relational Metadata Mapping patterns / Metadata Mapping pattern", link: "eap-architecture/index.html#objrelmeta"},
+            {name: "Enterprise Application Architecture / Object-Relational Metadata Mapping patterns / Query Object pattern", link: "eap-architecture/index.html#objrelmeta"},
+            {name: "Enterprise Application Architecture / Object-Relational Metadata Mapping patterns / Repository pattern", link: "eap-architecture/index.html#objrelmeta"},
+            {name: "Enterprise Application Architecture / Web Presentation patterns / Model View Controller pattern", link: "eap-architecture/index.html#webpresentation"},
+            {name: "Enterprise Application Architecture / Web Presentation patterns / Page Controller pattern", link: "eap-architecture/index.html#webpresentation"},
+            {name: "Enterprise Application Architecture / Web Presentation patterns / Front Controller pattern", link: "eap-architecture/index.html#webpresentation"},
+            {name: "Enterprise Application Architecture / Web Presentation patterns / Template View pattern", link: "eap-architecture/index.html#webpresentation"},
+            {name: "Enterprise Application Architecture / Web Presentation patterns / Transform View pattern", link: "eap-architecture/index.html#webpresentation"},
+            {name: "Enterprise Application Architecture / Web Presentation patterns / Two-Step View pattern", link: "eap-architecture/index.html#webpresentation"},
+            {name: "Enterprise Application Architecture / Web Presentation patterns / Application Controller pattern", link: "eap-architecture/index.html#webpresentation"},
+            {name: "Enterprise Application Architecture / Distribution patterns / Remote Facade pattern", link: "eap-architecture/index.html#distribution"},
+            {name: "Enterprise Application Architecture / Distribution patterns / Data Transfer Object pattern", link: "eap-architecture/index.html#distribution"},
+            {name: "Enterprise Application Architecture / Offline Concurrency patterns / Optimistic Offline Lock pattern", link: "eap-architecture/index.html#offlineconcurrency"},
+            {name: "Enterprise Application Architecture / Offline Concurrency patterns / Pessimistic Offline Lock pattern", link: "eap-architecture/index.html#offlineconcurrency"},
+            {name: "Enterprise Application Architecture / Offline Concurrency patterns / Coarse Grained Lock pattern", link: "eap-architecture/index.html#offlineconcurrency"},
+            {name: "Enterprise Application Architecture / Offline Concurrency patterns / Implicit Lock pattern", link: "eap-architecture/index.html#offlineconcurrency"},
+            {name: "Enterprise Application Architecture / Session State patterns / Client Session State pattern", link: "eap-architecture/index.html#sessionstate"},
+            {name: "Enterprise Application Architecture / Session State patterns / Server Session State pattern", link: "eap-architecture/index.html#sessionstate"},
+            {name: "Enterprise Application Architecture / Session State patterns / Database Session State pattern", link: "eap-architecture/index.html#sessionstate"},
+            {name: "Concurrency / Concurrency patterns / Active Object pattern", link: "concurrency/index.html#undefined"},
+            {name: "Concurrency / Concurrency patterns / Balking pattern", link: "concurrency/index.html#undefined"},
+            {name: "Concurrency / Concurrency patterns / Barrier pattern", link: "concurrency/index.html#undefined"},
+            {name: "Concurrency / Concurrency patterns / Disruptor pattern", link: "concurrency/index.html#undefined"},
+            {name: "Concurrency / Concurrency patterns / Double-checked locking pattern", link: "concurrency/index.html#undefined"},
+            {name: "Concurrency / Concurrency patterns / Guarded suspension pattern", link: "concurrency/index.html#undefined"},
+            {name: "Concurrency / Concurrency patterns / Leaders/followers pattern", link: "concurrency/index.html#undefined"},
+            {name: "Concurrency / Concurrency patterns / Monitor pattern", link: "concurrency/index.html#undefined"},
+            {name: "Concurrency / Concurrency patterns / Reactor pattern", link: "concurrency/index.html#undefined"},
+            {name: "Concurrency / Concurrency patterns / Readers-writer lock pattern", link: "concurrency/index.html#undefined"},
+            {name: "Concurrency / Concurrency patterns / Scheduler pattern", link: "concurrency/index.html#undefined"},
+            {name: "Concurrency / Concurrency patterns / Thread pool pattern", link: "concurrency/index.html#undefined"},
+            {name: "Concurrency / Concurrency patterns / Thread-local storage pattern", link: "concurrency/index.html#undefined"},
+            {name: "Microservice / Core patterns / Microservices Architecture pattern", link: "microservice/index.html#core"},
+            {name: "Microservice / Core patterns / API Gateway pattern", link: "microservice/index.html#core"},
+            {name: "Microservice / Deployment patterns / Multiple service instances per host pattern", link: "microservice/index.html#deployment"},
+            {name: "Microservice / Deployment patterns / Single Service Instance per Host pattern", link: "microservice/index.html#deployment"},
+            {name: "Microservice / Deployment patterns / Service Instance per VM pattern", link: "microservice/index.html#deployment"},
+            {name: "Microservice / Deployment patterns / Service instance per container pattern", link: "microservice/index.html#deployment"},
+            {name: "Microservice / Service discovery patterns / Client-side service discovery pattern", link: "microservice/index.html#servicediscovery"},
+            {name: "Microservice / Service discovery patterns / Server-side service discovery pattern", link: "microservice/index.html#servicediscovery"},
+            {name: "Microservice / Service discovery patterns / Service registry pattern", link: "microservice/index.html#servicediscovery"},
+            {name: "Microservice / Service discovery patterns / Self Registration pattern", link: "microservice/index.html#servicediscovery"},
+            {name: "Microservice / Service discovery patterns / 3rd Party Registration pattern", link: "microservice/index.html#servicediscovery"},
+            {name: "Microservice / Collaboration patterns / Aggregator Microservice pattern", link: "microservice/index.html#collaboration"},
+            {name: "Microservice / Collaboration patterns / Proxy Microservice pattern", link: "microservice/index.html#collaboration"},
+            {name: "Microservice / Collaboration patterns / Chained Microservice pattern", link: "microservice/index.html#collaboration"},
+            {name: "Microservice / Collaboration patterns / Branch Microservice pattern", link: "microservice/index.html#collaboration"},
+            {name: "Microservice / Collaboration patterns / Shared Data Microservice pattern", link: "microservice/index.html#collaboration"},
+            {name: "Microservice / Collaboration patterns / Asynchronous Messaging Microservice pattern", link: "microservice/index.html#collaboration"},
+            {name: "JavaScript / General patterns / Function Declaration pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / General patterns / Conditionals pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / General patterns / Access to the Global Object pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / General patterns / Single var pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / General patterns / Hoisting pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / General patterns / For loops pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / General patterns / (Not) Augmenting Built-in Prototypes pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / General patterns / Switch pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / General patterns / Implied Typecasting pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / General patterns / Avoiding eval() pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / General patterns / Number Conversions with parseInt() pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / General patterns / Minimizing Globals pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / General patterns / The Problem with Globals pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / General patterns / The Module pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / General patterns / The Revealing Module pattern", link: "javascript/index.html#general"},
+            {name: "JavaScript / jQuery patterns / Requery pattern", link: "javascript/index.html#jquery"},
+            {name: "JavaScript / jQuery patterns / Append pattern", link: "javascript/index.html#jquery"},
+            {name: "JavaScript / jQuery patterns / Data pattern", link: "javascript/index.html#jquery"},
+            {name: "JavaScript / jQuery patterns / Context and find pattern", link: "javascript/index.html#jquery"},
+            {name: "JavaScript / jQuery patterns / Detach pattern", link: "javascript/index.html#jquery"},
+            {name: "JavaScript / jQuery patterns / Event delegation pattern", link: "javascript/index.html#jquery"},
+            {name: "JavaScript / jQuery patterns / Selector cache pattern", link: "javascript/index.html#jquery"},
+            {name: "JavaScript / jQuery patterns / Window scroll event pattern", link: "javascript/index.html#jquery"},
+            {name: "JavaScript / jQuery patterns / Left and Right pattern", link: "javascript/index.html#jquery"},
+            {name: "JavaScript / jQuery patterns / Decending from id pattern", link: "javascript/index.html#jquery"},
+            {name: "JavaScript / jQuery patterns / Universal Selector pattern", link: "javascript/index.html#jquery"},
+            {name: "JavaScript / jQuery patterns / Be Specific when Needed pattern", link: "javascript/index.html#jquery"},
+            {name: "JavaScript / jQuery plugin patterns / Basic pattern", link: "javascript/index.html#jqueryplugin"},
+            {name: "JavaScript / jQuery plugin patterns / Extend pattern", link: "javascript/index.html#jqueryplugin"},
+            {name: "JavaScript / jQuery plugin patterns / Lightweight pattern", link: "javascript/index.html#jqueryplugin"},
+            {name: "JavaScript / jQuery plugin patterns / Namespaced pattern", link: "javascript/index.html#jqueryplugin"},
+            {name: "JavaScript / jQuery plugin patterns / Prototypal inheritance pattern", link: "javascript/index.html#jqueryplugin"},
+            {name: "JavaScript / jQuery plugin patterns / Best options pattern", link: "javascript/index.html#jqueryplugin"},
+            {name: "JavaScript / jQuery plugin patterns / Custom events (Pseudo Pub/Sub) pattern", link: "javascript/index.html#jqueryplugin"},
+            {name: "JavaScript / jQuery plugin patterns / Highly configurable mutable pattern", link: "javascript/index.html#jqueryplugin"},
+            {name: "JavaScript / jQuery plugin patterns / UI Widget factory pattern", link: "javascript/index.html#jqueryplugin"},
+            {name: "JavaScript / jQuery plugin patterns / UI Widget factory \"bridge\" pattern", link: "javascript/index.html#jqueryplugin"},
+            {name: "JavaScript / jQuery plugin patterns / UI Widget factory for jQuery mobile pattern", link: "javascript/index.html#jqueryplugin"},
+            {name: "JavaScript / jQuery plugin patterns / UI Widget + RequireJS module pattern", link: "javascript/index.html#jqueryplugin"},
+            {name: "JavaScript / jQuery plugin patterns / Universal Module Definition pattern", link: "javascript/index.html#jqueryplugin"},
+            {name: "JavaScript / Literals and Constructors patterns / Object literal pattern", link: "javascript/index.html#literalsconstr"},
+            {name: "JavaScript / Literals and Constructors patterns / Enforcing \"new\" pattern", link: "javascript/index.html#literalsconstr"},
+            {name: "JavaScript / Literals and Constructors patterns / Array literal pattern", link: "javascript/index.html#literalsconstr"},
+            {name: "JavaScript / Literals and Constructors patterns / Working with JSON pattern", link: "javascript/index.html#literalsconstr"},
+            {name: "JavaScript / Literals and Constructors patterns / Primitive wrappers pattern", link: "javascript/index.html#literalsconstr"},
+            {name: "JavaScript / Function patterns / Callback pattern", link: "javascript/index.html#function"},
+            {name: "JavaScript / Function patterns / Configuration objects pattern", link: "javascript/index.html#function"},
+            {name: "JavaScript / Function patterns / Returning functions pattern", link: "javascript/index.html#function"},
+            {name: "JavaScript / Function patterns / Currying pattern", link: "javascript/index.html#function"},
+            {name: "JavaScript / Function patterns / Partial application pattern", link: "javascript/index.html#function"},
+            {name: "JavaScript / Function patterns / Immediate functions pattern", link: "javascript/index.html#function"},
+            {name: "JavaScript / Function patterns / Immediate object initialization pattern", link: "javascript/index.html#function"},
+            {name: "JavaScript / Function patterns / Init-time branching pattern", link: "javascript/index.html#function"},
+            {name: "JavaScript / Function patterns / Memoization pattern", link: "javascript/index.html#function"},
+            {name: "JavaScript / Function patterns / Self-defining functions pattern", link: "javascript/index.html#function"},
+            {name: "JavaScript / Object Creation patterns / Namespace pattern", link: "javascript/index.html#objectcreation"},
+            {name: "JavaScript / Object Creation patterns / Declaring Dependencies pattern", link: "javascript/index.html#objectcreation"},
+            {name: "JavaScript / Object Creation patterns / Private Properties and Methods pattern", link: "javascript/index.html#objectcreation"},
+            {name: "JavaScript / Object Creation patterns / Revelation pattern", link: "javascript/index.html#objectcreation"},
+            {name: "JavaScript / Object Creation patterns / Module pattern", link: "javascript/index.html#objectcreation"},
+            {name: "JavaScript / Object Creation patterns / Sandbox pattern", link: "javascript/index.html#objectcreation"},
+            {name: "JavaScript / Object Creation patterns / Static Members pattern", link: "javascript/index.html#objectcreation"},
+            {name: "JavaScript / Object Creation patterns / Object Constants pattern", link: "javascript/index.html#objectcreation"},
+            {name: "JavaScript / Object Creation patterns / Chaining pattern", link: "javascript/index.html#objectcreation"},
+            {name: "JavaScript / Object Creation patterns / method() Method pattern", link: "javascript/index.html#objectcreation"},
+            {name: "JavaScript / Code Reuse patterns / The default pattern", link: "javascript/index.html#codereuse"},
+            {name: "JavaScript / Code Reuse patterns / Rent a constructor pattern", link: "javascript/index.html#codereuse"},
+            {name: "JavaScript / Code Reuse patterns / Rent and Set Prototype pattern", link: "javascript/index.html#codereuse"},
+            {name: "JavaScript / Code Reuse patterns / Share the Prototype pattern", link: "javascript/index.html#codereuse"},
+            {name: "JavaScript / Code Reuse patterns / A Temporary Constructor pattern", link: "javascript/index.html#codereuse"},
+            {name: "JavaScript / Code Reuse patterns / Klass pattern", link: "javascript/index.html#codereuse"},
+            {name: "JavaScript / Code Reuse patterns / Prototypal Inheritance pattern", link: "javascript/index.html#codereuse"},
+            {name: "JavaScript / Code Reuse patterns / Inheritance by Copying Properties pattern", link: "javascript/index.html#codereuse"},
+            {name: "JavaScript / Code Reuse patterns / Mix-ins pattern", link: "javascript/index.html#codereuse"},
+            {name: "JavaScript / Code Reuse patterns / Borrowing Methods pattern", link: "javascript/index.html#codereuse"},
+            {name: "JavaScript / GoF design patterns / Builder pattern", link: "javascript/index.html#gof"},
+            {name: "JavaScript / GoF design patterns / Factory method pattern", link: "javascript/index.html#gof"},
+            {name: "JavaScript / GoF design patterns / Singleton pattern", link: "javascript/index.html#gof"},
+            {name: "JavaScript / GoF design patterns / Decorator pattern", link: "javascript/index.html#gof"},
+            {name: "JavaScript / GoF design patterns / Facade pattern", link: "javascript/index.html#gof"},
+            {name: "JavaScript / GoF design patterns / Proxy pattern", link: "javascript/index.html#gof"},
+            {name: "JavaScript / GoF design patterns / Chain of responsibility pattern", link: "javascript/index.html#gof"},
+            {name: "JavaScript / GoF design patterns / Command pattern", link: "javascript/index.html#gof"},
+            {name: "JavaScript / GoF design patterns / Iterator pattern", link: "javascript/index.html#gof"},
+            {name: "JavaScript / GoF design patterns / Mediator pattern", link: "javascript/index.html#gof"},
+            {name: "JavaScript / GoF design patterns / Observer pattern", link: "javascript/index.html#gof"},
+            {name: "JavaScript / GoF design patterns / Strategy pattern", link: "javascript/index.html#gof"},
+            {name: "Changelog", link: "changelog.html"},
+            {name: "About", link: "about.html"}
+      ];
+
+      var navigateToLink = function(name) {
+
+           var length = patterns.length;
+
+           for(var i=0; i<length; i+=1) {
+                if(patterns[i].name == name) {
+                     window.location.href = patterns[i].link;
+                }
+           }
+      };
+
+      var input = document.getElementById("searchField");
+      new Awesomplete(input, {
+           list: "#designpatterns",
+           replace: function(item) {
+                this.input.value = item;
+                navigateToLink(item);
+           }
+      });
+
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-61553779-1', 'auto');
+ga('send', 'pageview');
+</script>
 </body>
 </html>

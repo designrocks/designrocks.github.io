@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title itemprop="name">Enterprise Integration | Design Patterns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="design patterns, Gang of Four, Enterprise, integration, microservice, javascript" />
+<meta name="description" content="A collection of various design patterns.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="search" title="Search" href="/" />
+<link rel="copyright" title="About" href="/../about.html" />
+<link rel="author" title="About" href="/about.html" />
+<link rel="home" title="" href="/" id="homelink" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="canonical" href="http://design.patterns.rocks/" />
+
+<!-- Font CSS (Via CDN) -->
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'>
+
+<!-- Core CSS -->
+<link rel="stylesheet" type="text/css" href="../min2.css">
+<!--<link rel="stylesheet" type="text/css" href="theme.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="awesomplete.css">
+<link rel="stylesheet" type="text/css" href="st.css">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body style="min-height: 1500px;" itemscope itemtype="http://schema.org/WebPage">
+
+    <nav class="navbar bg-light docs-navbar" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="container">
+        <div class="navbar-header" itemprop="name">
+            <a class="navbar-brand" href="../index.html" hreflang="en"><b>Design Patterns</b></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="mi"><a href="../index.html" hreflang="en" title="Design Patterns" itemprop="url name">Index</a></li>
+                    <li class="mp active"><a href="../categories.html" hreflang="en" title="Patterns" itemprop="url name">Patterns</a></li>
+                    <li class="mc"><a href="../changelog.html" hreflang="en" title="Changelog" itemprop="url name">Changelog</a></li>
+                    <li class="ma"><a href="about.html" hreflang="en" title="About" itemprop="url name">About</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        <div class="docs-container" id="docs">
+            <div class="row table-layout">
+                <div class="col-xs-3 left-col" itemscope itemtype="http://schema.org/WPSideBar">
+                    <div id="nav-spy" class="posr">
+                        <ul class="list-group list-group-accordion" itemscope itemtype="http://schema.org/Offer">
+  <li class="list-group-item list-group-header br-n" itemprop="name">Categories</li>
+  <li class="list-group-item active"><a href="#" itemprop="category">Enterprise Integration</a></li>
+  <li class="list-group-item"><a href="#integration" itemprop="name url">Integration Style patterns</a></li>
+  <li class="list-group-item"><a href="#messagingsystems" itemprop="name url">Messaging System patterns</a></li>
+  <li class="list-group-item"><a href="#messagingchannel" itemprop="name url">Messaging Channel patterns</a></li>
+  <li class="list-group-item"><a href="#messageconstruction" itemprop="name url">Message Construction patterns</a></li>
+  <li class="list-group-item"><a href="#messagerouting" itemprop="name url">Message Routing patterns</a></li>
+  <li class="list-group-item"><a href="#messagetransformation" itemprop="name url">Message Transformation patterns</a></li>
+  <li class="list-group-item"><a href="#messagingendpoints" itemprop="name url">Messaging Endpoint patterns</a></li>
+  <li class="list-group-item"><a href="#systemmanagement" itemprop="name url">System Management patterns</a></li>
+</ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-9 center-col va-t" itemprop="mainContentOfPage">
+
+                    <div id="docs-content" class="tab-content pn" itemscope itemtype="http://schema.org/CollectionPage">
+
+                        
+<h1 class="page-header" itemprop="name headline">Enterprise Integration</h1>
+
+
+	<a name="integration">&nbsp;</a>
+	<h2 itemprop="name headline">Integration Style patterns</h2>
+	<hr/>
+
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/FileTransferIntegration.html" title="File Transfer pattern" name="File Transfer pattern" target="_blank" itemprop="name url">File Transfer pattern</a></h3>
+	<p itemprop="description">Have each application produce files containing information that other applications need to consume. Integrators take the responsibility of transforming files into different formats. Produce the files at regular intervals according to the nature of the business.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/SharedDataBaseIntegration.html" title="Shared Database pattern" name="Shared Database pattern" target="_blank" itemprop="name url">Shared Database pattern</a></h3>
+	<p itemprop="description">Integrate applications by having them store their data in a single Shared Database.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/EncapsulatedSynchronousIntegration.html" title="Remote Procedure Invocation pattern" name="Remote Procedure Invocation pattern" target="_blank" itemprop="name url">Remote Procedure Invocation pattern</a></h3>
+	<p itemprop="description">Develop each application as a large-scale object or component with encapsulated data. Provide an interface to allow other applications to interact with the running application.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/Messaging.html" title="Messaging pattern" name="Messaging pattern" target="_blank" itemprop="name url">Messaging pattern</a></h3>
+	<p itemprop="description">Use Messaging to transfer packets of data frequently, immediately, reliably, and asynchronously, using customizable formats.</p>
+
+	<a name="messagingsystems">&nbsp;</a>
+	<h2 itemprop="name headline">Messaging System patterns</h2>
+	<hr/>
+
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageChannel.html" title="Message Channel pattern" name="Message Channel pattern" target="_blank" itemprop="name url">Message Channel pattern</a></h3>
+	<p itemprop="description">Connect the applications using a Message Channel, where one application writes information to the channel and the other one reads that information from the channel.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/Message.html" title="Message pattern" name="Message pattern" target="_blank" itemprop="name url">Message pattern</a></h3>
+	<p itemprop="description">Package the information into a Message, a data record that the messaging system can transmit through a message channel.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/PipesAndFilters.html" title="Pipes and Filters pattern" name="Pipes and Filters pattern" target="_blank" itemprop="name url">Pipes and Filters pattern</a></h3>
+	<p itemprop="description">Use the Pipes and Filters architectural style to divide a larger processing task into a sequence of smaller, independent processing steps (Filters) that are connected by channels (Pipes).</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageRouter.html" title="Message Router pattern" name="Message Router pattern" target="_blank" itemprop="name url">Message Router pattern</a></h3>
+	<p itemprop="description">Insert a special filter, a Message Router, which consumes a Message from one Message Channel and republishes it to a different Message Channel channel depending on a set of conditions.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageTranslator.html" title="Message Router pattern" name="Message Router pattern" target="_blank" itemprop="name url">Message Router pattern</a></h3>
+	<p itemprop="description">Use a special filter, a Message Translator, between other filters or applications to translate one data format into another.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageEndpoint.html" title="Message Endpoint pattern" name="Message Endpoint pattern" target="_blank" itemprop="name url">Message Endpoint pattern</a></h3>
+	<p itemprop="description">Connect an application to a messaging channel using a Message Endpoint, a client of the messaging system that the application can then use to send or receive messages.</p>
+
+	<a name="messagingchannel">&nbsp;</a>
+	<h2 itemprop="name headline">Messaging Channel patterns</h2>
+	<hr/>
+
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/PointToPointChannel.html" title="Point-to-Point Channel pattern" name="Point-to-Point Channel pattern" target="_blank" itemprop="name url">Point-to-Point Channel pattern</a></h3>
+	<p itemprop="description">Send the message on a Point-to-Point Channel, which ensures that only one receiver will receive a particular message.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/PublishSubscribeChannel.html" title="Publish-Subscribe Channel pattern" name="Publish-Subscribe Channel pattern" target="_blank" itemprop="name url">Publish-Subscribe Channel pattern</a></h3>
+	<p itemprop="description">Send the event on a Publish-Subscribe Channel, which delivers a copy of a particular event to each receiver.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/DatatypeChannel.html" title="Datatype Channel pattern" name="Datatype Channel pattern" target="_blank" itemprop="name url">Datatype Channel pattern</a></h3>
+	<p itemprop="description">Use a separate Datatype Channel for each data type, so that all data on a particular channel is of the same type.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/InvalidMessageChannel.html" title="Invalid Message Channel pattern" name="Invalid Message Channel pattern" target="_blank" itemprop="name url">Invalid Message Channel pattern</a></h3>
+	<p itemprop="description">The receiver should move the improper message to an Invalid Message Channel, a special channel for messages that could not be processed by their receivers.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/DeadLetterChannel.html" title="Dead Letter Channel pattern" name="Dead Letter Channel pattern" target="_blank" itemprop="name url">Dead Letter Channel pattern</a></h3>
+	<p itemprop="description">When a messaging system determines that it cannot or should not deliver a message, it may elect to move the message to a Dead Letter Channel.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/GuaranteedMessaging.html" title="Guaranteed Delivery pattern" name="Guaranteed Delivery pattern" target="_blank" itemprop="name url">Guaranteed Delivery pattern</a></h3>
+	<p itemprop="description">Use Guaranteed Delivery to make messages persistent so that they are not lost even if the messaging system crashes.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/ChannelAdapter.html" title="Channel Adapter pattern" name="Channel Adapter pattern" target="_blank" itemprop="name url">Channel Adapter pattern</a></h3>
+	<p itemprop="description">Use a Channel Adapter that can access the application's API or data and publish messages on a channel based on this data, and that likewise can receive messages and invoke functionality inside the application.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessagingBridge.html" title="Messaging Bridge pattern" name="Messaging Bridge pattern" target="_blank" itemprop="name url">Messaging Bridge pattern</a></h3>
+	<p itemprop="description">Use a Messaging Bridge, a connection between messaging systems, to replicate messages between systems.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageBus.html" title="Message Bus pattern" name="Message Bus pattern" target="_blank" itemprop="name url">Message Bus pattern</a></h3>
+	<p itemprop="description">Structure the connecting middleware between these applications as a Message Bus that enables them to work together using messaging.</p>
+
+	<a name="messageconstruction">&nbsp;</a>
+	<h2 itemprop="name headline">Message Construction patterns</h2>
+	<hr/>
+
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/CommandMessage.html" title="Command Message pattern" name="Command Message pattern" target="_blank" itemprop="name url">Command Message pattern</a></h3>
+	<p itemprop="description">Use a Command Message to reliably invoke a procedure in another application.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/DocumentMessage.html" title="Document Message pattern" name="Document Message pattern" target="_blank" itemprop="name url">Document Message pattern</a></h3>
+	<p itemprop="description">Use a Document Message to reliably transfer a data structure between applications.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/EventMessage.html" title="Event Message pattern" name="Event Message pattern" target="_blank" itemprop="name url">Event Message pattern</a></h3>
+	<p itemprop="description">Use an Event Message for reliable, asynchronous event notification between applications.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/RequestReply.html" title="Request-Reply pattern" name="Request-Reply pattern" target="_blank" itemprop="name url">Request-Reply pattern</a></h3>
+	<p itemprop="description">Send a pair of Request-Reply messages, each on its own channel.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/ReturnAddress.html" title="Return Address pattern" name="Return Address pattern" target="_blank" itemprop="name url">Return Address pattern</a></h3>
+	<p itemprop="description">The request message should contain a Return Address that indicates where to send the reply message.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/CorrelationIdentifier.html" title="Correlation Identifier pattern" name="Correlation Identifier pattern" target="_blank" itemprop="name url">Correlation Identifier pattern</a></h3>
+	<p itemprop="description">Each reply message should contain a Correlation Identifier, a unique identifier that indicates which request message this reply is for.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageSequence.html" title="Message Sequence pattern" name="Message Sequence pattern" target="_blank" itemprop="name url">Message Sequence pattern</a></h3>
+	<p itemprop="description">Whenever a large set of data may need to be broken into message-size chunks, send the data as a Message Sequence and mark each message with sequence identification fields.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageExpiration.html" title="Message Expiration pattern" name="Message Expiration pattern" target="_blank" itemprop="name url">Message Expiration pattern</a></h3>
+	<p itemprop="description">Set the Message Expiration to specify a time limit how long the message is viable.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/FormatIndicator.html" title="Format Indicator pattern" name="Format Indicator pattern" target="_blank" itemprop="name url">Format Indicator pattern</a></h3>
+	<p itemprop="description">Design a data format that includes a Format Indicator, so that the message specifies what format it is using.</p>
+
+	<a name="messagerouting">&nbsp;</a>
+	<h2 itemprop="name headline">Message Routing patterns</h2>
+	<hr/>
+
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/ContentBasedRouter.html" title="Content-Based Router pattern" name="Content-Based Router pattern" target="_blank" itemprop="name url">Content-Based Router pattern</a></h3>
+	<p itemprop="description">Use a Content-Based Router to route each message to the correct recipient based on message content.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/Filter.html" title="Message Filter pattern" name="Message Filter pattern" target="_blank" itemprop="name url">Message Filter pattern</a></h3>
+	<p itemprop="description">Use a special kind of Message Router, a Message Filter, to eliminate undesired messages from a channel based on a set of criteria.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/DynamicRouter.html" title="Dynamic Router pattern" name="Dynamic Router pattern" target="_blank" itemprop="name url">Dynamic Router pattern</a></h3>
+	<p itemprop="description">Use a Dynamic Router, a Router that can self-configure based on special configuration messages from participating destinations.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/RecipientList.html" title="Recipient List pattern" name="Recipient List pattern" target="_blank" itemprop="name url">Recipient List pattern</a></h3>
+	<p itemprop="description">Define a channel for each recipient. Then use a Recipient List to inspect an incoming message, determine the list of desired recipients, and forward the message to all channels associated with the recipients in the list.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/Sequencer.html" title="Splitter pattern" name="Splitter pattern" target="_blank" itemprop="name url">Splitter pattern</a></h3>
+	<p itemprop="description">Use a Splitter to break out the composite message into a series of individual messages, each containing data related to one item.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/Aggregator.html" title="Aggregator pattern" name="Aggregator pattern" target="_blank" itemprop="name url">Aggregator pattern</a></h3>
+	<p itemprop="description">Use a stateful filter, an Aggregator, to collect and store individual messages until a complete set of related messages has been received. Then, the Aggregator publishes a single message distilled from the individual messages.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/Resequencer.html" title="Resequencer pattern" name="Resequencer pattern" target="_blank" itemprop="name url">Resequencer pattern</a></h3>
+	<p itemprop="description">Use a stateful filter, a Resequencer, to collect and re-order messages so that they can be published to the output channel in a specified order.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/DistributionAggregate.html" title="Composed Message Processor pattern" name="Composed Message Processor pattern" target="_blank" itemprop="name url">Composed Message Processor pattern</a></h3>
+	<p itemprop="description">Use Composed Message Processor to process a composite message. The Composed Message Processor splits the message up, routes the sub-messages to the appropriate destinations and re-aggregates the responses back into a single message.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/BroadcastAggregate.html" title="Scatter-Gather pattern" name="Scatter-Gather pattern" target="_blank" itemprop="name url">Scatter-Gather pattern</a></h3>
+	<p itemprop="description">Use a Scatter-Gather that broadcasts a message to multiple recipients and re-aggregates the responses back into a single message.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/RoutingTable.html" title="Routing Slip pattern" name="Routing Slip pattern" target="_blank" itemprop="name url">Routing Slip pattern</a></h3>
+	<p itemprop="description">Attach a Routing Slip to each message, specifying the sequence of processing steps. Wrap each component with a special message router that reads the Routing Slip and routes the message to the next component in the list.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/ProcessManager.html" title="Process Manager pattern" name="Process Manager pattern" target="_blank" itemprop="name url">Process Manager pattern</a></h3>
+	<p itemprop="description">Use a central processing unit, a Process Manager, to maintain the state of the sequence and determine the next processing step based on intermediate results.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageBroker.html" title="Message Broker pattern" name="Message Broker pattern" target="_blank" itemprop="name url">Message Broker pattern</a></h3>
+	<p itemprop="description">Use a central Message Broker that can receive messages from multiple destinations, determine the correct destination and route the message to the correct channel. Implement the internals of the Message Broker using the design patterns presented in this chapter.</p>
+
+	<a name="messagetransformation">&nbsp;</a>
+	<h2 itemprop="name headline">Message Transformation patterns</h2>
+	<hr/>
+
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/EnvelopeWrapper.html" title="Envelope Wrapper pattern" name="Envelope Wrapper pattern" target="_blank" itemprop="name url">Envelope Wrapper pattern</a></h3>
+	<p itemprop="description">Use a Envelope Wrapper to wrap application data inside an envelope that is compliant with the messaging infrastructure. Unwrap the message when it arrives at the destination.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/DataEnricher.html" title="Content Enricher pattern" name="Content Enricher pattern" target="_blank" itemprop="name url">Content Enricher pattern</a></h3>
+	<p itemprop="description">Use a specialized transformer, a Content Enricher, to access an external data source in order to augment a message with missing information.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/DataEnricher.html" title="Content Enricher pattern" name="Content Enricher pattern" target="_blank" itemprop="name url">Content Enricher pattern</a></h3>
+	<p itemprop="description">Use a specialized transformer, a Content Enricher, to access an external data source in order to augment a message with missing information.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/ContentFilter.html" title="Content Filter pattern" name="Content Filter pattern" target="_blank" itemprop="name url">Content Filter pattern</a></h3>
+	<p itemprop="description">Use a Content Filter to remove unimportant data items from a message leaving only important items.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/StoreInLibrary.html" title="Claim Check pattern" name="Claim Check pattern" target="_blank" itemprop="name url">Claim Check pattern</a></h3>
+	<p itemprop="description">Store message data in a persistent store and pass a Claim Check to subsequent components. These components can use the Claim Check to retrieve the stored information.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/Normalizer.html" title="Normalizer pattern" name="Normalizer pattern" target="_blank" itemprop="name url">Normalizer pattern</a></h3>
+	<p itemprop="description">Use a Normalizer to route each message type through a custom Message Translator so that the resulting messages match a common format.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/CanonicalDataModel.html" title="Canonical Data Model pattern" name="Canonical Data Model pattern" target="_blank" itemprop="name url">Canonical Data Model pattern</a></h3>
+	<p itemprop="description">The Canonical Data Model provides an additional level of indirection between application's individual data formats. If a new application is added to the integration solution only transformation between the Canonical Data Model has to created, independent from the number of applications that already participate.</p>
+
+	<a name="messagingendpoints">&nbsp;</a>
+	<h2 itemprop="name headline">Messaging Endpoint patterns</h2>
+	<hr/>
+
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessagingGateway.html" title="Messaging Gateway pattern" name="Messaging Gateway pattern" target="_blank" itemprop="name url">Messaging Gateway pattern</a></h3>
+	<p itemprop="description">Use a Messaging Gateway, a class than wraps messaging-specific method calls and exposes domain-specific methods to the application.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessagingMapper.html" title="Messaging Mapper pattern" name="Messaging Mapper pattern" target="_blank" itemprop="name url">Messaging Mapper pattern</a></h3>
+	<p itemprop="description">Create a separate Messaging Mapper that contains the mapping logic between the messaging infrastructure and the domain objects. Neither the objects nor the infrastructure have knowledge of the Messaging Mapper's existence.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/TransactionalClient.html" title="Transactional Client pattern" name="Transactional Client pattern" target="_blank" itemprop="name url">Transactional Client pattern</a></h3>
+	<p itemprop="description">Use a Transactional Client—make the client’s session with the messaging system transactional so that the client can specify transaction boundaries.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/PollingConsumer.html" title="Polling Consumer pattern" name="Polling Consumer pattern" target="_blank" itemprop="name url">Polling Consumer pattern</a></h3>
+	<p itemprop="description">The aplication should use a Polling Consumer, one that explicitly makes a call when it wants to receive a message.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/EventDrivenConsumer.html" title="Event-Driven Consumer pattern" name="Event-Driven Consumer pattern" target="_blank" itemprop="name url">Event-Driven Consumer pattern</a></h3>
+	<p itemprop="description">The application should use an Event-Driven Consumer, one that is automatically handed messages as they’re delivered on the channel.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/CompetingConsumers.html" title="Competing Consumers pattern" name="Competing Consumers pattern" target="_blank" itemprop="name url">Competing Consumers pattern</a></h3>
+	<p itemprop="description">Create multiple Competing Consumers on a single channel so that the consumers can process multiple messages concurrently.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageDispatcher.html" title="Message Dispatcher pattern" name="Message Dispatcher pattern" target="_blank" itemprop="name url">Message Dispatcher pattern</a></h3>
+	<p itemprop="description">Create a Message Dispatcher on a channel that will consume messages from a channel and distribute them to performers.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageSelector.html" title="Selective Consumer pattern" name="Selective Consumer pattern" target="_blank" itemprop="name url">Selective Consumer pattern</a></h3>
+	<p itemprop="description">Make the consumer a Selective Consumer, one that filteres the messages delivered by its channel so that it only receives the ones that match its criteria.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/DurableSubscription.html" title="Durable Subscriber pattern" name="Durable Subscriber pattern" target="_blank" itemprop="name url">Durable Subscriber pattern</a></h3>
+	<p itemprop="description">Use a Durable Subscriber to make the messaging system save messages published while the subscriber is disconnected.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/IdempotentReceiver.html" title="Idempotent Receiver pattern" name="Idempotent Receiver pattern" target="_blank" itemprop="name url">Idempotent Receiver pattern</a></h3>
+	<p itemprop="description">Design a receiver to be an Idempotent Receiver--one that can safely receive the same message multiple times.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessagingAdapter.html" title="Service Activator pattern" name="Service Activator pattern" target="_blank" itemprop="name url">Service Activator pattern</a></h3>
+	<p itemprop="description">Design a Service Activator that connects the messages on the channel to the service being accessed.</p>
+
+	<a name="systemmanagement">&nbsp;</a>
+	<h2 itemprop="name headline">System Management patterns</h2>
+	<hr/>
+
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/ControlBus.html" title="Control Bus pattern" name="Control Bus pattern" target="_blank" itemprop="name url">Control Bus pattern</a></h3>
+	<p itemprop="description">Use a Control Bus to manage an enterprise integration system. The Control Bus uses the same messaging mechanism used by the application data, but uses separate channels to transmit data that is relevant to the management of components involved in the message flow.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/Detour.html" title="Detour pattern" name="Detour pattern" target="_blank" itemprop="name url">Detour pattern</a></h3>
+	<p itemprop="description">Construct a Detour with a context-based router controlled via the Control Bus. In one state the router routes incoming messages through additional steps while in the other it routes messages directly to the destination channel.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/WireTap.html" title="Wire Tap pattern" name="Wire Tap pattern" target="_blank" itemprop="name url">Wire Tap pattern</a></h3>
+	<p itemprop="description">Insert a simple Recipient List into the channel that publishes each incoming message to the main channel and a secondary channel.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageHistory.html" title="Message History pattern" name="Message History pattern" target="_blank" itemprop="name url">Message History pattern</a></h3>
+	<p itemprop="description">The Message History maintains a list of all components that the message passed through. Every component that processes the message (including the originator) adds one entry to the list. The Message History should be part of the message header because it contains system-specific control information. Keeping this information in the header separates it from the message body that contains application specific data.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageStore.html" title="Message Store pattern" name="Message Store pattern" target="_blank" itemprop="name url">Message Store pattern</a></h3>
+	<p itemprop="description">Use a Message Store to capture information about each message in a central location.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/SmartProxy.html" title="Smart Proxy pattern" name="Smart Proxy pattern" target="_blank" itemprop="name url">Smart Proxy pattern</a></h3>
+	<p itemprop="description">Use a Smart Proxy to store the Return Address supplied by the original requestor and replace it with the address of the Smart Proxy. When the service sends the reply message route it to the original Return Address.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/TestMessage.html" title="Test Message pattern" name="Test Message pattern" target="_blank" itemprop="name url">Test Message pattern</a></h3>
+	<p itemprop="description">Use Test Message to assure the health of message processing components.</p>
+	<h3><a href="http://www.enterpriseintegrationpatterns.com/ChannelPurger.html" title="Channel Purger pattern" name="Channel Purger pattern" target="_blank" itemprop="name url">Channel Purger pattern</a></h3>
+	<p itemprop="description">Use a Channel Purger to remove unwanted messages from a channel.</p>
+
+<div><br /><br /></div>
+
+<hr/>
+
+<div class="alert alert-info alert-border-left mv30" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<b>Source(s):</b><br />
+<b itemprop="name">Patterns and Best Practices for Enterprise Integration</b> <a class="alert-link" href="http://www.enterpriseintegrationpatterns.com/" title="Patterns and Best Practices for Enterprise Integration" target="_blank" itemprop="url">http://www.enterpriseintegrationpatterns.com/</a><br />
+</div>
+
+                        <div class="top-wrapper clearfix" itemscope itemtype="http://schema.org/WPFooter">
+                            <a href="#" class="return-top">Return to Top</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-61553779-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html>

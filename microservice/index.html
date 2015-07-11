@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title itemprop="name">Microservice | Design Patterns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="design patterns, Gang of Four, Enterprise, integration, microservice, javascript" />
+<meta name="description" content="A collection of various design patterns.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="search" title="Search" href="/" />
+<link rel="copyright" title="About" href="/../about.html" />
+<link rel="author" title="About" href="/about.html" />
+<link rel="home" title="" href="/" id="homelink" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="canonical" href="http://design.patterns.rocks/" />
+
+<!-- Font CSS (Via CDN) -->
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'>
+
+<!-- Core CSS -->
+<link rel="stylesheet" type="text/css" href="../min2.css">
+<!--<link rel="stylesheet" type="text/css" href="theme.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="awesomplete.css">
+<link rel="stylesheet" type="text/css" href="st.css">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body style="min-height: 1500px;" itemscope itemtype="http://schema.org/WebPage">
+
+    <nav class="navbar bg-light docs-navbar" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="container">
+        <div class="navbar-header" itemprop="name">
+            <a class="navbar-brand" href="../index.html" hreflang="en"><b>Design Patterns</b></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="mi"><a href="../index.html" hreflang="en" title="Design Patterns" itemprop="url name">Index</a></li>
+                    <li class="mp active"><a href="../categories.html" hreflang="en" title="Patterns" itemprop="url name">Patterns</a></li>
+                    <li class="mc"><a href="../changelog.html" hreflang="en" title="Changelog" itemprop="url name">Changelog</a></li>
+                    <li class="ma"><a href="about.html" hreflang="en" title="About" itemprop="url name">About</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        <div class="docs-container" id="docs">
+            <div class="row table-layout">
+                <div class="col-xs-3 left-col" itemscope itemtype="http://schema.org/WPSideBar">
+                    <div id="nav-spy" class="posr">
+                        <ul class="list-group list-group-accordion" itemscope itemtype="http://schema.org/Offer">
+  <li class="list-group-item list-group-header br-n" itemprop="name">Categories</li>
+  <li class="list-group-item active"><a href="#" itemprop="category">Microservice</a></li>
+  <li class="list-group-item"><a href="#core" itemprop="name url">Core patterns</a></li>
+  <li class="list-group-item"><a href="#deployment" itemprop="name url">Deployment patterns</a></li>
+  <li class="list-group-item"><a href="#servicediscovery" itemprop="name url">Service discovery patterns</a></li>
+  <li class="list-group-item"><a href="#collaboration" itemprop="name url">Collaboration patterns</a></li>
+</ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-9 center-col va-t" itemprop="mainContentOfPage">
+
+                    <div id="docs-content" class="tab-content pn" itemscope itemtype="http://schema.org/CollectionPage">
+
+                        
+<h1 class="page-header" itemprop="name headline">Microservice</h1>
+
+
+	<a name="core">&nbsp;</a>
+	<h2 itemprop="name headline">Core patterns</h2>
+	<hr/>
+
+	<h3><a href="http://microservices.io/patterns/microservices.html" title="Microservices Architecture pattern" name="Microservices Architecture pattern" target="_blank" itemprop="name url">Microservices Architecture pattern</a></h3>
+	<p itemprop="description">Architect the application by applying the Scale Cube (specifically y-axis scaling) and functionally decompose the application into a set of collaborating services. Each service implements a set of narrowly, related functions. For example, an application might consist of services such as the order management service, the customer management service etc.</p>
+	<h3><a href="http://microservices.io/patterns/apigateway.html" title="API Gateway pattern" name="API Gateway pattern" target="_blank" itemprop="name url">API Gateway pattern</a></h3>
+	<p itemprop="description">Implement an API gateway that is the single entry point for all clients. The API gateway handles requests in one of two ways. Some requests are simply proxied/routed to the appropriate service. It handles other requests by fanning out to multiple services.</p>
+
+	<a name="deployment">&nbsp;</a>
+	<h2 itemprop="name headline">Deployment patterns</h2>
+	<hr/>
+
+	<h3><a href="http://microservices.io/patterns/deployment/multiple-services-per-host.html" title="Multiple service instances per host pattern" name="Multiple service instances per host pattern" target="_blank" itemprop="name url">Multiple service instances per host pattern</a></h3>
+	<p itemprop="description">Run multiple instances of different services on a host (Physical or Virtual machine).</p>
+	<h3><a href="http://microservices.io/patterns/deployment/single-service-per-host.html" title="Single Service Instance per Host pattern" name="Single Service Instance per Host pattern" target="_blank" itemprop="name url">Single Service Instance per Host pattern</a></h3>
+	<p itemprop="description">Deploy each single service instance on it's own host</p>
+	<h3><a href="http://microservices.io/patterns/deployment/service-per-vm.html" title="Service Instance per VM pattern" name="Service Instance per VM pattern" target="_blank" itemprop="name url">Service Instance per VM pattern</a></h3>
+	<p itemprop="description">Package the service as a virtual machine image and deploy each service instance as a separate VM</p>
+	<h3><a href="http://microservices.io/patterns/deployment/service-per-container.html" title="Service instance per container pattern" name="Service instance per container pattern" target="_blank" itemprop="name url">Service instance per container pattern</a></h3>
+	<p itemprop="description">Package the service as a (Docker) container image and deploy each service instance as a container</p>
+
+	<a name="servicediscovery">&nbsp;</a>
+	<h2 itemprop="name headline">Service discovery patterns</h2>
+	<hr/>
+
+	<h3><a href="http://microservices.io/patterns/client-side-discovery.html" title="Client-side service discovery pattern" name="Client-side service discovery pattern" target="_blank" itemprop="name url">Client-side service discovery pattern</a></h3>
+	<p itemprop="description">When making a request to a service, the client obtains the location of a service instance by querying a Service Registry, which knows the locations of all service instances.</p>
+	<h3><a href="http://microservices.io/patterns/server-side-discovery.html" title="Server-side service discovery pattern" name="Server-side service discovery pattern" target="_blank" itemprop="name url">Server-side service discovery pattern</a></h3>
+	<p itemprop="description">When making a request to a service, the client makes a request via a router (a.k.a load balancer) that runs at a well known location. The router queries a service registry, which might be built into the router, and forwards the request to an available service instance.</p>
+	<h3><a href="http://microservices.io/patterns/service-registry.html" title="Service registry pattern" name="Service registry pattern" target="_blank" itemprop="name url">Service registry pattern</a></h3>
+	<p itemprop="description">Implement a service registry, which is a database of services, their instances and their locations. Service instances are registered with the service registry on startup and deregistered on shutdown. Client of the service and/or routers query the service registry to find the available instances of a service.</p>
+	<h3><a href="http://microservices.io/patterns/self-registration.html" title="Self Registration pattern" name="Self Registration pattern" target="_blank" itemprop="name url">Self Registration pattern</a></h3>
+	<p itemprop="description">A service instance is responsible for registering itself with the service registry. On startup the service instance registers itself (host and IP address) with the service registry and makes itself available for discovery. The client must typically periodically renew it's registration so that the registry knows it is still alive. On shutdown, the service instance unregisters itself from the service registry.</p>
+	<h3><a href="http://microservices.io/patterns/3rd-party-registration.html" title="3rd Party Registration pattern" name="3rd Party Registration pattern" target="_blank" itemprop="name url">3rd Party Registration pattern</a></h3>
+	<p itemprop="description">A 3rd party registrar is responsible for registering and unregistering a service instance with the service registry. When the service instance starts up, the registrar registers the service instance with the service registry. When the service instance shuts downs, the registrar unregisters the service instance from the service registry.</p>
+
+	<a name="collaboration">&nbsp;</a>
+	<h2 itemprop="name headline">Collaboration patterns</h2>
+	<hr/>
+
+	<h3><a href="http://blog.arungupta.me/microservice-design-patterns/" title="Aggregator Microservice pattern" name="Aggregator Microservice pattern" target="_blank" itemprop="name url">Aggregator Microservice pattern</a></h3>
+	<p itemprop="description">In its simplest form, Aggregator would be a simple web page that invokes multiple services to achieve the functionality required by the application. Since each service (Service A, Service B, and Service C) is exposed using a lightweight REST mechanism, the web page can retrieve the data and process/display it accordingly. If some sort of processing is required, say applying business logic to the data received from individual services, then you may likely have a CDI bean that would transform the data so that it can be displayed by the web page.</p>
+	<h3><a href="http://blog.arungupta.me/microservice-design-patterns/" title="Proxy Microservice pattern" name="Proxy Microservice pattern" target="_blank" itemprop="name url">Proxy Microservice pattern</a></h3>
+	<p itemprop="description">Proxy microservice design pattern is a variation of Aggregator. In this case, no aggregation needs to happen on the client but a different microservice may be invoked based upon the business need.</p>
+	<h3><a href="http://blog.arungupta.me/microservice-design-patterns/" title="Chained Microservice pattern" name="Chained Microservice pattern" target="_blank" itemprop="name url">Chained Microservice pattern</a></h3>
+	<p itemprop="description">Chained microservice design pattern produce a single consolidated response to the request. In this case, the request from the client is received by Service A, which is then communicating with Service B, which in turn may be communicating with Service C. All the services are likely using a synchronous HTTP request/response messaging.</p>
+	<h3><a href="http://blog.arungupta.me/microservice-design-patterns/" title="Branch Microservice pattern" name="Branch Microservice pattern" target="_blank" itemprop="name url">Branch Microservice pattern</a></h3>
+	<p itemprop="description">Branch microservice design pattern extends Aggregator design pattern and allows simultaneous response processing from two, likely mutually exclusive, chains of microservices. This pattern can also be used to call different chains, or a single chain, based upon the business needs.</p>
+	<h3><a href="http://blog.arungupta.me/microservice-design-patterns/" title="Shared Data Microservice pattern" name="Shared Data Microservice pattern" target="_blank" itemprop="name url">Shared Data Microservice pattern</a></h3>
+	<p itemprop="description">One of the design principles of microservice is autonomy. That means the service is full-stack and has control of all the components – UI, middleware, persistence, transaction. This allows the service to be polyglot, and use the right tool for the right job. For example, if a NoSQL data store can be used if that is more appropriate instead of jamming that data in a SQL database.</p>
+	<h3><a href="http://blog.arungupta.me/microservice-design-patterns/" title="Asynchronous Messaging Microservice pattern" name="Asynchronous Messaging Microservice pattern" target="_blank" itemprop="name url">Asynchronous Messaging Microservice pattern</a></h3>
+	<p itemprop="description">While REST design pattern is quite prevalent, and well understood, but it has the limitation of being synchronous, and thus blocking. Asynchrony can be achieved but that is done in an application specific way. Some microservice architectures may elect to use message queues instead of REST request/response because of that.</p>
+
+<div><br /><br /></div>
+
+<hr/>
+
+<div class="alert alert-info alert-border-left mv30" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<b>Source(s):</b><br />
+<b itemprop="name">microservices.io</b> <a class="alert-link" href="http://microservices.io/" title="microservices.io" target="_blank" itemprop="url">http://microservices.io/</a><br />
+<b itemprop="name">Miles to go 2.0</b> <a class="alert-link" href="http://blog.arungupta.me/" title="Miles to go 2.0" target="_blank" itemprop="url">http://blog.arungupta.me/</a><br />
+</div>
+
+                        <div class="top-wrapper clearfix" itemscope itemtype="http://schema.org/WPFooter">
+                            <a href="#" class="return-top">Return to Top</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-61553779-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html>

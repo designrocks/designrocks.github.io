@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title itemprop="name">JavaScript | Design Patterns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="design patterns, Gang of Four, Enterprise, integration, microservice, javascript" />
+<meta name="description" content="A collection of various design patterns.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="search" title="Search" href="/" />
+<link rel="copyright" title="About" href="/../about.html" />
+<link rel="author" title="About" href="/about.html" />
+<link rel="home" title="" href="/" id="homelink" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="canonical" href="http://design.patterns.rocks/" />
+
+<!-- Font CSS (Via CDN) -->
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'>
+
+<!-- Core CSS -->
+<link rel="stylesheet" type="text/css" href="../min2.css">
+<!--<link rel="stylesheet" type="text/css" href="theme.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="awesomplete.css">
+<link rel="stylesheet" type="text/css" href="st.css">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body style="min-height: 1500px;" itemscope itemtype="http://schema.org/WebPage">
+
+    <nav class="navbar bg-light docs-navbar" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="container">
+        <div class="navbar-header" itemprop="name">
+            <a class="navbar-brand" href="../index.html" hreflang="en"><b>Design Patterns</b></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="mi"><a href="../index.html" hreflang="en" title="Design Patterns" itemprop="url name">Index</a></li>
+                    <li class="mp active"><a href="../categories.html" hreflang="en" title="Patterns" itemprop="url name">Patterns</a></li>
+                    <li class="mc"><a href="../changelog.html" hreflang="en" title="Changelog" itemprop="url name">Changelog</a></li>
+                    <li class="ma"><a href="about.html" hreflang="en" title="About" itemprop="url name">About</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        <div class="docs-container" id="docs">
+            <div class="row table-layout">
+                <div class="col-xs-3 left-col" itemscope itemtype="http://schema.org/WPSideBar">
+                    <div id="nav-spy" class="posr">
+                        <ul class="list-group list-group-accordion" itemscope itemtype="http://schema.org/Offer">
+  <li class="list-group-item list-group-header br-n" itemprop="name">Categories</li>
+  <li class="list-group-item active"><a href="#" itemprop="category">JavaScript</a></li>
+  <li class="list-group-item"><a href="#general" itemprop="name url">General patterns</a></li>
+  <li class="list-group-item"><a href="#jquery" itemprop="name url">jQuery patterns</a></li>
+  <li class="list-group-item"><a href="#jqueryplugin" itemprop="name url">jQuery Plugin patterns</a></li>
+  <li class="list-group-item"><a href="#literalsconstr" itemprop="name url">Literals and Constructor patterns</a></li>
+  <li class="list-group-item"><a href="#function" itemprop="name url">Function patterns</a></li>
+  <li class="list-group-item"><a href="#objectcreation" itemprop="name url">Object Creation patterns</a></li>
+  <li class="list-group-item"><a href="#codereuse" itemprop="name url">Code Reuse patterns</a></li>
+  <li class="list-group-item"><a href="#gof" itemprop="name url">GoF design patterns</a></li>
+</ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-9 center-col va-t" itemprop="mainContentOfPage">
+
+                    <div id="docs-content" class="tab-content pn" itemscope itemtype="http://schema.org/CollectionPage">
+
+                        
+<h1 class="page-header" itemprop="name headline">JavaScript</h1>
+
+
+	<a name="general">&nbsp;</a>
+	<h2 itemprop="name headline">General patterns</h2>
+	<hr/>
+
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/function-declarations.html" title="Function Declaration pattern" name="Function Declaration pattern" target="_blank" itemprop="name url">Function Declaration pattern</a></h3>
+	<p itemprop="description">Creating anonymous functions and assigning them to a variable.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/conditionals.html" title="Conditionals pattern" name="Conditionals pattern" target="_blank" itemprop="name url">Conditionals pattern</a></h3>
+	<p itemprop="description">Pattern and antipattern of using if else.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/access-to-global-object.html" title="Access to the Global Object pattern" name="Access to the Global Object pattern" target="_blank" itemprop="name url">Access to the Global Object pattern</a></h3>
+	<p itemprop="description">Access the global object without hard-coding the identifier window.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/single-var-pattern.html" title="Single var pattern" name="Single var pattern" target="_blank" itemprop="name url">Single var pattern</a></h3>
+	<p itemprop="description">Use one var statement and declare multiple variables.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/hoisting.html" title="Hoisting pattern" name="Hoisting pattern" target="_blank" itemprop="name url">Hoisting pattern</a></h3>
+	<p itemprop="description">Var statements anywhere in a function act as if the variables were declared at the top of the function.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/for-loops.html" title="For loops pattern" name="For loops pattern" target="_blank" itemprop="name url">For loops pattern</a></h3>
+	<p itemprop="description">Optimized for loops.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/built-in-prototypes.html" title="(Not) Augmenting Built-in Prototypes pattern" name="(Not) Augmenting Built-in Prototypes pattern" target="_blank" itemprop="name url">(Not) Augmenting Built-in Prototypes pattern</a></h3>
+	<p itemprop="description">Only augment built-in prototypes when certain conditions are met.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/switch-pattern.html" title="Switch pattern" name="Switch pattern" target="_blank" itemprop="name url">Switch pattern</a></h3>
+	<p itemprop="description">Improve the readability and robustness of your switch statements.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/avoiding-implied-typecasting.html" title="Implied Typecasting pattern" name="Implied Typecasting pattern" target="_blank" itemprop="name url">Implied Typecasting pattern</a></h3>
+	<p itemprop="description">Avoid implied typecasting.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/avoiding-eval.html" title="Avoiding eval() pattern" name="Avoiding eval() pattern" target="_blank" itemprop="name url">Avoiding eval() pattern</a></h3>
+	<p itemprop="description">Avoid using eval().</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/parseint.html" title="Number Conversions with parseInt() pattern" name="Number Conversions with parseInt() pattern" target="_blank" itemprop="name url">Number Conversions with parseInt() pattern</a></h3>
+	<p itemprop="description">Use the second radix parameter.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/minimizing-globals.html" title="Minimizing Globals pattern" name="Minimizing Globals pattern" target="_blank" itemprop="name url">Minimizing Globals pattern</a></h3>
+	<p itemprop="description">Create and access a global variable in a browser environment.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/globals.html" title="The Problem with Globals pattern" name="The Problem with Globals pattern" target="_blank" itemprop="name url">The Problem with Globals pattern</a></h3>
+	<p itemprop="description">Various problems with globals.</p>
+	<h3><a href="https://carldanley.com/js-module-pattern/" title="The Module pattern" name="The Module pattern" target="_blank" itemprop="name url">The Module pattern</a></h3>
+	<p itemprop="description">This pattern is used to mimic classes in conventional software engineering and focuses on public and private access to methods & variables. The module pattern strives to improve the reduction of globally scoped variables, thus decreasing the chances of collision with other code throughout an application.</p>
+	<h3><a href="https://carldanley.com/js-revealing-module-pattern/" title="The Revealing Module pattern" name="The Revealing Module pattern" target="_blank" itemprop="name url">The Revealing Module pattern</a></h3>
+	<p itemprop="description">This pattern is the same concept as the module pattern in that it focuses on public & private methods. The only difference is that the revealing module pattern was engineered as a way to ensure that all methods and variables are kept private until they are explicitly exposed; usually through an object literal returned by the closure from which it's defined. Personally, I like this approach for vanilla JavaScript as it puts a clear emphasis on both the intent of the developer and the module itself.</p>
+
+	<a name="jquery">&nbsp;</a>
+	<h2 itemprop="name headline">jQuery patterns</h2>
+	<hr/>
+
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/requery.html" title="Requery pattern" name="Requery pattern" target="_blank" itemprop="name url">Requery pattern</a></h3>
+	<p itemprop="description">Avoid requery by using jQuery chaining.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/append.html" title="Append pattern" name="Append pattern" target="_blank" itemprop="name url">Append pattern</a></h3>
+	<p itemprop="description">Use string concatenate and set innerHTML.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/data.html" title="Data pattern" name="Data pattern" target="_blank" itemprop="name url">Data pattern</a></h3>
+	<p itemprop="description">Pattern and antipattern of using data.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/context-and-find.html" title="Context and find pattern" name="Context and find pattern" target="_blank" itemprop="name url">Context and find pattern</a></h3>
+	<p itemprop="description">Use find over context.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/detach.html" title="Detach pattern" name="Detach pattern" target="_blank" itemprop="name url">Detach pattern</a></h3>
+	<p itemprop="description">Take element off the DOM while manipulating them.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/event-delegation.html" title="Event delegation pattern" name="Event delegation pattern" target="_blank" itemprop="name url">Event delegation pattern</a></h3>
+	<p itemprop="description">Event delegation pattern and antipattern.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/cache-selector.html" title="Selector cache pattern" name="Selector cache pattern" target="_blank" itemprop="name url">Selector cache pattern</a></h3>
+	<p itemprop="description">Using selector cache to avoid requery.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/window-scroll-event.html" title="Window scroll event pattern" name="Window scroll event pattern" target="_blank" itemprop="name url">Window scroll event pattern</a></h3>
+	<p itemprop="description">Avoid attaching handlers to the window scroll event.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/left-and-right.html" title="Left and Right pattern" name="Left and Right pattern" target="_blank" itemprop="name url">Left and Right pattern</a></h3>
+	<p itemprop="description">Specific on the right, light on the left.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/decending-from-id.html" title="Decending from id pattern" name="Decending from id pattern" target="_blank" itemprop="name url">Decending from id pattern</a></h3>
+	<p itemprop="description">Be more specific!</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/universal-selector.html" title="Universal Selector pattern" name="Universal Selector pattern" target="_blank" itemprop="name url">Universal Selector pattern</a></h3>
+	<p itemprop="description">Use of universal selector.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/specific-when-needed.html" title="Be Specific when Needed pattern" name="Be Specific when Needed pattern" target="_blank" itemprop="name url">Be Specific when Needed pattern</a></h3>
+	<p itemprop="description">Be specific only when needed!</p>
+
+	<a name="jqueryplugin">&nbsp;</a>
+	<h2 itemprop="name headline">jQuery plugin patterns</h2>
+	<hr/>
+
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/basic.html" title="Basic pattern" name="Basic pattern" target="_blank" itemprop="name url">Basic pattern</a></h3>
+	<p itemprop="description">The most basic pattern.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/extend.html" title="Extend pattern" name="Extend pattern" target="_blank" itemprop="name url">Extend pattern</a></h3>
+	<p itemprop="description">Enables you to define multiple functions at once and which sometimes make more sense semantically.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/lightweight.html" title="Lightweight pattern" name="Lightweight pattern" target="_blank" itemprop="name url">Lightweight pattern</a></h3>
+	<p itemprop="description">Perfect as a generic template for beginners and above.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/namespaced-starter.html" title="Namespaced pattern" name="Namespaced pattern" target="_blank" itemprop="name url">Namespaced pattern</a></h3>
+	<p itemprop="description">To avoid collisions and improve code organization when working with components under another namespace.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/prototypal-inheritance.html" title="Prototypal inheritance pattern" name="Prototypal inheritance pattern" target="_blank" itemprop="name url">Prototypal inheritance pattern</a></h3>
+	<p itemprop="description">Prototypal inheritance with the DOM-to-Object bridge pattern.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/best-options.html" title="Best options pattern" name="Best options pattern" target="_blank" itemprop="name url">Best options pattern</a></h3>
+	<p itemprop="description">Globally/Per-call overridable options for greater option customization.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/custom-events.html" title="Custom events (Pseudo Pub/Sub) pattern" name="Custom events (Pseudo Pub/Sub) pattern" target="_blank" itemprop="name url">Custom events (Pseudo Pub/Sub) pattern</a></h3>
+	<p itemprop="description">For better application decoupling.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/highly-configurable-mutable.html" title="Highly configurable mutable pattern" name="Highly configurable mutable pattern" target="_blank" itemprop="name url">Highly configurable mutable pattern</a></h3>
+	<p itemprop="description">Define plugin’s logic using a constructor and an object literal defined on its prototype.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/ui-widget-factory.html" title="UI Widget factory pattern" name="UI Widget factory pattern" target="_blank" itemprop="name url">UI Widget factory pattern</a></h3>
+	<p itemprop="description">For building complex, stateful plugins based on object-oriented principles.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/ui-widget-factory-bridge.html" title="UI Widget factory "bridge" pattern" name="UI Widget factory "bridge" pattern" target="_blank" itemprop="name url">UI Widget factory "bridge" pattern</a></h3>
+	<p itemprop="description">The bridge serves as a middle layer between a JavaScript object that is created using $.widget and jQuery’s API.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/ui-widget-factory-mobile.html" title="UI Widget factory for jQuery mobile pattern" name="UI Widget factory for jQuery mobile pattern" target="_blank" itemprop="name url">UI Widget factory for jQuery mobile pattern</a></h3>
+	<p itemprop="description">Demonstrating best practices for building mobile widgets.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/ui-widget-requirejs-module.html" title="UI Widget + RequireJS module pattern" name="UI Widget + RequireJS module pattern" target="_blank" itemprop="name url">UI Widget + RequireJS module pattern</a></h3>
+	<p itemprop="description">For wrapping jQueryUI widgets inside RequireJS compatible modules.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/tree/master/jquery-plugin-patterns/amd-commonjs" title="Universal Module Definition pattern" name="Universal Module Definition pattern" target="_blank" itemprop="name url">Universal Module Definition pattern</a></h3>
+	<p itemprop="description">Create AMD and CommonJS compatible plugin modules which are compatible with a number of different script loaders.</p>
+
+	<a name="literalsconstr">&nbsp;</a>
+	<h2 itemprop="name headline">Literals and Constructors patterns</h2>
+	<hr/>
+
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/literals-and-constructors/object-literal.html" title="Object literal pattern" name="Object literal pattern" target="_blank" itemprop="name url">Object literal pattern</a></h3>
+	<p itemprop="description">Use the simpler and reliable object literal instead of new Object();.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/literals-and-constructors/enforcing-new.html" title="Enforcing "new" pattern" name="Enforcing "new" pattern" target="_blank" itemprop="name url">Enforcing "new" pattern</a></h3>
+	<p itemprop="description">When you forget "new", "this" inside the constructor will point to the global object.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/literals-and-constructors/array-literal.html" title="Array literal pattern" name="Array literal pattern" target="_blank" itemprop="name url">Array literal pattern</a></h3>
+	<p itemprop="description">Use array literal notation to avoid potential errors when creating dynamic arrays at runtime.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/literals-and-constructors/json.html" title="Working with JSON pattern" name="Working with JSON pattern" target="_blank" itemprop="name url">Working with JSON pattern</a></h3>
+	<p itemprop="description">Use library from JSON.org, YUI, jQuery instead of eval for parsing.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/literals-and-constructors/primitive-wrappers.html" title="Primitive wrappers pattern" name="Primitive wrappers pattern" target="_blank" itemprop="name url">Primitive wrappers pattern</a></h3>
+	<p itemprop="description">Try to use the primitive without wrapper.</p>
+
+	<a name="function">&nbsp;</a>
+	<h2 itemprop="name headline">Function patterns</h2>
+	<hr/>
+
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/callback.html" title="Callback pattern" name="Callback pattern" target="_blank" itemprop="name url">Callback pattern</a></h3>
+	<p itemprop="description">When you pass function A to function B as a parameter, function A is a callback function.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/configuration-objects.html" title="Configuration objects pattern" name="Configuration objects pattern" target="_blank" itemprop="name url">Configuration objects pattern</a></h3>
+	<p itemprop="description">Keep control of function arguments and makes it easily configurable.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/returning-functions.html" title="Returning functions pattern" name="Returning functions pattern" target="_blank" itemprop="name url">Returning functions pattern</a></h3>
+	<p itemprop="description">One function returns another function or create another function on-demand.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/currying.html" title="Currying pattern" name="Currying pattern" target="_blank" itemprop="name url">Currying pattern</a></h3>
+	<p itemprop="description">Used to create new functions dynamically by partially applying a set of arguments.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/partial-application.html" title="Partial application pattern" name="Partial application pattern" target="_blank" itemprop="name url">Partial application pattern</a></h3>
+	<p itemprop="description">The process of fixing a number of arguments to a function, producing another function of smaller arity.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/immediate-functions.html" title="Immediate functions pattern" name="Immediate functions pattern" target="_blank" itemprop="name url">Immediate functions pattern</a></h3>
+	<p itemprop="description">Syntax that enables function execution as soon as it is defined.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/immediate-object-initialization.html" title="Immediate object initialization pattern" name="Immediate object initialization pattern" target="_blank" itemprop="name url">Immediate object initialization pattern</a></h3>
+	<p itemprop="description">This pattern is mainly suitable for one-off tasks.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/init-time-branching.html" title="Init-time branching pattern" name="Init-time branching pattern" target="_blank" itemprop="name url">Init-time branching pattern</a></h3>
+	<p itemprop="description">Branch code once during initlization initialization.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/memoization.html" title="Memoization pattern" name="Memoization pattern" target="_blank" itemprop="name url">Memoization pattern</a></h3>
+	<p itemprop="description">Use function properties to avoid repeated computation.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/self-defining-functions.html" title="Self-defining functions pattern" name="Self-defining functions pattern" target="_blank" itemprop="name url">Self-defining functions pattern</a></h3>
+	<p itemprop="description">Self-overwrite with new bodies to do less work from the second invocation and after.</p>
+
+	<a name="objectcreation">&nbsp;</a>
+	<h2 itemprop="name headline">Object Creation patterns</h2>
+	<hr/>
+
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/namespace.html" title="Namespace pattern" name="Namespace pattern" target="_blank" itemprop="name url">Namespace pattern</a></h3>
+	<p itemprop="description">Namespaces help reduce the number of globals required and avoid naming collisions or excessive name prefixing.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/declaring-dependencies.html" title="Declaring Dependencies pattern" name="Declaring Dependencies pattern" target="_blank" itemprop="name url">Declaring Dependencies pattern</a></h3>
+	<p itemprop="description">It's good to declare the modules your code relies on at the top.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/private-properties-and-methods.html" title="Private Properties and Methods pattern" name="Private Properties and Methods pattern" target="_blank" itemprop="name url">Private Properties and Methods pattern</a></h3>
+	<p itemprop="description">JavaScript doesn't have special syntax for private members, you can implement them using a closure.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/revelation.html" title="Revelation pattern" name="Revelation pattern" target="_blank" itemprop="name url">Revelation pattern</a></h3>
+	<p itemprop="description">It is about having private methods, which you also expose as public methods.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/module.html" title="Module pattern" name="Module pattern" target="_blank" itemprop="name url">Module pattern</a></h3>
+	<p itemprop="description">All the methods are kept private and you only expose those that you decide at the end.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/sandbox.html" title="Sandbox pattern" name="Sandbox pattern" target="_blank" itemprop="name url">Sandbox pattern</a></h3>
+	<p itemprop="description">It provides an environment for the modules to work without affecting other modules and their personal sandboxes.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/static-members.html" title="Static Members pattern" name="Static Members pattern" target="_blank" itemprop="name url">Static Members pattern</a></h3>
+	<p itemprop="description">Public and private static members.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/object-constants.html" title="Object Constants pattern" name="Object Constants pattern" target="_blank" itemprop="name url">Object Constants pattern</a></h3>
+	<p itemprop="description">An implementation of a contant object provides set, inDefined and get methods.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/chaining.html" title="Chaining pattern" name="Chaining pattern" target="_blank" itemprop="name url">Chaining pattern</a></h3>
+	<p itemprop="description">It enables you to call methods on an object one after the other.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/sugar-method.html" title="method() Method pattern" name="method() Method pattern" target="_blank" itemprop="name url">method() Method pattern</a></h3>
+	<p itemprop="description">Adding convenient funcationality to a language.</p>
+
+	<a name="codereuse">&nbsp;</a>
+	<h2 itemprop="name headline">Code Reuse patterns</h2>
+	<hr/>
+
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/cp1-default.html" title="The default pattern" name="The default pattern" target="_blank" itemprop="name url">The default pattern</a></h3>
+	<p itemprop="description">Create an object using the Parent() constructor and assign this object to the Child()'s prototype.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/cp2-rent-a-constructor.html" title="Rent a constructor pattern" name="Rent a constructor pattern" target="_blank" itemprop="name url">Rent a constructor pattern</a></h3>
+	<p itemprop="description">It borrows the parent constructor, passing the child object to be bound to this and also forwarding any arguments.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/cp3-rent-and-set-prototype.html" title="Rent and Set Prototype pattern" name="Rent and Set Prototype pattern" target="_blank" itemprop="name url">Rent and Set Prototype pattern</a></h3>
+	<p itemprop="description">Restricts object creation for a class to only one instance.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/cp4-share-the-prototype.html" title="Share the Prototype pattern" name="Share the Prototype pattern" target="_blank" itemprop="name url">Share the Prototype pattern</a></h3>
+	<p itemprop="description">Restricts object creation for a class to only one instance.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/cp5-a-temporary-constructor.html" title="A Temporary Constructor pattern" name="A Temporary Constructor pattern" target="_blank" itemprop="name url">A Temporary Constructor pattern</a></h3>
+	<p itemprop="description">First borrow the constructor and then also set the child's prototype to point to a new instance of the constructor.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/klass.html" title="Klass pattern" name="Klass pattern" target="_blank" itemprop="name url">Klass pattern</a></h3>
+	<p itemprop="description">Generally a pattern that should be avoided unless one is more comfortable with class than prototype.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/prototypal-inheritance.html" title="Prototypal Inheritance pattern" name="Prototypal Inheritance pattern" target="_blank" itemprop="name url">Prototypal Inheritance pattern</a></h3>
+	<p itemprop="description">Objects inherit from other objects.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/inheritance-by-copying-properties.html" title="Inheritance by Copying Properties pattern" name="Inheritance by Copying Properties pattern" target="_blank" itemprop="name url">Inheritance by Copying Properties pattern</a></h3>
+	<p itemprop="description">An object gets functionality from another object, simply by copying it.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/mix-ins.html" title="Mix-ins pattern" name="Mix-ins pattern" target="_blank" itemprop="name url">Mix-ins pattern</a></h3>
+	<p itemprop="description">Copy from any number of objects and mix them all into a new object.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/borrowing-methods.html" title="Borrowing Methods pattern" name="Borrowing Methods pattern" target="_blank" itemprop="name url">Borrowing Methods pattern</a></h3>
+	<p itemprop="description">Reuse one or two methods of an existing object without forming a parent-child relationship with that object.</p>
+
+	<a name="gof">&nbsp;</a>
+	<h2 itemprop="name headline">GoF design patterns</h2>
+	<hr/>
+
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/builder.html" title="Builder pattern" name="Builder pattern" target="_blank" itemprop="name url">Builder pattern</a></h3>
+	<p itemprop="description">Constructs complex objects by separating construction and representation.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/factory.html" title="Factory method pattern" name="Factory method pattern" target="_blank" itemprop="name url">Factory method pattern</a></h3>
+	<p itemprop="description">Creates objects without specifying the exact class to create.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/singleton.html" title="Singleton pattern" name="Singleton pattern" target="_blank" itemprop="name url">Singleton pattern</a></h3>
+	<p itemprop="description">Restricts object creation for a class to only one instance.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/decorator.html" title="Decorator pattern" name="Decorator pattern" target="_blank" itemprop="name url">Decorator pattern</a></h3>
+	<p itemprop="description">Dynamically adds/overrides behaviour in an existing method of an object.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/facade.html" title="Facade pattern" name="Facade pattern" target="_blank" itemprop="name url">Facade pattern</a></h3>
+	<p itemprop="description">Provides a simplified interface to a large body of code.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/proxy.html" title="Proxy pattern" name="Proxy pattern" target="_blank" itemprop="name url">Proxy pattern</a></h3>
+	<p itemprop="description">Provides a placeholder for another object to control access, reduce cost, and reduce complexity.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/chain-of-responsibility.html" title="Chain of responsibility pattern" name="Chain of responsibility pattern" target="_blank" itemprop="name url">Chain of responsibility pattern</a></h3>
+	<p itemprop="description">Delegates commands to a chain of processing objects.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/command.html" title="Command pattern" name="Command pattern" target="_blank" itemprop="name url">Command pattern</a></h3>
+	<p itemprop="description">Creates objects which encapsulate actions and parameters.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/iterator.html" title="Iterator pattern" name="Iterator pattern" target="_blank" itemprop="name url">Iterator pattern</a></h3>
+	<p itemprop="description">Iterator accesses the elements of an object sequentially without exposing its underlying representation.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/mediator.html" title="Mediator pattern" name="Mediator pattern" target="_blank" itemprop="name url">Mediator pattern</a></h3>
+	<p itemprop="description">Allows loose coupling between classes by being the only class that has detailed knowledge of their methods.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/observer.html" title="Observer pattern" name="Observer pattern" target="_blank" itemprop="name url">Observer pattern</a></h3>
+	<p itemprop="description">Is a publish/subscribe pattern which allows a number of observer objects to see an event.</p>
+	<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/strategy.html" title="Strategy pattern" name="Strategy pattern" target="_blank" itemprop="name url">Strategy pattern</a></h3>
+	<p itemprop="description">Allows one of a family of algorithms to be selected on-the-fly at runtime.</p>
+
+<div><br /><br /></div>
+
+<hr/>
+
+<div class="alert alert-info alert-border-left mv30" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<b>Source(s):</b><br />
+<b itemprop="name">JS Patterns by Shi Chuan</b> <a class="alert-link" href="http://shichuan.github.io/javascript-patterns/" title="JS Patterns by Shi Chuan" target="_blank" itemprop="url">http://shichuan.github.io/javascript-patterns/</a><br />
+</div>
+
+                        <div class="top-wrapper clearfix" itemscope itemtype="http://schema.org/WPFooter">
+                            <a href="#" class="return-top">Return to Top</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-61553779-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html>

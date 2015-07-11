@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title itemprop="name">Enterprise Application Architecture | Design Patterns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="design patterns, Gang of Four, Enterprise, integration, microservice, javascript" />
+<meta name="description" content="A collection of various design patterns.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="search" title="Search" href="/" />
+<link rel="copyright" title="About" href="/../about.html" />
+<link rel="author" title="About" href="/about.html" />
+<link rel="home" title="" href="/" id="homelink" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="canonical" href="http://design.patterns.rocks/" />
+
+<!-- Font CSS (Via CDN) -->
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'>
+
+<!-- Core CSS -->
+<link rel="stylesheet" type="text/css" href="../min2.css">
+<!--<link rel="stylesheet" type="text/css" href="theme.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="awesomplete.css">
+<link rel="stylesheet" type="text/css" href="st.css">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body style="min-height: 1500px;" itemscope itemtype="http://schema.org/WebPage">
+
+    <nav class="navbar bg-light docs-navbar" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="container">
+        <div class="navbar-header" itemprop="name">
+            <a class="navbar-brand" href="../index.html" hreflang="en"><b>Design Patterns</b></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="mi"><a href="../index.html" hreflang="en" title="Design Patterns" itemprop="url name">Index</a></li>
+                    <li class="mp active"><a href="../categories.html" hreflang="en" title="Patterns" itemprop="url name">Patterns</a></li>
+                    <li class="mc"><a href="../changelog.html" hreflang="en" title="Changelog" itemprop="url name">Changelog</a></li>
+                    <li class="ma"><a href="about.html" hreflang="en" title="About" itemprop="url name">About</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        <div class="docs-container" id="docs">
+            <div class="row table-layout">
+                <div class="col-xs-3 left-col" itemscope itemtype="http://schema.org/WPSideBar">
+                    <div id="nav-spy" class="posr">
+                        <ul class="list-group list-group-accordion" itemscope itemtype="http://schema.org/Offer">
+  <li class="list-group-item list-group-header br-n" itemprop="name">Categories</li>
+  <li class="list-group-item active"><a href="#" itemprop="category">Enterprise Application Architecture</a></li>
+  <li class="list-group-item"><a href="#base" itemprop="name url">Base Patterns</a></li>
+  <li class="list-group-item"><a href="#domainlogic" itemprop="name url">Domain Logic patterns</a></li>
+  <li class="list-group-item"><a href="#datasource" itemprop="name url">Data Source Architectural patterns</a></li>
+  <li class="list-group-item"><a href="#objrelbehavioral" itemprop="name url">Object-Relational Behavioral patterns</a></li>
+  <li class="list-group-item"><a href="#objrelstructural" itemprop="name url">Object-Relational Structural patterns</a></li>
+  <li class="list-group-item"><a href="#objrelmeta" itemprop="name url">Object-Relational Metadata Mapping patterns</a></li>
+  <li class="list-group-item"><a href="#webpresentation" itemprop="name url">Web Presentation patterns</a></li>
+  <li class="list-group-item"><a href="#distribution" itemprop="name url">Distribution patterns</a></li>
+  <li class="list-group-item"><a href="#offlineconcurrency" itemprop="name url">Offline Concurrency patterns</a></li>
+  <li class="list-group-item"><a href="#sessionstate" itemprop="name url">Session State patterns</a></li>
+</ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-9 center-col va-t" itemprop="mainContentOfPage">
+
+                    <div id="docs-content" class="tab-content pn" itemscope itemtype="http://schema.org/CollectionPage">
+
+                        
+<h1 class="page-header" itemprop="name headline">Enterprise Application Architecture</h1>
+
+
+	<a name="base">&nbsp;</a>
+	<h2 itemprop="name headline">Base patterns</h2>
+	<hr/>
+
+	<h3><a href="http://martinfowler.com/eaaCatalog/gateway.html" title="Gateway pattern" name="Gateway pattern" target="_blank" itemprop="name url">Gateway pattern</a></h3>
+	<p itemprop="description">An object that encapsulates access to an external system or resource.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/mapper.html" title="Mapper pattern" name="Mapper pattern" target="_blank" itemprop="name url">Mapper pattern</a></h3>
+	<p itemprop="description">An object that sets up a communication between two independent objects.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/layerSupertype.html" title="Layer Supertype pattern" name="Layer Supertype pattern" target="_blank" itemprop="name url">Layer Supertype pattern</a></h3>
+	<p itemprop="description">An object that sets up a communication between two independent objects.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/separatedInterface.html" title="Separated Interface pattern" name="Separated Interface pattern" target="_blank" itemprop="name url">Separated Interface pattern</a></h3>
+	<p itemprop="description">Defines an interface in a separate package from its implementation.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/registry.html" title="Registry pattern" name="Registry pattern" target="_blank" itemprop="name url">Registry pattern</a></h3>
+	<p itemprop="description">A well-known object that other objects can use to find common objects and services.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/valueObject.html" title="Value Object pattern" name="Value Object pattern" target="_blank" itemprop="name url">Value Object pattern</a></h3>
+	<p itemprop="description">A small simple object, like money or a date range, whose equality isn't based on identity.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/money.html" title="Money pattern" name="Money pattern" target="_blank" itemprop="name url">Money pattern</a></h3>
+	<p itemprop="description">Represents a monetary value.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/specialCase.html" title="Special Case pattern" name="Special Case pattern" target="_blank" itemprop="name url">Special Case pattern</a></h3>
+	<p itemprop="description">A subclass that provides special behavior for particular cases.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/plugin.html" title="Plugin pattern" name="Plugin pattern" target="_blank" itemprop="name url">Plugin pattern</a></h3>
+	<p itemprop="description">Links classes during configuration rather than compilation.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/serviceStub.html" title="Service Stub pattern" name="Service Stub pattern" target="_blank" itemprop="name url">Service Stub pattern</a></h3>
+	<p itemprop="description">Removes dependence upon problematic services during testing.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/recordSet.html" title="Record Set pattern" name="Record Set pattern" target="_blank" itemprop="name url">Record Set pattern</a></h3>
+	<p itemprop="description">An in-memory representation of tabular data.</p>
+
+	<a name="domainlogic">&nbsp;</a>
+	<h2 itemprop="name headline">Domain Logic patterns</h2>
+	<hr/>
+
+	<h3><a href="http://martinfowler.com/eaaCatalog/transactionScript.html" title="Transaction Script pattern" name="Transaction Script pattern" target="_blank" itemprop="name url">Transaction Script pattern</a></h3>
+	<p itemprop="description">Organizes business logic by procedures where each procedure handles a single request from the presentation.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/domainModel.html" title="Domain Model pattern" name="Domain Model pattern" target="_blank" itemprop="name url">Domain Model pattern</a></h3>
+	<p itemprop="description">An object model of the domain that incorporates both behavior and data.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/tableModule.html" title="Table Module pattern" name="Table Module pattern" target="_blank" itemprop="name url">Table Module pattern</a></h3>
+	<p itemprop="description">A single instance that handles the business logic for all rows in a database table or view.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/serviceLayer.html" title="Service Layer pattern" name="Service Layer pattern" target="_blank" itemprop="name url">Service Layer pattern</a></h3>
+	<p itemprop="description">Defines an application's boundary with a layer of services that establishes a set of available operations and coordinates the application's response in each operation.</p>
+
+	<a name="datasource">&nbsp;</a>
+	<h2 itemprop="name headline">Data Source Architectural patterns</h2>
+	<hr/>
+
+	<h3><a href="http://martinfowler.com/eaaCatalog/tableDataGateway.html" title="Table Data Gateway pattern" name="Table Data Gateway pattern" target="_blank" itemprop="name url">Table Data Gateway pattern</a></h3>
+	<p itemprop="description">An object that acts as a Gateway to a database table. One instance handles all the rows in the table.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/rowDataGateway.html" title="Row Data Gateway pattern" name="Row Data Gateway pattern" target="_blank" itemprop="name url">Row Data Gateway pattern</a></h3>
+	<p itemprop="description">An object that acts as a Gateway to a single record in a data source. There is one instance per row.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/activeRecord.html" title="Active Record pattern" name="Active Record pattern" target="_blank" itemprop="name url">Active Record pattern</a></h3>
+	<p itemprop="description">An object that wraps a row in a database table or view, encapsulates the database access, and adds domain logic on that data.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/dataMapper.html" title="Data Mapper pattern" name="Data Mapper pattern" target="_blank" itemprop="name url">Data Mapper pattern</a></h3>
+	<p itemprop="description">A layer of Mappers that moves data between objects and a database while keeping them independent of each other and the mapper itself.</p>
+
+	<a name="objrelbehavioral">&nbsp;</a>
+	<h2 itemprop="name headline">Object-Relational Behavioral patterns</h2>
+	<hr/>
+
+	<h3><a href="http://martinfowler.com/eaaCatalog/unitOfWork.html" title="Unit of Work pattern" name="Unit of Work pattern" target="_blank" itemprop="name url">Unit of Work pattern</a></h3>
+	<p itemprop="description">Maintains a list of objects affected by a business transaction and coordinates the writing out of changes and the resolution of concurrency problems.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/identityMap.html" title="Identity Map pattern" name="Identity Map pattern" target="_blank" itemprop="name url">Identity Map pattern</a></h3>
+	<p itemprop="description">Ensures that each object gets loaded only once by keeping every loaded object in a map. Looks up objects using the map when referring to them.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/lazyLoad.html" title="Lazy Load pattern" name="Lazy Load pattern" target="_blank" itemprop="name url">Lazy Load pattern</a></h3>
+	<p itemprop="description">An object that doesn't contain all of the data you need but knows how to get it.</p>
+
+	<a name="objrelstructural">&nbsp;</a>
+	<h2 itemprop="name headline">Object-Relational Structural patterns</h2>
+	<hr/>
+
+	<h3><a href="http://martinfowler.com/eaaCatalog/identityField.html" title="Identity Field pattern" name="Identity Field pattern" target="_blank" itemprop="name url">Identity Field pattern</a></h3>
+	<p itemprop="description">Saves a database ID field in an object to maintain identity between an in-memory object and a database row.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/foreignKeyMapping.html" title="Foreign Key Mapping pattern" name="Foreign Key Mapping pattern" target="_blank" itemprop="name url">Foreign Key Mapping pattern</a></h3>
+	<p itemprop="description">Maps an association between objects to a foreign key reference between tables.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/associationTableMapping.html" title="Association Table Mapping pattern" name="Association Table Mapping pattern" target="_blank" itemprop="name url">Association Table Mapping pattern</a></h3>
+	<p itemprop="description">Saves an association as a table with foreign keys to the tables that are linked by the association.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/dependentMapping.html" title="Dependent Mapping pattern" name="Dependent Mapping pattern" target="_blank" itemprop="name url">Dependent Mapping pattern</a></h3>
+	<p itemprop="description">Has one class perform the database mapping for a child class.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/embeddedValue.html" title="Embedded Value pattern" name="Embedded Value pattern" target="_blank" itemprop="name url">Embedded Value pattern</a></h3>
+	<p itemprop="description">Maps an object into several fields of another object's table.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/serializedLOB.html" title="Serialized LOB pattern" name="Serialized LOB pattern" target="_blank" itemprop="name url">Serialized LOB pattern</a></h3>
+	<p itemprop="description">Saves a graph of objects by serializing them into a single large object (LOB), which it stores in a database field.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/singleTableInheritance.html" title="Single Table Inheritance pattern" name="Single Table Inheritance pattern" target="_blank" itemprop="name url">Single Table Inheritance pattern</a></h3>
+	<p itemprop="description">Represents an inheritance hierarchy of classes as a single table that has columns for all the fields of the various classes.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/classTableInheritance.html" title="Class Table Inheritance pattern" name="Class Table Inheritance pattern" target="_blank" itemprop="name url">Class Table Inheritance pattern</a></h3>
+	<p itemprop="description">Represents an inheritance hierarchy of classes with one table for each class.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/concreteTableInheritance.html" title="Concrete Table Inheritance pattern" name="Concrete Table Inheritance pattern" target="_blank" itemprop="name url">Concrete Table Inheritance pattern</a></h3>
+	<p itemprop="description">Represents an inheritance hierarchy of classes with one table per concrete class in the hierarchy.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/inheritanceMappers.html" title="Inheritance Mappers pattern" name="Inheritance Mappers pattern" target="_blank" itemprop="name url">Inheritance Mappers pattern</a></h3>
+	<p itemprop="description">A structure to organize database mappers that handle inheritance hierarchies.</p>
+
+	<a name="objrelmeta">&nbsp;</a>
+	<h2 itemprop="name headline">Object-Relational Metadata Mapping patterns</h2>
+	<hr/>
+
+	<h3><a href="http://martinfowler.com/eaaCatalog/metadataMapping.html" title="Metadata Mapping pattern" name="Metadata Mapping pattern" target="_blank" itemprop="name url">Metadata Mapping pattern</a></h3>
+	<p itemprop="description">Holds details of object-relational mapping in metadata.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/queryObject.html" title="Query Object pattern" name="Query Object pattern" target="_blank" itemprop="name url">Query Object pattern</a></h3>
+	<p itemprop="description">An object that represents a database query.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/repository.html" title="Repository pattern" name="Repository pattern" target="_blank" itemprop="name url">Repository pattern</a></h3>
+	<p itemprop="description">Mediates between the domain and data mapping layers using a collection-like interface for accessing domain objects.</p>
+
+	<a name="webpresentation">&nbsp;</a>
+	<h2 itemprop="name headline">Web Presentation patterns</h2>
+	<hr/>
+
+	<h3><a href="http://martinfowler.com/eaaCatalog/modelViewController.html" title="Model View Controller pattern" name="Model View Controller pattern" target="_blank" itemprop="name url">Model View Controller pattern</a></h3>
+	<p itemprop="description">Splits user interface interaction into three distinct roles.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/pageController.html" title="Page Controller pattern" name="Page Controller pattern" target="_blank" itemprop="name url">Page Controller pattern</a></h3>
+	<p itemprop="description">An object that handles a request for a specific page or action on a Web site.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/frontController.html" title="Front Controller pattern" name="Front Controller pattern" target="_blank" itemprop="name url">Front Controller pattern</a></h3>
+	<p itemprop="description">A controller that handles all requests for a Web site.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/templateView.html" title="Template View pattern" name="Template View pattern" target="_blank" itemprop="name url">Template View pattern</a></h3>
+	<p itemprop="description">Renders information into HTML by embedding markers in an HTML page.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/transformView.html" title="Transform View pattern" name="Transform View pattern" target="_blank" itemprop="name url">Transform View pattern</a></h3>
+	<p itemprop="description">A view that processes domain data element by element and transforms it into HTML.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/twoStepView.html" title="Two-Step View pattern" name="Two-Step View pattern" target="_blank" itemprop="name url">Two-Step View pattern</a></h3>
+	<p itemprop="description">Turns domain data into HTML in two steps: first by forming some kind of logical page, then rendering the logical page into HTML.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/applicationController.html" title="Application Controller pattern" name="Application Controller pattern" target="_blank" itemprop="name url">Application Controller pattern</a></h3>
+	<p itemprop="description">A centralized point for handling screen navigation and the flow of an application.</p>
+
+	<a name="distribution">&nbsp;</a>
+	<h2 itemprop="name headline">Distribution patterns</h2>
+	<hr/>
+
+	<h3><a href="http://martinfowler.com/eaaCatalog/remoteFacade.html" title="Remote Facade pattern" name="Remote Facade pattern" target="_blank" itemprop="name url">Remote Facade pattern</a></h3>
+	<p itemprop="description">Provides a coarse-grained facade on fine-grained objects to improve efficiency over a network.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/dataTransferObject.html" title="Data Transfer Object pattern" name="Data Transfer Object pattern" target="_blank" itemprop="name url">Data Transfer Object pattern</a></h3>
+	<p itemprop="description">An object that carries data between processes in order to reduce the number of method calls.</p>
+
+	<a name="offlineconcurrency">&nbsp;</a>
+	<h2 itemprop="name headline">Offline Concurrency patterns</h2>
+	<hr/>
+
+	<h3><a href="http://martinfowler.com/eaaCatalog/optimisticOfflineLock.html" title="Optimistic Offline Lock pattern" name="Optimistic Offline Lock pattern" target="_blank" itemprop="name url">Optimistic Offline Lock pattern</a></h3>
+	<p itemprop="description">Prevents conflicts between concurrent business transactions by detecting a conflict and rolling back the transaction.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/pessimisticOfflineLock.html" title="Pessimistic Offline Lock pattern" name="Pessimistic Offline Lock pattern" target="_blank" itemprop="name url">Pessimistic Offline Lock pattern</a></h3>
+	<p itemprop="description">Prevents conflicts between concurrent business transactions by allowing only one business transaction at a time to access data.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/coarseGrainedLock.html" title="Coarse Grained Lock pattern" name="Coarse Grained Lock pattern" target="_blank" itemprop="name url">Coarse Grained Lock pattern</a></h3>
+	<p itemprop="description">Locks a set of related objects with a single lock.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/implicitLock.html" title="Implicit Lock pattern" name="Implicit Lock pattern" target="_blank" itemprop="name url">Implicit Lock pattern</a></h3>
+	<p itemprop="description">Allows framework or layer supertype code to acquire offline locks.</p>
+
+	<a name="sessionstate">&nbsp;</a>
+	<h2 itemprop="name headline">Session State patterns</h2>
+	<hr/>
+
+	<h3><a href="http://martinfowler.com/eaaCatalog/clientSessionState.html" title="Client Session State pattern" name="Client Session State pattern" target="_blank" itemprop="name url">Client Session State pattern</a></h3>
+	<p itemprop="description">Stores session state on the client.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/serverSessionState.html" title="Server Session State pattern" name="Server Session State pattern" target="_blank" itemprop="name url">Server Session State pattern</a></h3>
+	<p itemprop="description">Keeps the session state on a server system in a serialized form.</p>
+	<h3><a href="http://martinfowler.com/eaaCatalog/databaseSessionState.html" title="Database Session State pattern" name="Database Session State pattern" target="_blank" itemprop="name url">Database Session State pattern</a></h3>
+	<p itemprop="description">Stores session data as committed data in the database.</p>
+
+<div><br /><br /></div>
+
+<hr/>
+
+<div class="alert alert-info alert-border-left mv30" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<b>Source(s):</b><br />
+<b itemprop="name">Catalog of Patterns of Enterprise Application Architecture</b> <a class="alert-link" href="http://martinfowler.com/eaaCatalog/" title="Catalog of Patterns of Enterprise Application Architecture" target="_blank" itemprop="url">http://martinfowler.com/eaaCatalog/</a><br />
+</div>
+
+                        <div class="top-wrapper clearfix" itemscope itemtype="http://schema.org/WPFooter">
+                            <a href="#" class="return-top">Return to Top</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-61553779-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title itemprop="name">Concurrency | Design Patterns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="design patterns, Gang of Four, Enterprise, integration, microservice, javascript" />
+<meta name="description" content="A collection of various design patterns.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="search" title="Search" href="/" />
+<link rel="copyright" title="About" href="/../about.html" />
+<link rel="author" title="About" href="/about.html" />
+<link rel="home" title="" href="/" id="homelink" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="canonical" href="http://design.patterns.rocks/" />
+
+<!-- Font CSS (Via CDN) -->
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'>
+
+<!-- Core CSS -->
+<link rel="stylesheet" type="text/css" href="../min2.css">
+<!--<link rel="stylesheet" type="text/css" href="theme.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="awesomplete.css">
+<link rel="stylesheet" type="text/css" href="st.css">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body style="min-height: 1500px;" itemscope itemtype="http://schema.org/WebPage">
+
+    <nav class="navbar bg-light docs-navbar" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="container">
+        <div class="navbar-header" itemprop="name">
+            <a class="navbar-brand" href="../index.html" hreflang="en"><b>Design Patterns</b></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="mi"><a href="../index.html" hreflang="en" title="Design Patterns" itemprop="url name">Index</a></li>
+                    <li class="mp active"><a href="../categories.html" hreflang="en" title="Patterns" itemprop="url name">Patterns</a></li>
+                    <li class="mc"><a href="../changelog.html" hreflang="en" title="Changelog" itemprop="url name">Changelog</a></li>
+                    <li class="ma"><a href="about.html" hreflang="en" title="About" itemprop="url name">About</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        <div class="docs-container" id="docs">
+            <div class="row table-layout">
+                <div class="col-xs-3 left-col" itemscope itemtype="http://schema.org/WPSideBar">
+                    <div id="nav-spy" class="posr">
+                        <ul class="list-group list-group-accordion" itemscope itemtype="http://schema.org/Offer">
+  <li class="list-group-item list-group-header br-n" itemprop="name">Categories</li>
+  <li class="list-group-item active"><a href="#" itemprop="category">Concurrency</a></li>
+</ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-9 center-col va-t" itemprop="mainContentOfPage">
+
+                    <div id="docs-content" class="tab-content pn" itemscope itemtype="http://schema.org/CollectionPage">
+
+                        
+<h1 class="page-header" itemprop="name headline">Concurrency</h1>
+
+
+	<a name="">&nbsp;</a>
+	<h2 itemprop="name headline">Concurrency patterns</h2>
+	<hr/>
+
+	<h3><a href="http://en.wikipedia.org/wiki/Active_object" title="Active Object pattern" name="Active Object pattern" target="_blank" itemprop="name url">Active Object pattern</a></h3>
+	<p itemprop="description">The active object design pattern decouples method execution from method invocation for objects that each reside in their own thread of control. The goal is to introduce concurrency, by using asynchronous method invocation and a scheduler for handling requests.</p>
+	<h3><a href="http://en.wikipedia.org/wiki/Balking_pattern" title="Balking pattern" name="Balking pattern" target="_blank" itemprop="name url">Balking pattern</a></h3>
+	<p itemprop="description">The balking pattern is a software design pattern that only executes an action on an object when the object is in a particular state. For example, if an object reads ZIP files and a calling method invokes a get method on the object when the ZIP file is not open, the object would "balk" at the request. In the Java programming language, for example, an IllegalStateException might be thrown under these circumstances.</p>
+	<h3><a href="http://en.wikipedia.org/wiki/Barrier_(computer_science)" title="Barrier pattern" name="Barrier pattern" target="_blank" itemprop="name url">Barrier pattern</a></h3>
+	<p itemprop="description">In parallel computing, a barrier is a type of synchronization method. A barrier for a group of threads or processes in the source code means any thread/process must stop at this point and cannot proceed until all other threads/processes reach this barrier.</p>
+	<h3><a href="http://en.wikipedia.org/wiki/Disruptor_(software_pattern)" title="Disruptor pattern" name="Disruptor pattern" target="_blank" itemprop="name url">Disruptor pattern</a></h3>
+	<p itemprop="description">Disruptor is a data structure and concurrency software pattern for low latency and high throughput for asynchronous event processing architectures. It ensures that any data is owned by only one thread for write access, therefore eliminating write contention.</p>
+	<h3><a href="http://en.wikipedia.org/wiki/Double-checked_locking" title="Double-checked locking pattern" name="Double-checked locking pattern" target="_blank" itemprop="name url">Double-checked locking pattern</a></h3>
+	<p itemprop="description">In software engineering, double-checked locking (also known as "double-checked locking optimization") is a software design pattern used to reduce the overhead of acquiring a lock by first testing the locking criterion (the "lock hint") without actually acquiring the lock. Only if the locking criterion check indicates that locking is required does the actual locking logic proceed.</p>
+	<h3><a href="http://en.wikipedia.org/wiki/Guarded_suspension" title="Guarded suspension pattern" name="Guarded suspension pattern" target="_blank" itemprop="name url">Guarded suspension pattern</a></h3>
+	<p itemprop="description">In concurrent programming, guarded suspension is a software design pattern for managing operations that require both a lock to be acquired and a precondition to be satisfied before the operation can be executed. The guarded suspension pattern is typically applied to method calls in object-oriented programs, and involves suspending the method call, and the calling thread, until the precondition (acting as a guard) is satisfied.</p>
+	<h3><a href="" title="Leaders/followers pattern" name="Leaders/followers pattern" target="_blank" itemprop="name url">Leaders/followers pattern</a></h3>
+	<p itemprop="description">The Leader/Followers architectural pattern provides an efficient concurrency model where multiple threads take turns to share a set of event sources to detect, demultiplex, dispatch, and process service requests that occur on the event sources. The Leader/Followers pattern can be used in lieu of the Half-Sync/Half-Async and Active Object patterns to improve performance when there are no synchronization or ordering constraints on the processing of requests by pooled threads.</p>
+	<h3><a href="http://en.wikipedia.org/wiki/Monitor_(synchronization)" title="Monitor pattern" name="Monitor pattern" target="_blank" itemprop="name url">Monitor pattern</a></h3>
+	<p itemprop="description">In concurrent programming, a monitor is a synchronization construct that allows threads to have both mutual exclusion and the ability to wait (block) for a certain condition to become true. Monitors also have a mechanism for signalling other threads that their condition has been met. A monitor consists of a mutex (lock) object and condition variables. A condition variable is basically a container of threads that are waiting on a certain condition. Monitors provide a mechanism for threads to temporarily give up exclusive access in order to wait for some condition to be met, before regaining exclusive access and resuming their task.</p>
+	<h3><a href="http://en.wikipedia.org/wiki/Reactor_pattern" title="Reactor pattern" name="Reactor pattern" target="_blank" itemprop="name url">Reactor pattern</a></h3>
+	<p itemprop="description">The reactor design pattern is an event handling pattern for handling service requests delivered concurrently to a service handler by one or more inputs. The service handler then demultiplexes the incoming requests and dispatches them synchronously to the associated request handlers.</p>
+	<h3><a href="http://en.wikipedia.org/wiki/Readers%E2%80%93writer_lock" title="Readers-writer lock pattern" name="Readers-writer lock pattern" target="_blank" itemprop="name url">Readers-writer lock pattern</a></h3>
+	<p itemprop="description">In computer science, a readers-writer (RW) or shared-exclusive lock (also known as a multiple readers/single-writer lock or multi-reader lock) is a synchronization primitive that solves one of the readers-writers problems. A RW lock allows concurrent access for read-only operations, while write operations require exclusive access. This means that multiple threads can read the data in parallel but an exclusive lock is needed for writing or modifying data. When a writer is writing the data, readers will be blocked until the writer is finished writing. A common use might be to control access to a data structure in memory that can't be updated atomically and isn't valid (and shouldn't be read by another thread) until the update is complete.</p>
+	<h3><a href="http://en.wikipedia.org/wiki/Scheduler_pattern" title="Scheduler pattern" name="Scheduler pattern" target="_blank" itemprop="name url">Scheduler pattern</a></h3>
+	<p itemprop="description">In computer programming, the scheduler pattern is a software design pattern. It is a concurrency pattern used to explicitly control when threads may execute single-threaded code, like write operation to a file.</p>
+	<h3><a href="http://en.wikipedia.org/wiki/Thread_pool_pattern" title="Thread pool pattern" name="Thread pool pattern" target="_blank" itemprop="name url">Thread pool pattern</a></h3>
+	<p itemprop="description">In computer programming, the thread pool pattern (also replicated workers or worker-crew model) is where a number of threads are created to perform a number of tasks, which are usually organized in a queue. The results from the tasks being executed might also be placed in a queue, or the tasks might return no result (for example, if the task is for animation). Typically, there are many more tasks than threads. As soon as a thread completes its task, it will request the next task from the queue until all tasks have been completed. The thread can then terminate, or sleep until there are new tasks available.</p>
+	<h3><a href="http://en.wikipedia.org/wiki/Thread-local_storage" title="Thread-local storage pattern" name="Thread-local storage pattern" target="_blank" itemprop="name url">Thread-local storage pattern</a></h3>
+	<p itemprop="description">Thread-local storage (TLS) is a computer programming method that uses static or global memory local to a thread.</p>
+
+<div><br /><br /></div>
+
+<hr/>
+
+<div class="alert alert-info alert-border-left mv30" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<b>Source(s):</b><br />
+<b itemprop="name">Concurrency pattern - Wikipedia, the free encyclopedia</b> <a class="alert-link" href="https://en.wikipedia.org/wiki/Concurrency_pattern" title="Concurrency pattern - Wikipedia, the free encyclopedia" target="_blank" itemprop="url">https://en.wikipedia.org/wiki/Concurrency_pattern</a><br />
+</div>
+
+                        <div class="top-wrapper clearfix" itemscope itemtype="http://schema.org/WPFooter">
+                            <a href="#" class="return-top">Return to Top</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-61553779-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html>
