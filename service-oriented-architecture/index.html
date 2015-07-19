@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title itemprop="name">Service-Oriented Architecture (SOA) | Design Patterns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="design patterns, Gang of Four, Enterprise, integration, microservice, javascript" />
+<meta name="description" content="A collection of various design patterns.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="search" title="Search" href="/" />
+<link rel="copyright" title="About" href="/../about.html" />
+<link rel="author" title="About" href="/about.html" />
+<link rel="home" title="" href="/" id="homelink" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="canonical" href="http://design.patterns.rocks/" />
+
+<!-- Font CSS (Via CDN) -->
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'>
+
+<!-- Core CSS -->
+<link rel="stylesheet" type="text/css" href="../min2.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body style="min-height: 1500px;" itemscope itemtype="http://schema.org/WebPage">
+
+    <nav class="navbar bg-light docs-navbar" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="container">
+        <div class="navbar-header" itemprop="name">
+            <a class="navbar-brand" href="../index.html" hreflang="en"><b>Design Patterns</b></a>
+        </div>
+
+        <div class="navbar-collapse" id="navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="mi"><a href="../index.html" hreflang="en" title="Design Patterns" itemprop="url name">Index</a></li>
+                    <li class="mp active"><a href="../categories.html" hreflang="en" title="Patterns" itemprop="url name">Patterns</a></li>
+                    <li class="mc"><a href="../changelog.html" hreflang="en" title="Changelog" itemprop="url name">Changelog</a></li>
+                    <li class="ma"><a href="about.html" hreflang="en" title="About" itemprop="url name">About</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        <div class="docs-container" id="docs">
+            <div class="row table-layout">
+                <div class="col-xs-3 left-col" itemscope itemtype="http://schema.org/WPSideBar">
+                    <div id="nav-spy" class="posr">
+                        <ul class="list-group list-group-accordion" itemscope itemtype="http://schema.org/Offer">
+							<li class="list-group-item list-group-header br-n" itemprop="name">Categories</li>
+							<li class="list-group-item active"><a href="#" itemprop="category">Service-Oriented Architecture (SOA)</a></li>
+							<li class="list-group-item"><a href="#foundationalInventory" itemprop="name url">Foundational Inventory Patterns</a></li>
+							<li class="list-group-item"><a href="#logicalinventorylayer" itemprop="name url">Logical Inventory Layer Patterns</a></li>
+							<li class="list-group-item"><a href="#logicalcentralization" itemprop="name url">Inventory Centralization Patterns</a></li>
+							<li class="list-group-item"><a href="#inventoryimpl" itemprop="name url">Inventory Implementation Patterns</a></li>
+							<li class="list-group-item"><a href="#inventorygovernance" itemprop="name url">Inventory Governance Patterns</a></li>
+							<li class="list-group-item"><a href="#foundationalservice" itemprop="name url">Foundational Service Patterns</a></li>
+							<li class="list-group-item"><a href="#serviceimpl" itemprop="name url">Service Implementation Patterns</a></li>
+							<li class="list-group-item"><a href="#servicesecurity" itemprop="name url">Service Security Patterns</a></li>
+							<li class="list-group-item"><a href="#servicecontract" itemprop="name url">Service Contract Design Patterns</a></li>
+							<li class="list-group-item"><a href="#legacyencapsulation" itemprop="name url">Legacy Encapsulation Patterns</a></li>
+							<li class="list-group-item"><a href="#servicegovernance" itemprop="name url">Service Governance Patterns</a></li>
+							<li class="list-group-item"><a href="#capabilitycomposition" itemprop="name url">Capability Composition Patterns</a></li>
+							<li class="list-group-item"><a href="#servicemessaging" itemprop="name url">Service Messaging Patterns</a></li>
+							<li class="list-group-item"><a href="#compositionimpl" itemprop="name url">Composition Implementation Patterns</a></li>
+							<li class="list-group-item"><a href="#serviceitersecurity" itemprop="name url">Service Interaction Security Patterns</a></li>
+							<li class="list-group-item"><a href="#transformation" itemprop="name url">Transformation Patterns</a></li>
+							<li class="list-group-item"><a href="#restinspired" itemprop="name url">REST-inspired Patterns</a></li>
+						</ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-9 center-col va-t" itemprop="mainContentOfPage">
+
+                    <div id="docs-content" class="tab-content pn" itemscope itemtype="http://schema.org/CollectionPage">
+
+                        
+<h1 class="page-header" itemprop="name headline">Service-Oriented Architecture (SOA)</h1>
+
+
+<a name="foundationalInventory">&nbsp;</a>
+<h2 itemprop="name headline">Foundational Inventory Patterns</h2>
+<hr/>
+
+
+<h3><a href="http://soapatterns.org/design_patterns/canonical_protocol" title="Canonical Protocol" name="Canonical Protocol" target="_blank" itemprop="name url">Canonical Protocol</a></h3>
+<p itemprop="description">Services that support different communication technologies compromise interoperability, limit the quantity of potential consumers, and introduce the need for undesirable protocol bridging measures.</p><p>The architecture establishes a single communications technology as the sole or primary medium by which services can interact.</p>
+<h3><a href="http://soapatterns.org/design_patterns/canonical_schema" title="Canonical Schema" name="Canonical Schema" target="_blank" itemprop="name url">Canonical Schema</a></h3>
+<p itemprop="description">Services with disparate models for similar data impose transformation requirements that increase development effort, design complexity, and runtime performance overhead.</p><p>Data models for common information sets are standardized across service contracts within an inventory boundary.</p>
+<h3><a href="http://soapatterns.org/design_patterns/domain_inventory" title="Domain Inventory" name="Domain Inventory" target="_blank" itemprop="name url">Domain Inventory</a></h3>
+<p itemprop="description">Establishing an single enterprise service inventory may be unmanageable for some enterprises, and attempts to do so may jeopardize the success of an SOA adoption as a whole.</p><p>Services can be grouped into manageable, domain-specific service inventories, each of which can be independently standardized, governed, and owned.</p>
+<h3><a href="http://soapatterns.org/design_patterns/enterprise_inventory" title="Enterprise Inventory" name="Enterprise Inventory" target="_blank" itemprop="name url">Enterprise Inventory</a></h3>
+<p itemprop="description">Delivering services independently via different project teams across an enterprise establishes a constant risk of producing inconsistent service and architecture implementations, compromising recomposition opportunities.</p><p>Services for multiple solutions can be designed for delivery within a standardized, enterprise-wide inventory architecture wherein they can be freely and repeatedly recomposed.</p>
+<h3><a href="http://soapatterns.org/design_patterns/logic_centralization" title="Logic Centralization" name="Logic Centralization" target="_blank" itemprop="name url">Logic Centralization</a></h3>
+<p itemprop="description">If agnostic services are not consistently reused, redundant functionality can be delivered in other services, resulting in problems associated with inventory denormalization and service ownership and governance.</p><p>Access to reusable functionality is limited to official agnostic services.</p>
+<h3><a href="http://soapatterns.org/design_patterns/service_layers" title="Service Layers" name="Service Layers" target="_blank" itemprop="name url">Service Layers</a></h3>
+<p itemprop="description">Arbitrarily defining services delivered and governed by different project teams can lead to design inconsistency and inadvertent functional redundancy across a service inventory.</p><p>The inventory is structured into two or more logical service layers, each of which is responsible for abstracting logic based on a common functional type.</p>
+<h3><a href="http://soapatterns.org/design_patterns/service_normalization" title="Service Normalization" name="Service Normalization" target="_blank" itemprop="name url">Service Normalization</a></h3>
+<p itemprop="description">When delivering services as part of a service inventory, there is a constant risk that services will be created with overlapping functional boundaries, making it difficult to enable wide-spread reuse.</p><p>The service inventory needs to be designed with an emphasis on service boundary alignment.</p>
+
+
+<a name="logicalinventorylayer">&nbsp;</a>
+<h2 itemprop="name headline">Logical Inventory Layer Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/entity_abstraction" title="Entity Abstraction" name="Entity Abstraction" target="_blank" itemprop="name url">Entity Abstraction</a></h3>
+<p itemprop="description">Bundling both process-agnostic and process-specific business logic into the same service eventually results in the creation of redundant agnostic business logic across multiple services.</p><p>An agnostic business service layer can be established, dedicated to services that base their functional context on existing business entities.</p>
+<h3><a href="http://soapatterns.org/design_patterns/process_abstraction" title="Process Abstraction" name="Process Abstraction" target="_blank" itemprop="name url">Process Abstraction</a></h3>
+<p itemprop="description">Grouping task-centric logic together with task-agnostic logic hinders the governance of the task-specific logic and the reuse of the agnostic logic.</p><p>A dedicated parent business process service layer is established to support governance independence and the positioning of task services as potential enterprise resources.</p>
+<h3><a href="http://soapatterns.org/design_patterns/utility_abstraction" title="Utility Abstraction" name="Utility Abstraction" target="_blank" itemprop="name url">Utility Abstraction</a></h3>
+<p itemprop="description">When non-business centric processing logic is packaged together with business-specific logic, it results in the redundant implementation of common utility functions across different services.</p><p>A service layer dedicated to utility processing is established, providing reusable utility services for use by other services in the inventory.</p>
+
+
+<a name="logicalcentralization">&nbsp;</a>
+<h2 itemprop="name headline">Inventory Centralization Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/policy_centralization" title="Policy Centralization" name="Policy Centralization" target="_blank" itemprop="name url">Policy Centralization</a></h3>
+<p itemprop="description">Policies that apply to multiple services can introduce redundancy and inconsistency within service logic and contracts.</p><p>Global or domain-specific policies can be isolated and applied to multiple services.</p>
+<h3><a href="http://soapatterns.org/design_patterns/process_centralization" title="Process Centralization" name="Process Centralization" target="_blank" itemprop="name url">Process Centralization</a></h3>
+<p itemprop="description">When business process logic is distributed across independent service implementations, it can be problematic to extend and evolve.</p><p>Logic representing numerous business processes can be deployed and governed from a central location.</p>
+<h3><a href="http://soapatterns.org/design_patterns/rules_centralization" title="Rules Centralization" name="Rules Centralization" target="_blank" itemprop="name url">Rules Centralization</a></h3>
+<p itemprop="description">The same business rules may apply across different business services, leading to redundancy and governance challenges.</p><p>The storage and management of business rules are positioned within a dedicated architectural extension from where they can be centrally accessed and maintained.</p>
+<h3><a href="http://soapatterns.org/design_patterns/schema_centralization" title="Schema Centralization" name="Schema Centralization" target="_blank" itemprop="name url">Schema Centralization</a></h3>
+<p itemprop="description">Different service contracts often need to express capabilities that process similar business documents or data sets, resulting in redundant schema content that is difficult to govern.</p><p>Select schemas that exist as physically separate parts of the service contract are shared across multiple contracts.</p>
+
+
+<a name="inventoryimpl">&nbsp;</a>
+<h2 itemprop="name headline">Inventory Implementation Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/augmented_protocols" title="Augmented Protocols" name="Augmented Protocols" target="_blank" itemprop="name url">Augmented Protocols</a></h3>
+<p itemprop="description">Canonical Protocol requires that all services conform to the use of the same communications technology. However, Canonical Protocol can constrain quality of service when additional protocols are also available.</p><p>The architecture's single communication technology that is established as the sole or primary medium by which services interact is augmented to support additional beneficial protocols.</p>
+<h3><a href="http://soapatterns.org/design_patterns/canonical_resources" title="Canonical Resources" name="Canonical Resources" target="_blank" itemprop="name url">Canonical Resources</a></h3>
+<p itemprop="description">Service implementations can unnecessarily introduce disparate infrastructure resources, thereby bloating the enterprise and resulting in increased governance burden.</p><p>The supporting infrastructure and architecture can be equipped with common resources and extensions that can be repeatedly utilized by different services.</p>
+<h3><a href="http://soapatterns.org/design_patterns/cross_domain_utility_layer" title="Cross-Domain Utility Layer" name="Cross-Domain Utility Layer" target="_blank" itemprop="name url">Cross-Domain Utility Layer</a></h3>
+<p itemprop="description">While domain service inventories may be required for independent business governance, they can impose unnecessary redundancy within utility service layers.</p><p>A common utility service layer can be established, spanning two or more domain service inventories.</p>
+<h3><a href="http://soapatterns.org/design_patterns/dual_protocols" title="Dual Protocols" name="Dual Protocols" target="_blank" itemprop="name url">Dual Protocols</a></h3>
+<p itemprop="description">Canonical Protocol requires that all services conform to the use of the same communications technology; however, a single protocol may not be able to accommodate all service requirements, thereby introducing limitations.</p><p>The service inventory architecture is designed to support services based on primary and secondary protocols.</p>
+<h3><a href="http://soapatterns.org/design_patterns/inventory_endpoint" title="Inventory Endpoint" name="Inventory Endpoint" target="_blank" itemprop="name url">Inventory Endpoint</a></h3>
+<p itemprop="description">A group of services delivered for a specific inventory may provide capabilities that are useful to services outside of that inventory. However, for security and governance reasons, it may not be desirable to expose all services or all service capabilities to external consumers.</p><p>Abstract the relevant capabilities into an endpoint service that acts as a the official inventory entry point dedicated to a specific set of external consumers.</p>
+<h3><a href="http://soapatterns.org/design_patterns/service_grid" title="Service Grid" name="Service Grid" target="_blank" itemprop="name url">Service Grid</a></h3>
+<p itemprop="description">State data deferred via State Repository or Stateful Services can be subject to performance bottlenecks and failure, especially when exposed to high-usage volumes.</p><p>State data is deferred to a collection of stateful system services that form a grid that provides high scalability and fault tolerance through memory replication and redundancy and supporting infrastructure.</p>
+<h3><a href="http://soapatterns.org/design_patterns/state_repository" title="State Repository" name="State Repository" target="_blank" itemprop="name url">State Repository</a></h3>
+<p itemprop="description">Large amounts of state data cached to support the activity within a running service composition can consume too much memory, especially for long-running activities, thereby decreasing scalability.</p><p>State data can be temporarily written to and then later retrieved from a dedicated state repository.</p>
+<h3><a href="http://soapatterns.org/design_patterns/stateful_services" title="Stateful Services" name="Stateful Services" target="_blank" itemprop="name url">Stateful Services</a></h3>
+<p itemprop="description">State data associated with a particular service activity can impose a great deal of runtime state management responsibility upon service compositions, thereby reducing their scalability.</p><p>State data is managed and stored by intentionally stateful utility services.</p>
+
+
+<a name="inventorygovernance">&nbsp;</a>
+<h2 itemprop="name headline">Inventory Governance Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/canonical_expression" title="Canonical Expression" name="Canonical Expression" target="_blank" itemprop="name url">Canonical Expression</a></h3>
+<p itemprop="description">Service contracts may express similar capabilities in different ways, leading to inconsistency and risking misinterpretation.</p><p>Service contracts are standardized using naming conventions.</p>
+<h3><a href="http://soapatterns.org/design_patterns/canonical_versioning" title="Canonical Versioning" name="Canonical Versioning" target="_blank" itemprop="name url">Canonical Versioning</a></h3>
+<p itemprop="description">Service contracts within the same service inventory that are versioned differently will cause numerous interoperability and governance problems.</p><p>Service contract versioning rules and the expression of version information are standardized within a service inventory boundary.</p>
+<h3><a href="http://soapatterns.org/design_patterns/metadata_centralization" title="Metadata Centralization" name="Metadata Centralization" target="_blank" itemprop="name url">Metadata Centralization</a></h3>
+<p itemprop="description">Project teams, especially in larger enterprises, run the constant risk of building functionality that already exists or is already in development, resulting in wasted effort, service logic redundancy, and service inventory denormalization.</p><p>Service metadata can be centrally published in a service registry so as to provide a formal means of service registration and discovery.</p>
+
+
+<a name="foundationalservice">&nbsp;</a>
+<h2 itemprop="name headline">Foundational Service Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/agnostic_capability" title="Agnostic Capability" name="Agnostic Capability" target="_blank" itemprop="name url">Agnostic Capability</a></h3>
+<p itemprop="description">Service capabilities derived from specific concerns may not be useful to multiple service consumers, thereby reducing the reusability potential of the agnostic service.</p><p>Agnostic service logic is partitioned into a set of well-defined capabilities that address common concerns not specific to any one problem.</p>
+<h3><a href="http://soapatterns.org/design_patterns/agnostic_context" title="Agnostic Context" name="Agnostic Context" target="_blank" itemprop="name url">Agnostic Context</a></h3>
+<p itemprop="description">Multi-purpose logic grouped together with single purpose logic results in programs with little or no reuse potential that introduce waste and redundancy into an enterprise.</p><p>Isolate logic that is not specific to one purpose into separate services with distinct agnostic contexts.</p>
+<h3><a href="http://soapatterns.org/design_patterns/functional_decomposition" title="Functional Decomposition" name="Functional Decomposition" target="_blank" itemprop="name url">Functional Decomposition</a></h3>
+<p itemprop="description">To solve a large, complex business problem a corresponding amount of solution logic needs to be created, resulting in a selfcontained application with traditional governance and reusability constraints.</p><p>The large business problem can be broken down into a set of smaller, related problems, allowing the required solution logic to also be decomposed into a corresponding set of smaller, related solution logic units.</p>
+<h3><a href="http://soapatterns.org/design_patterns/non_agnostic_context" title="Non-Agnostic Context" name="Non-Agnostic Context" target="_blank" itemprop="name url">Non-Agnostic Context</a></h3>
+<p itemprop="description">Non-agnostic logic that is not service-oriented can inhibit the effectiveness of service compositions that utilize agnostic services.</p><p>Non-agnostic solution logic suitable for service encapsulation can be located within services that reside as official members of a service inventory.</p>
+<h3><a href="http://soapatterns.org/design_patterns/service_encapsulation" title="Service Encapsulation" name="Service Encapsulation" target="_blank" itemprop="name url">Service Encapsulation</a></h3>
+<p itemprop="description">Solution logic designed for a single application environment is typically limited in its potential to interoperate with or be leveraged by other parts of an enterprise.</p><p>Solution logic can be encapsulated by a service so that it is positioned as an enterprise resource capable of functioning beyond the boundary for which it is initially delivered.</p>
+
+
+<a name="serviceimpl">&nbsp;</a>
+<h2 itemprop="name headline">Service Implementation Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/partial_state_deferral" title="Partial State Deferral" name="Partial State Deferral" target="_blank" itemprop="name url">Partial State Deferral</a></h3>
+<p itemprop="description">Service capabilities may be required to store and manage large amounts of state data, resulting in increased memory consumption and reduced scalability.</p><p>Even when services are required to remain stateful, a subset of their state data can be temporarily deferred.</p>
+<h3><a href="http://soapatterns.org/design_patterns/partial_validation" title="Partial Validation" name="Partial Validation" target="_blank" itemprop="name url">Partial Validation</a></h3>
+<p itemprop="description">The generic capabilities provided by agnostic services sometimes result in service contracts that impose unnecessary data and validation upon consumer programs.</p><p>A consumer program can be designed to only validate the relevant subset of the data and ignore the remainder.</p>
+<h3><a href="http://soapatterns.org/design_patterns/redundant_implementation" title="Redundant Implementation" name="Redundant Implementation" target="_blank" itemprop="name url">Redundant Implementation</a></h3>
+<p itemprop="description">A service that is being actively reused introduces a potential single point of failure that may jeopardize the reliability of all compositions in which it participates if an unexpected error condition occurs.</p><p>Reusable services can be deployed via redundant implementations or with failover support.</p>
+<h3><a href="http://soapatterns.org/design_patterns/reference_data_centralization" title="Reference Data Centralization" name="Reference Data Centralization" target="_blank" itemprop="name url">Reference Data Centralization</a></h3>
+<p itemprop="description">The same reference data often applies across different business services, leading to redundancy and governance challenges. This data can be business-specific data such as product codes, or can be generic data such as Countries, States and Counties.</p><p>The storage, management and access to reference data are centralized.</p>
+<h3><a href="http://soapatterns.org/design_patterns/service_data_replication" title="Service Data Replication" name="Service Data Replication" target="_blank" itemprop="name url">Service Data Replication</a></h3>
+<p itemprop="description">Service logic can be deployed in isolation to increase service autonomy, but services continue to lose autonomy when requiring access to shared data sources.</p><p>Services can have their own dedicated databases with replication to shared data sources.</p>
+<h3><a href="http://soapatterns.org/design_patterns/service_facade" title="Service Facade" name="Service Facade" target="_blank" itemprop="name url">Service Facade</a></h3>
+<p itemprop="description">The coupling of the core service logic to contracts and implementation resources can inhibit its evolution and negatively impact service consumers.</p><p>A service facade component is used to abstract a part of the service architecture with negative coupling potential.</p>
+<h3><a href="http://soapatterns.org/design_patterns/ui_mediator" title="UI Mediator" name="UI Mediator" target="_blank" itemprop="name url">UI Mediator</a></h3>
+<p itemprop="description">Because the behavior of individual services can vary depending on their design, runtime usage, and the workload required to carry out a given capability, the consistency with which a service-oriented solution can respond to requests originating from a user-interface can fluctuate, leading to a poor user experience.</p><p>Establish mediator logic solely responsible for ensuring timely interaction and feedback with user-interfaces and presentation logic.</p>
+
+
+<a name="servicesecurity">&nbsp;</a>
+<h2 itemprop="name headline">Service Security Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/exception_shielding" title="Exception Shielding" name="Exception Shielding" target="_blank" itemprop="name url">Exception Shielding</a></h3>
+<p itemprop="description">Unfiltered exception data output by a service may contain internal implementation details that can compromise the security of the service and its surrounding environment.</p><p>Potentially unsafe exception data is "sanitized" by replacing it with exception data that is safe by design before it is made available to consumers.</p>
+<h3><a href="http://soapatterns.org/design_patterns/message_screening" title="Message Screening" name="Message Screening" target="_blank" itemprop="name url">Message Screening</a></h3>
+<p itemprop="description">An attacker can transmit messages with malicious or malformed content to a service, resulting in undesirable behavior.</p><p>The service is equipped or supplemented with special screening routines that assume that all input data is harmful until proven otherwise.</p>
+<h3><a href="http://soapatterns.org/design_patterns/service_perimeter_guard" title="Service Perimeter Guard" name="Service Perimeter Guard" target="_blank" itemprop="name url">Service Perimeter Guard</a></h3>
+<p itemprop="description">External consumers that require access to one or more services in a private network can attack the service or use it to gain access to internal resources.</p><p>An intermediate service is established at the perimeter of the private network as a secure contact point for any external consumers that need to interact with internal services.</p>
+<h3><a href="http://soapatterns.org/design_patterns/trusted_subsystem" title="Trusted Subsystem" name="Trusted Subsystem" target="_blank" itemprop="name url">Trusted Subsystem</a></h3>
+<p itemprop="description">A consumer that accesses backend resources of a service directly can compromise the integrity of the resources and can further lead to undesirable forms of implementation coupling.</p><p>The service is designed to use its own credentials for authentication and authorization with backend resources on behalf of consumers.</p>
+
+
+<a name="servicecontract">&nbsp;</a>
+<h2 itemprop="name headline">Service Contract Design Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/concurrent_contracts" title="Concurrent Contracts" name="Concurrent Contracts" target="_blank" itemprop="name url">Concurrent Contracts</a></h3>
+<p itemprop="description">A service's contract may not be suitable for or applicable to all potential service consumers.</p><p>Multiple contracts can be created for a single service, each targeted at a specific type of consumer.</p>
+<h3><a href="http://soapatterns.org/design_patterns/contract_centralization" title="Contract Centralization" name="Contract Centralization" target="_blank" itemprop="name url">Contract Centralization</a></h3>
+<p itemprop="description">Consumer programs can be designed to access underlying service resources using different entry points, resulting in different forms of implementation dependencies that inhibit the service from evolving in response to change.</p><p>Access to service logic is limited to the service contract, forcing consumers to avoid implementation coupling.</p>
+<h3><a href="http://soapatterns.org/design_patterns/contract_denormalization" title="Contract Denormalization" name="Contract Denormalization" target="_blank" itemprop="name url">Contract Denormalization</a></h3>
+<p itemprop="description">Services with strictly normalized contracts can impose unnecessary functional and performace demands on some consumer programs.</p><p>Service contracts can include a measured extent of denormalization, allowing multiple capabilities to redundantly express core functions in different ways for different types of consumer programs.</p>
+<h3><a href="http://soapatterns.org/design_patterns/decoupled_contract" title="Decoupled Contract" name="Decoupled Contract" target="_blank" itemprop="name url">Decoupled Contract</a></h3>
+<p itemprop="description">For a service to be positioned as an effective enterprise resource, it must be equipped with a technical contract that exists independently from its implementation yet still in alignment with other services.</p><p>The service contract is physically decoupled from its implementation.</p>
+<h3><a href="http://soapatterns.org/design_patterns/validation_abstraction" title="Validation Abstraction" name="Validation Abstraction" target="_blank" itemprop="name url">Validation Abstraction</a></h3>
+<p itemprop="description">Service contracts that contain detailed validation constraints become more easily invalidated when the rules behind those constraints change.</p><p>Granular validation logic and rules can be abstracted away from the service contract, thereby decreasing constraint granularity and increasing the contract's potential longevity.</p>
+
+
+<a name="legacyencapsulation">&nbsp;</a>
+<h2 itemprop="name headline">Legacy Encapsulation Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/file_gateway" title="File Gateway" name="File Gateway" target="_blank" itemprop="name url">File Gateway</a></h3>
+<p itemprop="description">Data records contained in flat files produced by a legacy system need to be processed individually by service logic, but legacy systems are not capable of directly invoking services. Conversely, service logic may need to produce information for the legacy system, but building file creation and transfer functionality into the service can result in an inflexible design.</p><p>Intermediary two-way file processing logic is positioned between the legacy system and the service.</p>
+<h3><a href="http://soapatterns.org/design_patterns/legacy_wrapper" title="Legacy Wrapper" name="Legacy Wrapper" target="_blank" itemprop="name url">Legacy Wrapper</a></h3>
+<p itemprop="description">Wrapper services required to encapsulate legacy logic are often forced to introduce a non-standard service contract with high technology coupling requirements, resulting in a proliferation of implementation coupling throughout all service consumer programs.</p><p>The non-standard wrapper service can be replaced by or further wrapped with a standardized service contract that extracts, encapsulates, and possibly eliminates legacy technical details from the contract.</p>
+<h3><a href="http://soapatterns.org/design_patterns/multi_channel_endpoint" title="Multi-Channel Endpoint" name="Multi-Channel Endpoint" target="_blank" itemprop="name url">Multi-Channel Endpoint</a></h3>
+<p itemprop="description">Legacy systems custom-built for specific delivery channels (mobile phone, desktop, kiosk, etc.) result in redundancy and application silos when multiple channels need to be supported, thereby making these systems burdensome to govern and difficult to federate.</p><p>An intermediary service is designed to encapsulate channelspecific legacy systems and expose a single standardized contract for multiple channel-specific consumers.</p>
+
+<a name="servicegovernance">&nbsp;</a>
+<h2 itemprop="name headline">Service Governance Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/compatible_change" title="Compatible Change" name="Compatible Change" target="_blank" itemprop="name url">Compatible Change</a></h3>
+<p itemprop="description">Changing an already-published service contract can impact and invalidate existing consumer programs.</p><p>Some changes to the service contract can be backwardscompatible, thereby avoiding negative consumer impacts.</p>
+<h3><a href="http://soapatterns.org/design_patterns/decomposed_capability" title="Decomposed Capability" name="Decomposed Capability" target="_blank" itemprop="name url">Decomposed Capability</a></h3>
+<p itemprop="description">The decomposition of a service subsequent to its implementation can require the deconstruction of logic within capabilities, which can be disruptive and make the preservation of a service contract problematic.</p><p>Services prone to future decomposition can be equipped with a series of granular capabilities that more easily facilitate decomposition.</p>
+<h3><a href="http://soapatterns.org/design_patterns/distributed_capability" title="Distributed Capability" name="Distributed Capability" target="_blank" itemprop="name url">Distributed Capability</a></h3>
+<p itemprop="description">A capability that belongs within a service may have unique processing requirements that cannot be accommodated by the default service implementation, but separating capability logic from the service will compromise the integrity of the service context.</p><p>The underlying service logic is distributed, thereby allowing the implementation logic for a capability with unique processing requirements to be physically separated, while continuing to be represented by the same service contract.</p>
+<h3><a href="http://soapatterns.org/design_patterns/proxy_capability" title="Proxy Capability" name="Proxy Capability" target="_blank" itemprop="name url">Proxy Capability</a></h3>
+<p itemprop="description">If an established service needs to be decomposed into multiple services, its contract and its existing consumers can be impacted.</p><p>The original service contract is preserved, even if underlying capability logic is separated, by turning the established capability definition into a proxy.</p>
+<h3><a href="http://soapatterns.org/design_patterns/service_decomposition" title="Service Decomposition" name="Service Decomposition" target="_blank" itemprop="name url">Service Decomposition</a></h3>
+<p itemprop="description">Overly coarse-grained services can inhibit optimal composition design.</p><p>An already implemented coarse-grained service can be decomposed into two or more fine-grained services.</p>
+<h3><a href="http://soapatterns.org/design_patterns/service_refactoring" title="Service Refactoring" name="Service Refactoring" target="_blank" itemprop="name url">Service Refactoring</a></h3>
+<p itemprop="description">The logic or implementation technology of a service may become outdated or inadequate over time, but the service has become too entrenched to be replaced.</p><p>The service contract is preserved to maintain existing consumer dependencies, but the underlying service logic and/or implementation are refactored.</p>
+<h3><a href="http://soapatterns.org/design_patterns/termination_notification" title="Termination Notification" name="Termination Notification" target="_blank" itemprop="name url">Termination Notification</a></h3>
+<p itemprop="description">Consumer programs may be unaware of when a service or a service contract version is scheduled for retirement, thereby risking runtime failure.</p><p>Service contracts can be designed to express termination information for programmatic and human consumption.</p>
+<h3><a href="http://soapatterns.org/design_patterns/version_identification" title="Version Identification" name="Version Identification" target="_blank" itemprop="name url">Version Identification</a></h3>
+<p itemprop="description">When an already-published service contract is changed, unaware consumers will miss the opportunity to leverage the change or may be negatively impacted by the change.</p><p>Versioning information pertaining to compatible and incompatible changes can be expressed as part of the service contract, both for communication and enforcement purposes.</p>
+
+
+<a name="capabilitycomposition">&nbsp;</a>
+<h2 itemprop="name headline">Capability Composition Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/capability_composition" title="Capability Composition" name="Capability Composition" target="_blank" itemprop="name url">Capability Composition</a></h3>
+<p itemprop="description">A capability may not be able to fulfill its processing requirements without adding logic that resides outside of its service's functional context, thereby compromising the integrity of the service context and risking service denormalization.</p><p>When requiring access to logic that falls outside of a service's boundary, capability logic within the service is designed to compose one or more capabilities in other services.</p>
+<h3><a href="http://soapatterns.org/design_patterns/capability_recomposition" title="Capability Recomposition" name="Capability Recomposition" target="_blank" itemprop="name url">Capability Recomposition</a></h3>
+<p itemprop="description">Using agnostic service logic to only solve a single problem is wasteful and does not leverage the logic's reuse potential.</p><p>Agnostic service capabilities can be designed to be repeatedly invoked in support of multiple compositions that solve multiple problems.</p>
+
+<a name="servicemessaging">&nbsp;</a>
+<h2 itemprop="name headline">Service Messaging Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/asynchronous_queuing" title="Asynchronous Queuing" name="Asynchronous Queuing" target="_blank" itemprop="name url">Asynchronous Queuing</a></h3>
+<p itemprop="description">When a service capability requires that consumers interact with it synchronously, it can inhibit performance and compromise reliability.</p><p>A service can exchange messages with its consumers via an intermediary buffer, allowing service and consumers to process messages independently by remaining temporally decoupled.</p>
+<h3><a href="http://soapatterns.org/design_patterns/event_driven_messaging" title="Event-Driven Messaging" name="Event-Driven Messaging" target="_blank" itemprop="name url">Event-Driven Messaging</a></h3>
+<p itemprop="description">Events that occur within the functional boundary encapsulated by a service may be of relevance to service consumers, but without resorting to inefficient polling-based interaction, the consumer has no way of learning about these events.</p><p>The consumer establishes itself as a subscriber of the service. The service, in turn, automatically issues notifications of relevant events to this and any of its subscribers.</p>
+<h3><a href="http://soapatterns.org/design_patterns/intermediate_routing" title="Intermediate Routing" name="Intermediate Routing" target="_blank" itemprop="name url">Intermediate Routing</a></h3>
+<p itemprop="description">The larger and more complex a service composition is, the more difficult it is to anticipate and design for all possible runtime scenarios in advance, especially with asynchronous, messagingbased communication.</p><p>Message paths can be dynamically determined through the use of intermediary routing logic.</p>
+<h3><a href="http://soapatterns.org/design_patterns/messaging_metadata" title="Messaging Metadata" name="Messaging Metadata" target="_blank" itemprop="name url">Messaging Metadata</a></h3>
+<p itemprop="description">Because messaging does not rely on a persistent connection between service and consumer, it is challenging for a service to gain access to the state data associated with an overall runtime activity.</p><p>Message contents can be supplemented with activity-specific metadata that can be interpreted and processed separately at runtime.</p>
+<h3><a href="http://soapatterns.org/design_patterns/reliable_messaging" title="Reliable Messaging" name="Reliable Messaging" target="_blank" itemprop="name url">Reliable Messaging</a></h3>
+<p itemprop="description">Service communication cannot be guaranteed when using unreliable messaging protocols or when dependent on an otherwise unreliable environment.</p><p>An intermediate reliability mechanism is introduced into the inventory architecture, ensuring that message delivery is guaranteed.</p>
+<h3><a href="http://soapatterns.org/design_patterns/service_agent" title="Service Agent" name="Service Agent" target="_blank" itemprop="name url">Service Agent</a></h3>
+<p itemprop="description">Service compositions can become large and inefficient, especially when required to invoke granular capabilities across multiple services.</p><p>Event-driven logic can be deferred to event-driven programs that don't require explicit invocation, thereby reducing the size and performance strain of service compositions.</p>
+<h3><a href="http://soapatterns.org/design_patterns/service_callback" title="Service Callback" name="Service Callback" target="_blank" itemprop="name url">Service Callback</a></h3>
+<p itemprop="description">When a service needs to respond to a consumer request through the issuance of multiple messages or when service message processing requires a large amount of time, it is often not possible to communicate synchronously.</p><p>A service can require that consumers communicate with it asynchronously and provide a callback address to which the service can send response messages.</p>
+<h3><a href="http://soapatterns.org/design_patterns/service_instance_routing" title="Service Instance Routing" name="Service Instance Routing" target="_blank" itemprop="name url">Service Instance Routing</a></h3>
+<p itemprop="description">When required to repeatedly access a specific stateful service instance, consumers must rely on custom logic that more tightly couples them to the service.</p><p>The service provides an instance identifier along with its destination information in a standardized format that shields the consumer from having to resort to custom logic.</p>
+<h3><a href="http://soapatterns.org/design_patterns/service_messaging" title="Service Messaging" name="Service Messaging" target="_blank" itemprop="name url">Service Messaging</a></h3>
+<p itemprop="description">Services that depend on traditional remote communication protocols impose the need for persistent connections and tightly coupled data exchanges, increasing consumer dependencies and limiting service reuse potential.</p><p>Services can be designed to interact via a messaging-based technology, which removes the need for persistent connections and reduces coupling requirements.</p>
+<h3><a href="http://soapatterns.org/design_patterns/state_messaging" title="State Messaging" name="State Messaging" target="_blank" itemprop="name url">State Messaging</a></h3>
+<p itemprop="description">When services are required to maintain state information in memory between message exchanges with consumers, their scalability can be comprised, and they can become a performance burden on the surrounding infrastructure.</p><p>Instead of retaining the state data in memory, its storage is temporarily delegated to messages.</p>
+
+
+<a name="compositionimpl">&nbsp;</a>
+<h2 itemprop="name headline">Composition Implementation Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/agnostic_sub_controller" title="Agnostic Sub-Controller" name="Agnostic Sub-Controller" target="_blank" itemprop="name url">Agnostic Sub-Controller</a></h3>
+<p itemprop="description">Service compositions are generally configured specific to a parent task, inhibiting reuse potential that may exist within a subset of the composition logic.</p><p>Reusable, cross-entity composition logic is abstracted or made accessible via an agnostic sub-controller capability, allowing that subset of the parent composition logic to be recomposed independently.</p>
+<h3><a href="http://soapatterns.org/design_patterns/atomic_service_transaction" title="Atomic Service Transaction" name="Atomic Service Transaction" target="_blank" itemprop="name url">Atomic Service Transaction</a></h3>
+<p itemprop="description">When runtime activities that span multiple services fail, the parent business task is incomplete and actions performed and changes made up to that point may compromise the integrity of the underlying solution and architecture.</p><p>Runtime service activities can be wrapped in a transaction with rollback feature that resets all actions and changes if the parent business task cannot be successfully completed.</p>
+<h3><a href="http://soapatterns.org/design_patterns/compensating_service_transaction" title="Compensating Service Transaction" name="Compensating Service Transaction" target="_blank" itemprop="name url">Compensating Service Transaction</a></h3>
+<p itemprop="description">Whereas uncontrolled runtime exceptions can jeopardize a service composition, wrapping the composition in an atomic transaction can tie up too many resources, thereby negatively affecting performance and scalability.</p><p>Compensating routines are introduced, allowing runtime exceptions to be resolved with the opportunity for reduced resource locking and memory consumption.</p>
+<h3><a href="http://soapatterns.org/design_patterns/composition_autonomy" title="Composition Autonomy" name="Composition Autonomy" target="_blank" itemprop="name url">Composition Autonomy</a></h3>
+<p itemprop="description">Composition controller services naturally lose autonomy when delegating processing tasks to composed services, some of which may be shared across multiple compositions.</p><p>All composition participants can be isolated to maximize the autonomy of the composition as a whole.</p>
+
+
+<a name="serviceitersecurity">&nbsp;</a>
+<h2 itemprop="name headline">Service Interaction Security Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/brokered_authentication" title="Brokered Authentication" name="Brokered Authentication" target="_blank" itemprop="name url">Brokered Authentication</a></h3>
+<p itemprop="description">Requiring the use of Direct Authentication can be impractical or even impossible when consumers and services do not trust each other or when consumers are required to access multiple services as part of the same runtime activity.</p><p>An authentication broker with a centralized identity store assumes the responsibility for authenticating the consumer and issuing a token that the consumer can use to access the service.</p>
+<h3><a href="http://soapatterns.org/design_patterns/data_confidentiality" title="Data Confidentiality" name="Data Confidentiality" target="_blank" itemprop="name url">Data Confidentiality</a></h3>
+<p itemprop="description">Within service compositions, data is often required to pass through one or more intermediaries. Point-to-point security protocols, such as those frequently used at the transport-layer, may allow messages containing sensitive information to be intercepted and viewed by such intermediaries.</p><p>The message contents are encrypted independently from the transport, ensuring that only intended recipients can access the protected data.</p>
+<h3><a href="http://soapatterns.org/design_patterns/data_origin_authentication" title="Data Origin Authentication" name="Data Origin Authentication" target="_blank" itemprop="name url">Data Origin Authentication</a></h3>
+<p itemprop="description">The intermediary processing layers generally required by service compositions can expose sensitive data when security is limited to point-to-point protocols, such as those used with transportlayer security.</p><p>A message can be digitally signed so that the recipient services can verify that it originated from the expected consumer and that it has not been tampered with during transit.</p>
+<h3><a href="http://soapatterns.org/design_patterns/direct_authentication" title="Direct Authentication" name="Direct Authentication" target="_blank" itemprop="name url">Direct Authentication</a></h3>
+<p itemprop="description">Some of the capabilities offered by a service may be intended for specific groups of consumers or may involve the transmission of sensitive data. Attackers that access this data could use it to compromise the service or the IT enterprise itself.</p><p>Service capabilities require that consumers provide credentials that can be authenticated against an identity store.</p>
+
+
+<a name="transformation">&nbsp;</a>
+<h2 itemprop="name headline">Transformation Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/data_format_transformation" title="Data Format Transformation" name="Data Format Transformation" target="_blank" itemprop="name url">Data Format Transformation</a></h3>
+<p itemprop="description">A service may be incompatible with resources it needs to access due to data format disparity. Furthermore, a service consumer that communicates using a data format different from a target service will be incompatible and therefore unable to invoke the service.</p><p>Intermediary data format transformation logic needs to be introduced in order to dynamically translate one data format into another.</p>
+<h3><a href="http://soapatterns.org/design_patterns/data_model_transformation" title="Data Model Transformation" name="Data Model Transformation" target="_blank" itemprop="name url">Data Model Transformation</a></h3>
+<p itemprop="description">Services may use incompatible schemas to represent the same data, hindering service interaction and composition.</p><p>A data transformation technology can be incorporated to convert data between disparate schema structures.</p>
+<h3><a href="http://soapatterns.org/design_patterns/protocol_bridging" title="Protocol Bridging" name="Protocol Bridging" target="_blank" itemprop="name url">Protocol Bridging</a></h3>
+<p itemprop="description">Services using different communication protocols or different versions of the same protocol cannot exchange data.</p><p>Bridging logic is introduced to enable communication between different communication protocols by dynamically converting one protocol to another at runtime.</p>
+
+
+<a name="restinspired">&nbsp;</a>
+<h2 itemprop="name headline">REST-inspired Patterns</h2>
+<hr/>
+
+<h3><a href="http://soapatterns.org/design_patterns/entity_linking" title="Entity Linking" name="Entity Linking" target="_blank" itemprop="name url">Entity Linking</a></h3>
+<p itemprop="description">Business entities have natural relationships, yet entity services are commonly designed autonomously with no indication of these relationships. Service consumers acting as composition controllers are commonly required to have entity linking logic hard-coded in order to work with entity relationships. This limits the composition controller to any additional links that may become relevant and further adds a governance burden to ensure that hard-coded entity linking logic is kept in synch with the business.</p><p>Services inform their consumers about the existence of related entities as part of the consumer's interactions with the services.</p>
+<h3><a href="http://soapatterns.org/design_patterns/lightweight_endpoint" title="Lightweight Endpoint" name="Lightweight Endpoint" target="_blank" itemprop="name url">Lightweight Endpoint</a></h3>
+<p itemprop="description">A service consumer that requires access to business entity information (such as data about an invoice) needs to maintain two identifiers: one for the service and another for the invoice itself. The business entity identifier may be unique only within the scope of the service contract, and the service consumer may be limited to using unnecessarily coarse-grained service capabilities pre-defined as part of the published service contract. This can result in wasteful data exchange and consumer-side processing.</p><p>Expose data and functionality associated with business entities as a series of granular, lightweight endpoints. Allow consumers to target those endpoints in order to optimize data exchange and consumer-side processing.</p>
+<h3><a href="http://soapatterns.org/design_patterns/reusable_contract" title="Reusable Contract" name="Reusable Contract" target="_blank" itemprop="name url">Reusable Contract</a></h3>
+<p itemprop="description">To access a service capability of a service with a service-specific contract, the service consumer must be designed to couple itself to the service contract. When the service contract changes, the service consumer is no longer functional. To access a new version of the service contract or to access other service contracts in order to compose other services the service consumer must be subjected to additional development cycles, thereby adding incurring time, effort, and expense.</p><p>Limit tight coupling to a common, reusable technical contract that is shared by multiple services. The technical contract provides only generic, high-level functions that are less likely to be impacted when service logic changes.</p>
+
+
+<div><br /><br /></div>
+
+<hr/>
+
+<div class="alert alert-info alert-border-left mv30" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<b>Source(s):</b><br />
+<b itemprop="name">SOAPatterns.org</b> <a class="alert-link" href="http://soapatterns.org/" title="http://soapatterns.org/" target="_blank" itemprop="url">http://soapatterns.org/</a><br />
+</div>
+
+                        <div class="top-wrapper clearfix" itemscope itemtype="http://schema.org/WPFooter">
+                            <a href="#" class="return-top">Return to Top</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-61553779-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html>
