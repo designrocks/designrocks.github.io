@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title itemprop="name">Service | Design Patterns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="design patterns, Gang of Four, Enterprise, integration, microservice, javascript" />
+<meta name="description" content="A collection of various design patterns.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="search" title="Search" href="/" />
+<link rel="copyright" title="About" href="/../about.html" />
+<link rel="author" title="About" href="/about.html" />
+<link rel="home" title="" href="/" id="homelink" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="canonical" href="http://design.patterns.rocks/" />
+
+<!-- Font CSS (Via CDN) -->
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'>
+
+<!-- Core CSS -->
+<link rel="stylesheet" type="text/css" href="../min2.css">
+<!--<link rel="stylesheet" type="text/css" href="theme.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="awesomplete.css">
+<link rel="stylesheet" type="text/css" href="st.css">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body style="min-height: 1500px;" itemscope itemtype="http://schema.org/WebPage">
+
+    <nav class="navbar bg-light docs-navbar" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="container">
+        <div class="navbar-header" itemprop="name">
+            <a class="navbar-brand" href="../index.html" hreflang="en"><b>Design Patterns</b></a>
+        </div>
+
+        <div class="navbar-collapse" id="navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="mi"><a href="../index.html" hreflang="en" title="Design Patterns" itemprop="url name">Index</a></li>
+                    <li class="mp active"><a href="../categories.html" hreflang="en" title="Patterns" itemprop="url name">Patterns</a></li>
+                    <li class="mc"><a href="../changelog.html" hreflang="en" title="Changelog" itemprop="url name">Changelog</a></li>
+                    <li class="ma"><a href="about.html" hreflang="en" title="About" itemprop="url name">About</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        <div class="docs-container" id="docs">
+            <div class="row table-layout">
+                <div class="col-xs-3 left-col" itemscope itemtype="http://schema.org/WPSideBar">
+                    <div id="nav-spy" class="posr">
+                        <ul class="list-group list-group-accordion" itemscope itemtype="http://schema.org/Offer">
+							<li class="list-group-item list-group-header br-n" itemprop="name">Categories</li>
+							<li class="list-group-item active"><a href="#" itemprop="category">Service</a></li>
+							<li class="list-group-item"><a href="#apis" itemprop="name url">Service APIs</a></li>
+							<li class="list-group-item"><a href="#clientserviteraction" itemprop="name url">Client-Service Interactions</a></li>
+							<li class="list-group-item"><a href="#reqresmgmt" itemprop="name url">Request and Response Management</a></li>
+							<li class="list-group-item"><a href="#serviceimpl" itemprop="name url">Web Service Implementation</a></li>
+							<li class="list-group-item"><a href="#serviceinfra" itemprop="name url">Web Service Infrastructures</a></li>
+							<li class="list-group-item"><a href="#serviceevolution" itemprop="name url">Web Service Evolution</a></li>
+						</ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-9 center-col va-t" itemprop="mainContentOfPage">
+
+                    <div id="docs-content" class="tab-content pn" itemscope itemtype="http://schema.org/CollectionPage">
+
+                        
+<h1 class="page-header" itemprop="name headline">Service</h1>
+
+
+	<a name="apis">&nbsp;</a>
+	<h2 itemprop="name headline">Web Service API Styles</h2>
+	<hr/>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceAPIStyles/RemoteProcedureCallAPI" title="RPC API" name="RPC API" target="_blank" itemprop="name url">RPC API</a></h3>
+	<p itemprop="description">How can clients execute remote procedures over HTTP?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceAPIStyles/MessageAPI" title="Message API" name="Message API" target="_blank" itemprop="name url">Message API</a></h3>
+	<p itemprop="description">How can clients send commands, notifications, or other information to remote systems over HTTP while avoiding direct coupling to remote procedures?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceAPIStyles/ResourceAPI" title="Resource API" name="Resource API" target="_blank" itemprop="name url">Resource API</a></h3>
+	<p itemprop="description">How can a client manipulate data managed by a remote system, avoid direct coupling to remote procedures, and minimize the need for domain-specific APIs?</p>
+
+
+	<a name="clientserviteraction">&nbsp;</a>
+	<h2 itemprop="name headline">Client-Service Interactions</h2>
+	<hr/>
+
+	<h3><a href="http://www.servicedesignpatterns.com/ClientServiceInteractions/RequestResponse" title="Request/Response" name="Request/Response" target="_blank" itemprop="name url">Request/Response</a></h3>
+	<p itemprop="description">What's the simplest way for a web service to process a request and provide a result?</p>
+	
+	<h3><a href="http://www.servicedesignpatterns.com/ClientServiceInteractions/RequestAcknowledge" title="Request/Acknowledge" name="Request/Acknowledge" target="_blank" itemprop="name url">Request/Acknowledge</a></h3>
+	<p itemprop="description">How can a web service safeguard systems from spikes in request load and ensure that requests are processed even when the underlying systems are unavailable?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/ClientServiceInteractions/MediaTypeNegotiation" title="Media Type Negotiation" name="Media Type Negotiation" target="_blank" itemprop="name url">Media Type Negotiation</a></h3>
+	<p itemprop="description">How can a web service provide multiple representations of the same logical resource while minimizing the number of distinct URIs for that resource?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/ClientServiceInteractions/LinkedService" title="Linked Service" name="Linked Service" target="_blank" itemprop="name url">Linked Service</a></h3>
+	<p itemprop="description">Once a service has processed a request, how can a client discover the related services that may be called, and also be insulated from changing service locations and URI schemes?</p>
+
+
+	<a name="reqresmgmt">&nbsp;</a>
+	<h2 itemprop="name headline">Request and Response Management</h2>
+	<hr/>
+
+	<h3><a href="http://www.servicedesignpatterns.com/RequestAndResponseManagement/ServiceController" title="Service Controller" name="Service Controller" target="_blank" itemprop="name url">Service Controller</a></h3>
+	<p itemprop="description">How can the correct web service be executed without having to maintain complex parsing and routing logic?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/RequestAndResponseManagement/DataTransferObject" title="Data Transfer Object (DTO)" name="Data Transfer Object (DTO)" target="_blank" itemprop="name url">Data Transfer Object (DTO)</a></h3>
+	<p itemprop="description">How can one simplify manipulation of request and response data and also minimize dependencies between domain layer entities, request structures, and response structures?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/RequestAndResponseManagement/RequestMapper" title="Request Mapper" name="Request Mapper" target="_blank" itemprop="name url">Request Mapper</a></h3>
+	<p itemprop="description">How can a service process data from requests that are structurally different yet semantically equivalent?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/RequestAndResponseManagement/ResponseMapper" title="Response Mapper" name="Response Mapper" target="_blank" itemprop="name url">Response Mapper</a></h3>
+	<p itemprop="description">How can the logic required to construct a response be reused by multiple services?</p>
+
+
+	<a name="serviceimpl">&nbsp;</a>
+	<h2 itemprop="name headline">Web Service Implementation Styles</h2>
+	<hr/>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/TransactionScript" title="Transaction Script" name="Transaction Script" target="_blank" itemprop="name url">Transaction Script</a></h3>
+	<p itemprop="description">How can developers quickly implement web service logic?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/DatasourceAdapter" title="Datasource Adapter" name="Datasource Adapter" target="_blank" itemprop="name url">Datasource Adapter</a></h3>
+	<p itemprop="description">How can a web service provide access to internal resources like database tables, stored procedures, domain objects, or files with a minimum amount of custom code?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/OperationScript" title="Operation Script" name="Operation Script" target="_blank" itemprop="name url">Operation Script</a></h3>
+	<p itemprop="description">How can web services reuse common domain logic without duplicating code?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/CommandInvoker" title="Command Invoker" name="Command Invoker" target="_blank" itemprop="name url">Command Invoker</a></h3>
+	<p itemprop="description">How can web services with different APIs reuse common domain logic while enabling both synchronous and asynchronous request processing?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/WorkflowConnector" title="Workflow Connector" name="Workflow Connector" target="_blank" itemprop="name url">Workflow Connector</a></h3>
+	<p itemprop="description">How can web services be used to support complex and long-running business processes?</p>
+
+
+	<a name="serviceinfra">&nbsp;</a>
+	<h2 itemprop="name headline">Web Service Infrastructures</h2>
+	<hr/>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/ServiceConnector" title="Service Connector" name="Service Connector" target="_blank" itemprop="name url">Service Connector</a></h3>
+	<p itemprop="description">How can clients avoid duplicating the code required to use a specific service and also be insulated from the intricacies of communication logic?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/ServiceDescriptor" title="Service Descriptor" name="Service Descriptor" target="_blank" itemprop="name url">Service Descriptor</a></h3>
+	<p itemprop="description">How can development tools acquire the information necessary to use a web service, and how can the code for Service Connectors be generated?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/AsyncResponseHandler" title="Asynchronous Response Handler" name="Asynchronous Response Handler" target="_blank" itemprop="name url">Asynchronous Response Handler</a></h3>
+	<p itemprop="description">How can a client avoid blocking when sending a request?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/ServiceInterceptor" title="Service Interceptor" name="Service Interceptor" target="_blank" itemprop="name url">Service Interceptor</a></h3>
+	<p itemprop="description">How can common behaviors like authentication, caching, logging, exception handling, and validation be executed without having to modify the client or service code?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/IdempotentRetry" title="Idempotent Retry" name="Idempotent Retry" target="_blank" itemprop="name url">Idempotent Retry</a></h3>
+	<p itemprop="description">How can a client ensure that requests are delivered to a web service despite temporary network or server failures?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/BookInfo" title="SOA Infrastructures" name="SOA Infrastructures" target="_blank" itemprop="name url">SOA Infrastructures</a></h3>
+	<p itemprop="description">An overview of a few infrastructures frequently used in Service Oriented Architectures.</p>
+
+
+	<a name="serviceevolution">&nbsp;</a>
+	<h2 itemprop="name headline">Web Service Evolution</h2>
+	<hr/>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceEvolution/SingleMessageArgument" title="Single Message Argument" name="Single Message Argument" target="_blank" itemprop="name url">Single Message Argument</a></h3>
+	<p itemprop="description">How can a web service with an RPC API become less brittle and easily accommodate new parameters over time without breaking clients?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceEvolution/DatasetAmendment" title="Dataset Amendment" name="Dataset Amendment" target="_blank" itemprop="name url">Dataset Amendment</a></h3>
+	<p itemprop="description">How can a service augment the information it sends or receives while minimizing the probability of breaking changes?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceEvolution/TolerantReader" title="Tolerant Reader" name="Tolerant Reader" target="_blank" itemprop="name url">Tolerant Reader</a></h3>
+	<p itemprop="description">How can clients or services function properly when some of the content in the messages or media types they receive is unknown or when the data structures vary?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/WebServiceEvolution/ConsumerDrivenContracts" title="Consumer-Driven Contract" name="Consumer-Driven Contract" target="_blank" itemprop="name url">Consumer-Driven Contract</a></h3>
+	<p itemprop="description">How can a web service API reflect its clients' needs while enabling evolution and avoiding breaking clients?</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/BookInfo" title="Breaking Changes" name="Breaking Changes" target="_blank" itemprop="name url">Breaking Changes</a></h3>
+	<p itemprop="description">A breaking change is any service change that forces client developers to update their code or change configurations in 'lock-step' with the service deployment. Failure to change the client application at just the right time may cause it to crash. This section provides information to help you recognize the common causes of breaking changes for RESTful services and SOAP/WSDL services.</p>
+
+	<h3><a href="http://www.servicedesignpatterns.com/BookInfo" title="Versioning" name="Versioning" target="_blank" itemprop="name url">Versioning</a></h3>
+	<p itemprop="description">How can clients be notified about service changes?</p>
+
+
+<div><br /><br /></div>
+
+<hr/>
+
+<div class="alert alert-info alert-border-left mv30" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<b>Source(s):</b><br />
+<b itemprop="name">Service Design Patterns - Design Solutions for SOAP/WSDL and RESTful Web Services</b> <a class="alert-link" href="http://www.servicedesignpatterns.com/" title="http://www.servicedesignpatterns.com/" target="_blank" itemprop="url">http://www.servicedesignpatterns.com/</a><br />
+</div>
+
+                        <div class="top-wrapper clearfix" itemscope itemtype="http://schema.org/WPFooter">
+                            <a href="#" class="return-top">Return to Top</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-61553779-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html>
