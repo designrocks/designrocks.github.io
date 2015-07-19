@@ -56,6 +56,12 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 		<priority>1.0</priority>
 	</url>
 	<url>
+		<loc>http://design.patterns.rocks/service-oriented-architecture/index.html</loc>
+		<lastmod>2015-07-19</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
 		<loc>http://design.patterns.rocks/service/index.html</loc>
 		<lastmod>2015-07-19</lastmod>
 		<changefreq>daily</changefreq>
