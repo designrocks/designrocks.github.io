@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title itemprop="name">List | Design Patterns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="design patterns, Gang of Four, Enterprise, integration, microservice, javascript" />
+<meta name="description" content="A collection of various design patterns.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="search" title="Search" href="/" />
+<link rel="copyright" title="About" href="/about.html" />
+<link rel="author" title="About" href="/about.html" />
+<link rel="home" title="" href="/" id="homelink" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="canonical" href="http://design.patterns.rocks/" />
+
+<!-- Font CSS (Via CDN) -->
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'>
+
+<!-- Core CSS -->
+<link rel="stylesheet" type="text/css" href="min2.css">
+<!--<link rel="stylesheet" type="text/css" href="theme.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="awesomplete.css">
+<link rel="stylesheet" type="text/css" href="st.css">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body style="min-height: 1500px;" itemscope itemtype="http://schema.org/WebPage">
+
+    <nav class="navbar bg-light docs-navbar" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="container">
+        <div class="navbar-header" itemprop="name">
+            <a class="navbar-brand" href="../index.html" hreflang="en"><b>Design Patterns</b></a>
+        </div>
+
+        <div class="navbar-collapse" id="navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="mi"><a href="index.html" hreflang="en" title="Design Patterns Home" itemprop="url name">Home</a></li>
+                    <li class="mp"><a href="categories.html" hreflang="en" title="Design Pattern Categories" itemprop="url name">Patterns</a></li>
+                    <li class="mi active"><a href="abc.html" hreflang="en" title="Design Pattern Index" itemprop="url name">Index</a></li>
+                    <li class="mc"><a href="changelog.html" hreflang="en" title="Changelog" itemprop="url name">Changelog</a></li>
+                    <li class="ma"><a href="about.html" hreflang="en" title="About" itemprop="url name">About</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        <div class="docs-container" id="docs">
+            <div class="row table-layout">
+                <div class="col-xs-3 left-col" itemscope itemtype="http://schema.org/WPSideBar">
+                    <div id="nav-spy" class="posr">
+                        <ul class="list-group list-group-accordion" itemscope itemtype="http://schema.org/Offer">
+						  <li class="list-group-item list-group-header br-n" itemprop="name">&nbsp;</li>
+						  <li class="list-group-item active"><a href="#" itemprop="category" class="nohand">Index</a></li>
+						  <li class="list-group-item"><a href="#A" itemprop="name url">A</a></li>
+						  <li class="list-group-item"><a href="#B" itemprop="name url">B</a></li>
+						  <li class="list-group-item"><a href="#C" itemprop="name url">C</a></li>
+						  <li class="list-group-item"><a href="#D" itemprop="name url">D</a></li>
+						  <li class="list-group-item"><a href="#E" itemprop="name url">E</a></li>
+						  <li class="list-group-item"><a href="#F" itemprop="name url">F</a></li>
+						  <li class="list-group-item"><a href="#G" itemprop="name url">G</a></li>
+						  <li class="list-group-item"><a href="#H" itemprop="name url">H</a></li>
+						  <li class="list-group-item"><a href="#I" itemprop="name url">I</a></li>
+						  <li class="list-group-item"><a href="#J" itemprop="name url">J</a></li>
+						  <li class="list-group-item"><a href="#K" itemprop="name url">K</a></li>
+						  <li class="list-group-item"><a href="#L" itemprop="name url">L</a></li>
+						  <li class="list-group-item"><a href="#M" itemprop="name url">M</a></li>
+						  <li class="list-group-item"><a href="#N" itemprop="name url">N</a></li>
+						  <li class="list-group-item"><a href="#O" itemprop="name url">O</a></li>
+						  <li class="list-group-item"><a href="#P" itemprop="name url">P</a></li>
+						  <li class="list-group-item"><a href="#Q" itemprop="name url">Q</a></li>
+						  <li class="list-group-item"><a href="#R" itemprop="name url">R</a></li>
+						  <li class="list-group-item"><a href="#S" itemprop="name url">S</a></li>
+						  <li class="list-group-item"><a href="#T" itemprop="name url">T</a></li>
+						  <li class="list-group-item"><a href="#U" itemprop="name url">U</a></li>
+						  <li class="list-group-item"><a href="#V" itemprop="name url">V</a></li>
+						  <li class="list-group-item"><a href="#W" itemprop="name url">W</a></li>
+						  <li class="list-group-item"><a href="#X" itemprop="name url">X</a></li>
+						  <li class="list-group-item"><a href="#Y" itemprop="name url">Y</a></li>
+						  <li class="list-group-item"><a href="#Z" itemprop="name url">Z</a></li>
+						  <li class="list-group-item"><a href="#_" itemprop="name url">_</a></li>
+						</ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-9 center-col va-t" itemprop="mainContentOfPage">
+
+                    <div id="docs-content" class="tab-content pn" itemscope itemtype="http://schema.org/CollectionPage">
+
+
+                        <a name="A">&nbsp;</a><h2 itemprop="name headline">A</h2><hr/>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/cp5-a-temporary-constructor.html" title="A Temporary Constructor pattern" name="A Temporary Constructor pattern" target="_blank" itemprop="name url">A Temporary Constructor pattern</a></h3>
+<h3><a href="http://microservices.io/patterns/apigateway.html" title="API Gateway pattern" name="API Gateway pattern" target="_blank" itemprop="name url">API Gateway pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Abstract_factory_pattern" title="Abstract factory pattern" name="Abstract factory pattern" target="_blank" itemprop="name url">Abstract factory pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/access-to-global-object.html" title="Access to the Global Object pattern" name="Access to the Global Object pattern" target="_blank" itemprop="name url">Access to the Global Object pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Active_object" title="Active Object pattern" name="Active Object pattern" target="_blank" itemprop="name url">Active Object pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/activeRecord.html" title="Active Record pattern" name="Active Record pattern" target="_blank" itemprop="name url">Active Record pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Adapter_pattern" title="Adapter pattern" name="Adapter pattern" target="_blank" itemprop="name url">Adapter pattern</a></h3>
+<h3><a href="http://blog.arungupta.me/microservice-design-patterns/" title="Aggregator Microservice pattern" name="Aggregator Microservice pattern" target="_blank" itemprop="name url">Aggregator Microservice pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/Aggregator.html" title="Aggregator pattern" name="Aggregator pattern" target="_blank" itemprop="name url">Aggregator pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/agnostic_capability" title="Agnostic Capability" name="Agnostic Capability" target="_blank" itemprop="name url">Agnostic Capability</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/agnostic_context" title="Agnostic Context" name="Agnostic Context" target="_blank" itemprop="name url">Agnostic Context</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/agnostic_sub_controller" title="Agnostic Sub-Controller" name="Agnostic Sub-Controller" target="_blank" itemprop="name url">Agnostic Sub-Controller</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/append.html" title="Append pattern" name="Append pattern" target="_blank" itemprop="name url">Append pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/applicationController.html" title="Application Controller pattern" name="Application Controller pattern" target="_blank" itemprop="name url">Application Controller pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/literals-and-constructors/array-literal.html" title="Array literal pattern" name="Array literal pattern" target="_blank" itemprop="name url">Array literal pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/associationTableMapping.html" title="Association Table Mapping pattern" name="Association Table Mapping pattern" target="_blank" itemprop="name url">Association Table Mapping pattern</a></h3>
+<h3><a href="http://blog.arungupta.me/microservice-design-patterns/" title="Asynchronous Messaging Microservice pattern" name="Asynchronous Messaging Microservice pattern" target="_blank" itemprop="name url">Asynchronous Messaging Microservice pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/asynchronous_queuing" title="Asynchronous Queuing" name="Asynchronous Queuing" target="_blank" itemprop="name url">Asynchronous Queuing</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/AsyncResponseHandler" title="Asynchronous Response Handler" name="Asynchronous Response Handler" target="_blank" itemprop="name url">Asynchronous Response Handler</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/atomic_service_transaction" title="Atomic Service Transaction" name="Atomic Service Transaction" target="_blank" itemprop="name url">Atomic Service Transaction</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/augmented_protocols" title="Augmented Protocols" name="Augmented Protocols" target="_blank" itemprop="name url">Augmented Protocols</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/avoiding-eval.html" title="Avoiding eval() pattern" name="Avoiding eval() pattern" target="_blank" itemprop="name url">Avoiding eval() pattern</a></h3>
+<a name="B">&nbsp;</a><h2 itemprop="name headline">B</h2><hr/>
+<h3><a href="http://en.wikipedia.org/wiki/Balking_pattern" title="Balking pattern" name="Balking pattern" target="_blank" itemprop="name url">Balking pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Barrier_(computer_science)" title="Barrier pattern" name="Barrier pattern" target="_blank" itemprop="name url">Barrier pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/basic.html" title="Basic pattern" name="Basic pattern" target="_blank" itemprop="name url">Basic pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/specific-when-needed.html" title="Be Specific when Needed pattern" name="Be Specific when Needed pattern" target="_blank" itemprop="name url">Be Specific when Needed pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/best-options.html" title="Best options pattern" name="Best options pattern" target="_blank" itemprop="name url">Best options pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/borrowing-methods.html" title="Borrowing Methods pattern" name="Borrowing Methods pattern" target="_blank" itemprop="name url">Borrowing Methods pattern</a></h3>
+<h3><a href="http://blog.arungupta.me/microservice-design-patterns/" title="Branch Microservice pattern" name="Branch Microservice pattern" target="_blank" itemprop="name url">Branch Microservice pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/BookInfo" title="Breaking Changes" name="Breaking Changes" target="_blank" itemprop="name url">Breaking Changes</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Bridge_pattern" title="Bridge pattern" name="Bridge pattern" target="_blank" itemprop="name url">Bridge pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/brokered_authentication" title="Brokered Authentication" name="Brokered Authentication" target="_blank" itemprop="name url">Brokered Authentication</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/builder.html" title="Builder pattern" name="Builder pattern" target="_blank" itemprop="name url">Builder pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Builder_pattern" title="Builder pattern" name="Builder pattern" target="_blank" itemprop="name url">Builder pattern</a></h3>
+<a name="C">&nbsp;</a><h2 itemprop="name headline">C</h2><hr/>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/callback.html" title="Callback pattern" name="Callback pattern" target="_blank" itemprop="name url">Callback pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/CanonicalDataModel.html" title="Canonical Data Model pattern" name="Canonical Data Model pattern" target="_blank" itemprop="name url">Canonical Data Model pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/canonical_expression" title="Canonical Expression" name="Canonical Expression" target="_blank" itemprop="name url">Canonical Expression</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/canonical_protocol" title="Canonical Protocol" name="Canonical Protocol" target="_blank" itemprop="name url">Canonical Protocol</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/canonical_resources" title="Canonical Resources" name="Canonical Resources" target="_blank" itemprop="name url">Canonical Resources</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/canonical_schema" title="Canonical Schema" name="Canonical Schema" target="_blank" itemprop="name url">Canonical Schema</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/canonical_versioning" title="Canonical Versioning" name="Canonical Versioning" target="_blank" itemprop="name url">Canonical Versioning</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/capability_composition" title="Capability Composition" name="Capability Composition" target="_blank" itemprop="name url">Capability Composition</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/capability_recomposition" title="Capability Recomposition" name="Capability Recomposition" target="_blank" itemprop="name url">Capability Recomposition</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/chain-of-responsibility.html" title="Chain of responsibility pattern" name="Chain of responsibility pattern" target="_blank" itemprop="name url">Chain of responsibility pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Chain-of-responsibility_pattern" title="Chain of responsibility pattern" name="Chain of responsibility pattern" target="_blank" itemprop="name url">Chain of responsibility pattern</a></h3>
+<h3><a href="http://blog.arungupta.me/microservice-design-patterns/" title="Chained Microservice pattern" name="Chained Microservice pattern" target="_blank" itemprop="name url">Chained Microservice pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/chaining.html" title="Chaining pattern" name="Chaining pattern" target="_blank" itemprop="name url">Chaining pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/ChannelAdapter.html" title="Channel Adapter pattern" name="Channel Adapter pattern" target="_blank" itemprop="name url">Channel Adapter pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/ChannelPurger.html" title="Channel Purger pattern" name="Channel Purger pattern" target="_blank" itemprop="name url">Channel Purger pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/StoreInLibrary.html" title="Claim Check pattern" name="Claim Check pattern" target="_blank" itemprop="name url">Claim Check pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/classTableInheritance.html" title="Class Table Inheritance pattern" name="Class Table Inheritance pattern" target="_blank" itemprop="name url">Class Table Inheritance pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/clientSessionState.html" title="Client Session State pattern" name="Client Session State pattern" target="_blank" itemprop="name url">Client Session State pattern</a></h3>
+<h3><a href="http://microservices.io/patterns/client-side-discovery.html" title="Client-side service discovery pattern" name="Client-side service discovery pattern" target="_blank" itemprop="name url">Client-side service discovery pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/coarseGrainedLock.html" title="Coarse Grained Lock pattern" name="Coarse Grained Lock pattern" target="_blank" itemprop="name url">Coarse Grained Lock pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/CommandInvoker" title="Command Invoker" name="Command Invoker" target="_blank" itemprop="name url">Command Invoker</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/CommandMessage.html" title="Command Message pattern" name="Command Message pattern" target="_blank" itemprop="name url">Command Message pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Command_pattern" title="Command pattern" name="Command pattern" target="_blank" itemprop="name url">Command pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/command.html" title="Command pattern" name="Command pattern" target="_blank" itemprop="name url">Command pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/compatible_change" title="Compatible Change" name="Compatible Change" target="_blank" itemprop="name url">Compatible Change</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/compensating_service_transaction" title="Compensating Service Transaction" name="Compensating Service Transaction" target="_blank" itemprop="name url">Compensating Service Transaction</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/CompetingConsumers.html" title="Competing Consumers pattern" name="Competing Consumers pattern" target="_blank" itemprop="name url">Competing Consumers pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/DistributionAggregate.html" title="Composed Message Processor pattern" name="Composed Message Processor pattern" target="_blank" itemprop="name url">Composed Message Processor pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Composite_pattern" title="Composite pattern" name="Composite pattern" target="_blank" itemprop="name url">Composite pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/composition_autonomy" title="Composition Autonomy" name="Composition Autonomy" target="_blank" itemprop="name url">Composition Autonomy</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/concreteTableInheritance.html" title="Concrete Table Inheritance pattern" name="Concrete Table Inheritance pattern" target="_blank" itemprop="name url">Concrete Table Inheritance pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/concurrent_contracts" title="Concurrent Contracts" name="Concurrent Contracts" target="_blank" itemprop="name url">Concurrent Contracts</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/conditionals.html" title="Conditionals pattern" name="Conditionals pattern" target="_blank" itemprop="name url">Conditionals pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/configuration-objects.html" title="Configuration objects pattern" name="Configuration objects pattern" target="_blank" itemprop="name url">Configuration objects pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceEvolution/ConsumerDrivenContracts" title="Consumer-Driven Contract" name="Consumer-Driven Contract" target="_blank" itemprop="name url">Consumer-Driven Contract</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/DataEnricher.html" title="Content Enricher pattern" name="Content Enricher pattern" target="_blank" itemprop="name url">Content Enricher pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/DataEnricher.html" title="Content Enricher pattern" name="Content Enricher pattern" target="_blank" itemprop="name url">Content Enricher pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/ContentFilter.html" title="Content Filter pattern" name="Content Filter pattern" target="_blank" itemprop="name url">Content Filter pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/ContentBasedRouter.html" title="Content-Based Router pattern" name="Content-Based Router pattern" target="_blank" itemprop="name url">Content-Based Router pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/context-and-find.html" title="Context and find pattern" name="Context and find pattern" target="_blank" itemprop="name url">Context and find pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/contract_centralization" title="Contract Centralization" name="Contract Centralization" target="_blank" itemprop="name url">Contract Centralization</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/contract_denormalization" title="Contract Denormalization" name="Contract Denormalization" target="_blank" itemprop="name url">Contract Denormalization</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/ControlBus.html" title="Control Bus pattern" name="Control Bus pattern" target="_blank" itemprop="name url">Control Bus pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/CorrelationIdentifier.html" title="Correlation Identifier pattern" name="Correlation Identifier pattern" target="_blank" itemprop="name url">Correlation Identifier pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/cross_domain_utility_layer" title="Cross-Domain Utility Layer" name="Cross-Domain Utility Layer" target="_blank" itemprop="name url">Cross-Domain Utility Layer</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/currying.html" title="Currying pattern" name="Currying pattern" target="_blank" itemprop="name url">Currying pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/custom-events.html" title="Custom events (Pseudo Pub/Sub) pattern" name="Custom events (Pseudo Pub/Sub) pattern" target="_blank" itemprop="name url">Custom events (Pseudo Pub/Sub) pattern</a></h3>
+<a name="D">&nbsp;</a><h2 itemprop="name headline">D</h2><hr/>
+<h3><a href="http://soapatterns.org/design_patterns/data_confidentiality" title="Data Confidentiality" name="Data Confidentiality" target="_blank" itemprop="name url">Data Confidentiality</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/data_format_transformation" title="Data Format Transformation" name="Data Format Transformation" target="_blank" itemprop="name url">Data Format Transformation</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/dataMapper.html" title="Data Mapper pattern" name="Data Mapper pattern" target="_blank" itemprop="name url">Data Mapper pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/data_model_transformation" title="Data Model Transformation" name="Data Model Transformation" target="_blank" itemprop="name url">Data Model Transformation</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/data_origin_authentication" title="Data Origin Authentication" name="Data Origin Authentication" target="_blank" itemprop="name url">Data Origin Authentication</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/RequestAndResponseManagement/DataTransferObject" title="Data Transfer Object (DTO)" name="Data Transfer Object (DTO)" target="_blank" itemprop="name url">Data Transfer Object (DTO)</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/dataTransferObject.html" title="Data Transfer Object (DTO) pattern" name="Data Transfer Object (DTO) pattern" target="_blank" itemprop="name url">Data Transfer Object (DTO) pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/data.html" title="Data pattern" name="Data pattern" target="_blank" itemprop="name url">Data pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/databaseSessionState.html" title="Database Session State pattern" name="Database Session State pattern" target="_blank" itemprop="name url">Database Session State pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceEvolution/DatasetAmendment" title="Dataset Amendment" name="Dataset Amendment" target="_blank" itemprop="name url">Dataset Amendment</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/DatasourceAdapter" title="Datasource Adapter" name="Datasource Adapter" target="_blank" itemprop="name url">Datasource Adapter</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/DatatypeChannel.html" title="Datatype Channel pattern" name="Datatype Channel pattern" target="_blank" itemprop="name url">Datatype Channel pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/DeadLetterChannel.html" title="Dead Letter Channel pattern" name="Dead Letter Channel pattern" target="_blank" itemprop="name url">Dead Letter Channel pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/decending-from-id.html" title="Decending from id pattern" name="Decending from id pattern" target="_blank" itemprop="name url">Decending from id pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/declaring-dependencies.html" title="Declaring Dependencies pattern" name="Declaring Dependencies pattern" target="_blank" itemprop="name url">Declaring Dependencies pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/decomposed_capability" title="Decomposed Capability" name="Decomposed Capability" target="_blank" itemprop="name url">Decomposed Capability</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Decorator_pattern" title="Decorator pattern" name="Decorator pattern" target="_blank" itemprop="name url">Decorator pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/decorator.html" title="Decorator pattern" name="Decorator pattern" target="_blank" itemprop="name url">Decorator pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/decoupled_contract" title="Decoupled Contract" name="Decoupled Contract" target="_blank" itemprop="name url">Decoupled Contract</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/dependentMapping.html" title="Dependent Mapping pattern" name="Dependent Mapping pattern" target="_blank" itemprop="name url">Dependent Mapping pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/detach.html" title="Detach pattern" name="Detach pattern" target="_blank" itemprop="name url">Detach pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/Detour.html" title="Detour pattern" name="Detour pattern" target="_blank" itemprop="name url">Detour pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/direct_authentication" title="Direct Authentication" name="Direct Authentication" target="_blank" itemprop="name url">Direct Authentication</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Disruptor_(software_pattern)" title="Disruptor pattern" name="Disruptor pattern" target="_blank" itemprop="name url">Disruptor pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/distributed_capability" title="Distributed Capability" name="Distributed Capability" target="_blank" itemprop="name url">Distributed Capability</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/DocumentMessage.html" title="Document Message pattern" name="Document Message pattern" target="_blank" itemprop="name url">Document Message pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/domain_inventory" title="Domain Inventory" name="Domain Inventory" target="_blank" itemprop="name url">Domain Inventory</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/domainModel.html" title="Domain Model pattern" name="Domain Model pattern" target="_blank" itemprop="name url">Domain Model pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Double-checked_locking" title="Double-checked locking pattern" name="Double-checked locking pattern" target="_blank" itemprop="name url">Double-checked locking pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/dual_protocols" title="Dual Protocols" name="Dual Protocols" target="_blank" itemprop="name url">Dual Protocols</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/DurableSubscription.html" title="Durable Subscriber pattern" name="Durable Subscriber pattern" target="_blank" itemprop="name url">Durable Subscriber pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/DynamicRouter.html" title="Dynamic Router pattern" name="Dynamic Router pattern" target="_blank" itemprop="name url">Dynamic Router pattern</a></h3>
+<a name="E">&nbsp;</a><h2 itemprop="name headline">E</h2><hr/>
+<h3><a href="http://martinfowler.com/eaaCatalog/embeddedValue.html" title="Embedded Value pattern" name="Embedded Value pattern" target="_blank" itemprop="name url">Embedded Value pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/literals-and-constructors/enforcing-new.html" title="Enforcing "new" pattern" name="Enforcing "new" pattern" target="_blank" itemprop="name url">Enforcing "new" pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/enterprise_inventory" title="Enterprise Inventory" name="Enterprise Inventory" target="_blank" itemprop="name url">Enterprise Inventory</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/entity_abstraction" title="Entity Abstraction" name="Entity Abstraction" target="_blank" itemprop="name url">Entity Abstraction</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/entity_linking" title="Entity Linking" name="Entity Linking" target="_blank" itemprop="name url">Entity Linking</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/EnvelopeWrapper.html" title="Envelope Wrapper pattern" name="Envelope Wrapper pattern" target="_blank" itemprop="name url">Envelope Wrapper pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/EventMessage.html" title="Event Message pattern" name="Event Message pattern" target="_blank" itemprop="name url">Event Message pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/event-delegation.html" title="Event delegation pattern" name="Event delegation pattern" target="_blank" itemprop="name url">Event delegation pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/EventDrivenConsumer.html" title="Event-Driven Consumer pattern" name="Event-Driven Consumer pattern" target="_blank" itemprop="name url">Event-Driven Consumer pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/event_driven_messaging" title="Event-Driven Messaging" name="Event-Driven Messaging" target="_blank" itemprop="name url">Event-Driven Messaging</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/exception_shielding" title="Exception Shielding" name="Exception Shielding" target="_blank" itemprop="name url">Exception Shielding</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/extend.html" title="Extend pattern" name="Extend pattern" target="_blank" itemprop="name url">Extend pattern</a></h3>
+<a name="F">&nbsp;</a><h2 itemprop="name headline">F</h2><hr/>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/facade.html" title="Facade pattern" name="Facade pattern" target="_blank" itemprop="name url">Facade pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Facade_pattern" title="Facade pattern" name="Facade pattern" target="_blank" itemprop="name url">Facade pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Factory_method_pattern" title="Factory method pattern" name="Factory method pattern" target="_blank" itemprop="name url">Factory method pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/factory.html" title="Factory method pattern" name="Factory method pattern" target="_blank" itemprop="name url">Factory method pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/file_gateway" title="File Gateway" name="File Gateway" target="_blank" itemprop="name url">File Gateway</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/FileTransferIntegration.html" title="File Transfer pattern" name="File Transfer pattern" target="_blank" itemprop="name url">File Transfer pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Flyweight_pattern" title="Flyweight pattern" name="Flyweight pattern" target="_blank" itemprop="name url">Flyweight pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/for-loops.html" title="For loops pattern" name="For loops pattern" target="_blank" itemprop="name url">For loops pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/foreignKeyMapping.html" title="Foreign Key Mapping pattern" name="Foreign Key Mapping pattern" target="_blank" itemprop="name url">Foreign Key Mapping pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/FormatIndicator.html" title="Format Indicator pattern" name="Format Indicator pattern" target="_blank" itemprop="name url">Format Indicator pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/frontController.html" title="Front Controller pattern" name="Front Controller pattern" target="_blank" itemprop="name url">Front Controller pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/function-declarations.html" title="Function Declaration pattern" name="Function Declaration pattern" target="_blank" itemprop="name url">Function Declaration pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/functional_decomposition" title="Functional Decomposition" name="Functional Decomposition" target="_blank" itemprop="name url">Functional Decomposition</a></h3>
+<a name="G">&nbsp;</a><h2 itemprop="name headline">G</h2><hr/>
+<h3><a href="http://martinfowler.com/eaaCatalog/gateway.html" title="Gateway pattern" name="Gateway pattern" target="_blank" itemprop="name url">Gateway pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/GuaranteedMessaging.html" title="Guaranteed Delivery pattern" name="Guaranteed Delivery pattern" target="_blank" itemprop="name url">Guaranteed Delivery pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Guarded_suspension" title="Guarded suspension pattern" name="Guarded suspension pattern" target="_blank" itemprop="name url">Guarded suspension pattern</a></h3>
+<a name="H">&nbsp;</a><h2 itemprop="name headline">H</h2><hr/>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/highly-configurable-mutable.html" title="Highly configurable mutable pattern" name="Highly configurable mutable pattern" target="_blank" itemprop="name url">Highly configurable mutable pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/hoisting.html" title="Hoisting pattern" name="Hoisting pattern" target="_blank" itemprop="name url">Hoisting pattern</a></h3>
+<a name="I">&nbsp;</a><h2 itemprop="name headline">I</h2><hr/>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/IdempotentReceiver.html" title="Idempotent Receiver pattern" name="Idempotent Receiver pattern" target="_blank" itemprop="name url">Idempotent Receiver pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/IdempotentRetry" title="Idempotent Retry" name="Idempotent Retry" target="_blank" itemprop="name url">Idempotent Retry</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/identityField.html" title="Identity Field pattern" name="Identity Field pattern" target="_blank" itemprop="name url">Identity Field pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/identityMap.html" title="Identity Map pattern" name="Identity Map pattern" target="_blank" itemprop="name url">Identity Map pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/immediate-functions.html" title="Immediate functions pattern" name="Immediate functions pattern" target="_blank" itemprop="name url">Immediate functions pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/immediate-object-initialization.html" title="Immediate object initialization pattern" name="Immediate object initialization pattern" target="_blank" itemprop="name url">Immediate object initialization pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/implicitLock.html" title="Implicit Lock pattern" name="Implicit Lock pattern" target="_blank" itemprop="name url">Implicit Lock pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/avoiding-implied-typecasting.html" title="Implied Typecasting pattern" name="Implied Typecasting pattern" target="_blank" itemprop="name url">Implied Typecasting pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/inheritanceMappers.html" title="Inheritance Mappers pattern" name="Inheritance Mappers pattern" target="_blank" itemprop="name url">Inheritance Mappers pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/inheritance-by-copying-properties.html" title="Inheritance by Copying Properties pattern" name="Inheritance by Copying Properties pattern" target="_blank" itemprop="name url">Inheritance by Copying Properties pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/init-time-branching.html" title="Init-time branching pattern" name="Init-time branching pattern" target="_blank" itemprop="name url">Init-time branching pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/intermediate_routing" title="Intermediate Routing" name="Intermediate Routing" target="_blank" itemprop="name url">Intermediate Routing</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Interpreter_pattern" title="Interpreter pattern" name="Interpreter pattern" target="_blank" itemprop="name url">Interpreter pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/InvalidMessageChannel.html" title="Invalid Message Channel pattern" name="Invalid Message Channel pattern" target="_blank" itemprop="name url">Invalid Message Channel pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/inventory_endpoint" title="Inventory Endpoint" name="Inventory Endpoint" target="_blank" itemprop="name url">Inventory Endpoint</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Iterator_pattern" title="Iterator pattern" name="Iterator pattern" target="_blank" itemprop="name url">Iterator pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/iterator.html" title="Iterator pattern" name="Iterator pattern" target="_blank" itemprop="name url">Iterator pattern</a></h3>
+<a name="J">&nbsp;</a><h2 itemprop="name headline">J</h2><hr/>
+<a name="K">&nbsp;</a><h2 itemprop="name headline">K</h2><hr/>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/klass.html" title="Klass pattern" name="Klass pattern" target="_blank" itemprop="name url">Klass pattern</a></h3>
+<a name="L">&nbsp;</a><h2 itemprop="name headline">L</h2><hr/>
+<h3><a href="http://martinfowler.com/eaaCatalog/layerSupertype.html" title="Layer Supertype pattern" name="Layer Supertype pattern" target="_blank" itemprop="name url">Layer Supertype pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/lazyLoad.html" title="Lazy Load pattern" name="Lazy Load pattern" target="_blank" itemprop="name url">Lazy Load pattern</a></h3>
+<h3><a href="" title="Leaders/followers pattern" name="Leaders/followers pattern" target="_blank" itemprop="name url">Leaders/followers pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/left-and-right.html" title="Left and Right pattern" name="Left and Right pattern" target="_blank" itemprop="name url">Left and Right pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/legacy_wrapper" title="Legacy Wrapper" name="Legacy Wrapper" target="_blank" itemprop="name url">Legacy Wrapper</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/lightweight_endpoint" title="Lightweight Endpoint" name="Lightweight Endpoint" target="_blank" itemprop="name url">Lightweight Endpoint</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/lightweight.html" title="Lightweight pattern" name="Lightweight pattern" target="_blank" itemprop="name url">Lightweight pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/ClientServiceInteractions/LinkedService" title="Linked Service" name="Linked Service" target="_blank" itemprop="name url">Linked Service</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/logic_centralization" title="Logic Centralization" name="Logic Centralization" target="_blank" itemprop="name url">Logic Centralization</a></h3>
+<a name="M">&nbsp;</a><h2 itemprop="name headline">M</h2><hr/>
+<h3><a href="http://martinfowler.com/eaaCatalog/mapper.html" title="Mapper pattern" name="Mapper pattern" target="_blank" itemprop="name url">Mapper pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/ClientServiceInteractions/MediaTypeNegotiation" title="Media Type Negotiation" name="Media Type Negotiation" target="_blank" itemprop="name url">Media Type Negotiation</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Mediator_pattern" title="Mediator pattern" name="Mediator pattern" target="_blank" itemprop="name url">Mediator pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/mediator.html" title="Mediator pattern" name="Mediator pattern" target="_blank" itemprop="name url">Mediator pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Memento_pattern" title="Memento pattern" name="Memento pattern" target="_blank" itemprop="name url">Memento pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/memoization.html" title="Memoization pattern" name="Memoization pattern" target="_blank" itemprop="name url">Memoization pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceAPIStyles/MessageAPI" title="Message API" name="Message API" target="_blank" itemprop="name url">Message API</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageBroker.html" title="Message Broker pattern" name="Message Broker pattern" target="_blank" itemprop="name url">Message Broker pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageBus.html" title="Message Bus pattern" name="Message Bus pattern" target="_blank" itemprop="name url">Message Bus pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageChannel.html" title="Message Channel pattern" name="Message Channel pattern" target="_blank" itemprop="name url">Message Channel pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageDispatcher.html" title="Message Dispatcher pattern" name="Message Dispatcher pattern" target="_blank" itemprop="name url">Message Dispatcher pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageEndpoint.html" title="Message Endpoint pattern" name="Message Endpoint pattern" target="_blank" itemprop="name url">Message Endpoint pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageExpiration.html" title="Message Expiration pattern" name="Message Expiration pattern" target="_blank" itemprop="name url">Message Expiration pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/Filter.html" title="Message Filter pattern" name="Message Filter pattern" target="_blank" itemprop="name url">Message Filter pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageHistory.html" title="Message History pattern" name="Message History pattern" target="_blank" itemprop="name url">Message History pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageTranslator.html" title="Message Router pattern" name="Message Router pattern" target="_blank" itemprop="name url">Message Router pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageRouter.html" title="Message Router pattern" name="Message Router pattern" target="_blank" itemprop="name url">Message Router pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/message_screening" title="Message Screening" name="Message Screening" target="_blank" itemprop="name url">Message Screening</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageSequence.html" title="Message Sequence pattern" name="Message Sequence pattern" target="_blank" itemprop="name url">Message Sequence pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageStore.html" title="Message Store pattern" name="Message Store pattern" target="_blank" itemprop="name url">Message Store pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/Message.html" title="Message pattern" name="Message pattern" target="_blank" itemprop="name url">Message pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessagingBridge.html" title="Messaging Bridge pattern" name="Messaging Bridge pattern" target="_blank" itemprop="name url">Messaging Bridge pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessagingGateway.html" title="Messaging Gateway pattern" name="Messaging Gateway pattern" target="_blank" itemprop="name url">Messaging Gateway pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessagingMapper.html" title="Messaging Mapper pattern" name="Messaging Mapper pattern" target="_blank" itemprop="name url">Messaging Mapper pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/messaging_metadata" title="Messaging Metadata" name="Messaging Metadata" target="_blank" itemprop="name url">Messaging Metadata</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/Messaging.html" title="Messaging pattern" name="Messaging pattern" target="_blank" itemprop="name url">Messaging pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/metadata_centralization" title="Metadata Centralization" name="Metadata Centralization" target="_blank" itemprop="name url">Metadata Centralization</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/metadataMapping.html" title="Metadata Mapping pattern" name="Metadata Mapping pattern" target="_blank" itemprop="name url">Metadata Mapping pattern</a></h3>
+<h3><a href="http://microservices.io/patterns/microservices.html" title="Microservices Architecture pattern" name="Microservices Architecture pattern" target="_blank" itemprop="name url">Microservices Architecture pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/minimizing-globals.html" title="Minimizing Globals pattern" name="Minimizing Globals pattern" target="_blank" itemprop="name url">Minimizing Globals pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/mix-ins.html" title="Mix-ins pattern" name="Mix-ins pattern" target="_blank" itemprop="name url">Mix-ins pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/modelViewController.html" title="Model View Controller pattern" name="Model View Controller pattern" target="_blank" itemprop="name url">Model View Controller pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/module.html" title="Module pattern" name="Module pattern" target="_blank" itemprop="name url">Module pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/money.html" title="Money pattern" name="Money pattern" target="_blank" itemprop="name url">Money pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Monitor_(synchronization)" title="Monitor pattern" name="Monitor pattern" target="_blank" itemprop="name url">Monitor pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/multi_channel_endpoint" title="Multi-Channel Endpoint" name="Multi-Channel Endpoint" target="_blank" itemprop="name url">Multi-Channel Endpoint</a></h3>
+<h3><a href="http://microservices.io/patterns/deployment/multiple-services-per-host.html" title="Multiple service instances per host pattern" name="Multiple service instances per host pattern" target="_blank" itemprop="name url">Multiple service instances per host pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/sugar-method.html" title="method() Method pattern" name="method() Method pattern" target="_blank" itemprop="name url">method() Method pattern</a></h3>
+<a name="N">&nbsp;</a><h2 itemprop="name headline">N</h2><hr/>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/namespace.html" title="Namespace pattern" name="Namespace pattern" target="_blank" itemprop="name url">Namespace pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/namespaced-starter.html" title="Namespaced pattern" name="Namespaced pattern" target="_blank" itemprop="name url">Namespaced pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/non_agnostic_context" title="Non-Agnostic Context" name="Non-Agnostic Context" target="_blank" itemprop="name url">Non-Agnostic Context</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/Normalizer.html" title="Normalizer pattern" name="Normalizer pattern" target="_blank" itemprop="name url">Normalizer pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/parseint.html" title="Number Conversions with parseInt() pattern" name="Number Conversions with parseInt() pattern" target="_blank" itemprop="name url">Number Conversions with parseInt() pattern</a></h3>
+<a name="O">&nbsp;</a><h2 itemprop="name headline">O</h2><hr/>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/object-constants.html" title="Object Constants pattern" name="Object Constants pattern" target="_blank" itemprop="name url">Object Constants pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/literals-and-constructors/object-literal.html" title="Object literal pattern" name="Object literal pattern" target="_blank" itemprop="name url">Object literal pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Observer_pattern" title="Observer pattern" name="Observer pattern" target="_blank" itemprop="name url">Observer pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/observer.html" title="Observer pattern" name="Observer pattern" target="_blank" itemprop="name url">Observer pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/OperationScript" title="Operation Script" name="Operation Script" target="_blank" itemprop="name url">Operation Script</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/optimisticOfflineLock.html" title="Optimistic Offline Lock pattern" name="Optimistic Offline Lock pattern" target="_blank" itemprop="name url">Optimistic Offline Lock pattern</a></h3>
+<a name="P">&nbsp;</a><h2 itemprop="name headline">P</h2><hr/>
+<h3><a href="http://martinfowler.com/eaaCatalog/pageController.html" title="Page Controller pattern" name="Page Controller pattern" target="_blank" itemprop="name url">Page Controller pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/partial_state_deferral" title="Partial State Deferral" name="Partial State Deferral" target="_blank" itemprop="name url">Partial State Deferral</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/partial_validation" title="Partial Validation" name="Partial Validation" target="_blank" itemprop="name url">Partial Validation</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/partial-application.html" title="Partial application pattern" name="Partial application pattern" target="_blank" itemprop="name url">Partial application pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/pessimisticOfflineLock.html" title="Pessimistic Offline Lock pattern" name="Pessimistic Offline Lock pattern" target="_blank" itemprop="name url">Pessimistic Offline Lock pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/PipesAndFilters.html" title="Pipes and Filters pattern" name="Pipes and Filters pattern" target="_blank" itemprop="name url">Pipes and Filters pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/plugin.html" title="Plugin pattern" name="Plugin pattern" target="_blank" itemprop="name url">Plugin pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/PointToPointChannel.html" title="Point-to-Point Channel pattern" name="Point-to-Point Channel pattern" target="_blank" itemprop="name url">Point-to-Point Channel pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/policy_centralization" title="Policy Centralization" name="Policy Centralization" target="_blank" itemprop="name url">Policy Centralization</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/PollingConsumer.html" title="Polling Consumer pattern" name="Polling Consumer pattern" target="_blank" itemprop="name url">Polling Consumer pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/literals-and-constructors/primitive-wrappers.html" title="Primitive wrappers pattern" name="Primitive wrappers pattern" target="_blank" itemprop="name url">Primitive wrappers pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/private-properties-and-methods.html" title="Private Properties and Methods pattern" name="Private Properties and Methods pattern" target="_blank" itemprop="name url">Private Properties and Methods pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/process_abstraction" title="Process Abstraction" name="Process Abstraction" target="_blank" itemprop="name url">Process Abstraction</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/process_centralization" title="Process Centralization" name="Process Centralization" target="_blank" itemprop="name url">Process Centralization</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/ProcessManager.html" title="Process Manager pattern" name="Process Manager pattern" target="_blank" itemprop="name url">Process Manager pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/protocol_bridging" title="Protocol Bridging" name="Protocol Bridging" target="_blank" itemprop="name url">Protocol Bridging</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/prototypal-inheritance.html" title="Prototypal Inheritance pattern" name="Prototypal Inheritance pattern" target="_blank" itemprop="name url">Prototypal Inheritance pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/prototypal-inheritance.html" title="Prototypal inheritance pattern" name="Prototypal inheritance pattern" target="_blank" itemprop="name url">Prototypal inheritance pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Prototype_pattern" title="Prototype pattern" name="Prototype pattern" target="_blank" itemprop="name url">Prototype pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/proxy_capability" title="Proxy Capability" name="Proxy Capability" target="_blank" itemprop="name url">Proxy Capability</a></h3>
+<h3><a href="http://blog.arungupta.me/microservice-design-patterns/" title="Proxy Microservice pattern" name="Proxy Microservice pattern" target="_blank" itemprop="name url">Proxy Microservice pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/proxy.html" title="Proxy pattern" name="Proxy pattern" target="_blank" itemprop="name url">Proxy pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Proxy_pattern" title="Proxy pattern" name="Proxy pattern" target="_blank" itemprop="name url">Proxy pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/PublishSubscribeChannel.html" title="Publish-Subscribe Channel pattern" name="Publish-Subscribe Channel pattern" target="_blank" itemprop="name url">Publish-Subscribe Channel pattern</a></h3>
+<a name="Q">&nbsp;</a><h2 itemprop="name headline">Q</h2><hr/>
+<h3><a href="http://martinfowler.com/eaaCatalog/queryObject.html" title="Query Object pattern" name="Query Object pattern" target="_blank" itemprop="name url">Query Object pattern</a></h3>
+<a name="R">&nbsp;</a><h2 itemprop="name headline">R</h2><hr/>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceAPIStyles/RemoteProcedureCallAPI" title="RPC API" name="RPC API" target="_blank" itemprop="name url">RPC API</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Reactor_pattern" title="Reactor pattern" name="Reactor pattern" target="_blank" itemprop="name url">Reactor pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Readers%E2%80%93writer_lock" title="Readers-writer lock pattern" name="Readers-writer lock pattern" target="_blank" itemprop="name url">Readers-writer lock pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/RecipientList.html" title="Recipient List pattern" name="Recipient List pattern" target="_blank" itemprop="name url">Recipient List pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/recordSet.html" title="Record Set pattern" name="Record Set pattern" target="_blank" itemprop="name url">Record Set pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/redundant_implementation" title="Redundant Implementation" name="Redundant Implementation" target="_blank" itemprop="name url">Redundant Implementation</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/reference_data_centralization" title="Reference Data Centralization" name="Reference Data Centralization" target="_blank" itemprop="name url">Reference Data Centralization</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/registry.html" title="Registry pattern" name="Registry pattern" target="_blank" itemprop="name url">Registry pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/reliable_messaging" title="Reliable Messaging" name="Reliable Messaging" target="_blank" itemprop="name url">Reliable Messaging</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/remoteFacade.html" title="Remote Facade pattern" name="Remote Facade pattern" target="_blank" itemprop="name url">Remote Facade pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/EncapsulatedSynchronousIntegration.html" title="Remote Procedure Invocation pattern" name="Remote Procedure Invocation pattern" target="_blank" itemprop="name url">Remote Procedure Invocation pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/cp2-rent-a-constructor.html" title="Rent a constructor pattern" name="Rent a constructor pattern" target="_blank" itemprop="name url">Rent a constructor pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/cp3-rent-and-set-prototype.html" title="Rent and Set Prototype pattern" name="Rent and Set Prototype pattern" target="_blank" itemprop="name url">Rent and Set Prototype pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/repository.html" title="Repository pattern" name="Repository pattern" target="_blank" itemprop="name url">Repository pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/requery.html" title="Requery pattern" name="Requery pattern" target="_blank" itemprop="name url">Requery pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/RequestAndResponseManagement/RequestMapper" title="Request Mapper" name="Request Mapper" target="_blank" itemprop="name url">Request Mapper</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/RequestReply.html" title="Request-Reply pattern" name="Request-Reply pattern" target="_blank" itemprop="name url">Request-Reply pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/ClientServiceInteractions/RequestAcknowledge" title="Request/Acknowledge" name="Request/Acknowledge" target="_blank" itemprop="name url">Request/Acknowledge</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/ClientServiceInteractions/RequestResponse" title="Request/Response" name="Request/Response" target="_blank" itemprop="name url">Request/Response</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/Resequencer.html" title="Resequencer pattern" name="Resequencer pattern" target="_blank" itemprop="name url">Resequencer pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceAPIStyles/ResourceAPI" title="Resource API" name="Resource API" target="_blank" itemprop="name url">Resource API</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/RequestAndResponseManagement/ResponseMapper" title="Response Mapper" name="Response Mapper" target="_blank" itemprop="name url">Response Mapper</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/ReturnAddress.html" title="Return Address pattern" name="Return Address pattern" target="_blank" itemprop="name url">Return Address pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/returning-functions.html" title="Returning functions pattern" name="Returning functions pattern" target="_blank" itemprop="name url">Returning functions pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/reusable_contract" title="Reusable Contract" name="Reusable Contract" target="_blank" itemprop="name url">Reusable Contract</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/revelation.html" title="Revelation pattern" name="Revelation pattern" target="_blank" itemprop="name url">Revelation pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/RoutingTable.html" title="Routing Slip pattern" name="Routing Slip pattern" target="_blank" itemprop="name url">Routing Slip pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/rowDataGateway.html" title="Row Data Gateway pattern" name="Row Data Gateway pattern" target="_blank" itemprop="name url">Row Data Gateway pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/rules_centralization" title="Rules Centralization" name="Rules Centralization" target="_blank" itemprop="name url">Rules Centralization</a></h3>
+<a name="S">&nbsp;</a><h2 itemprop="name headline">S</h2><hr/>
+<h3><a href="http://www.servicedesignpatterns.com/BookInfo" title="SOA Infrastructures" name="SOA Infrastructures" target="_blank" itemprop="name url">SOA Infrastructures</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/sandbox.html" title="Sandbox pattern" name="Sandbox pattern" target="_blank" itemprop="name url">Sandbox pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/BroadcastAggregate.html" title="Scatter-Gather pattern" name="Scatter-Gather pattern" target="_blank" itemprop="name url">Scatter-Gather pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Scheduler_pattern" title="Scheduler pattern" name="Scheduler pattern" target="_blank" itemprop="name url">Scheduler pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/schema_centralization" title="Schema Centralization" name="Schema Centralization" target="_blank" itemprop="name url">Schema Centralization</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessageSelector.html" title="Selective Consumer pattern" name="Selective Consumer pattern" target="_blank" itemprop="name url">Selective Consumer pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/cache-selector.html" title="Selector cache pattern" name="Selector cache pattern" target="_blank" itemprop="name url">Selector cache pattern</a></h3>
+<h3><a href="http://microservices.io/patterns/self-registration.html" title="Self Registration pattern" name="Self Registration pattern" target="_blank" itemprop="name url">Self Registration pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/function-patterns/self-defining-functions.html" title="Self-defining functions pattern" name="Self-defining functions pattern" target="_blank" itemprop="name url">Self-defining functions pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/separatedInterface.html" title="Separated Interface pattern" name="Separated Interface pattern" target="_blank" itemprop="name url">Separated Interface pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/serializedLOB.html" title="Serialized LOB pattern" name="Serialized LOB pattern" target="_blank" itemprop="name url">Serialized LOB pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/serverSessionState.html" title="Server Session State pattern" name="Server Session State pattern" target="_blank" itemprop="name url">Server Session State pattern</a></h3>
+<h3><a href="http://microservices.io/patterns/server-side-discovery.html" title="Server-side service discovery pattern" name="Server-side service discovery pattern" target="_blank" itemprop="name url">Server-side service discovery pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/MessagingAdapter.html" title="Service Activator pattern" name="Service Activator pattern" target="_blank" itemprop="name url">Service Activator pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/service_agent" title="Service Agent" name="Service Agent" target="_blank" itemprop="name url">Service Agent</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/service_callback" title="Service Callback" name="Service Callback" target="_blank" itemprop="name url">Service Callback</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/ServiceConnector" title="Service Connector" name="Service Connector" target="_blank" itemprop="name url">Service Connector</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/RequestAndResponseManagement/ServiceController" title="Service Controller" name="Service Controller" target="_blank" itemprop="name url">Service Controller</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/service_data_replication" title="Service Data Replication" name="Service Data Replication" target="_blank" itemprop="name url">Service Data Replication</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/service_decomposition" title="Service Decomposition" name="Service Decomposition" target="_blank" itemprop="name url">Service Decomposition</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/ServiceDescriptor" title="Service Descriptor" name="Service Descriptor" target="_blank" itemprop="name url">Service Descriptor</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/service_encapsulation" title="Service Encapsulation" name="Service Encapsulation" target="_blank" itemprop="name url">Service Encapsulation</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/service_facade" title="Service Facade" name="Service Facade" target="_blank" itemprop="name url">Service Facade</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/service_grid" title="Service Grid" name="Service Grid" target="_blank" itemprop="name url">Service Grid</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/service_instance_routing" title="Service Instance Routing" name="Service Instance Routing" target="_blank" itemprop="name url">Service Instance Routing</a></h3>
+<h3><a href="http://microservices.io/patterns/deployment/service-per-vm.html" title="Service Instance per VM pattern" name="Service Instance per VM pattern" target="_blank" itemprop="name url">Service Instance per VM pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/ServiceInterceptor" title="Service Interceptor" name="Service Interceptor" target="_blank" itemprop="name url">Service Interceptor</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/serviceLayer.html" title="Service Layer pattern" name="Service Layer pattern" target="_blank" itemprop="name url">Service Layer pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/service_layers" title="Service Layers" name="Service Layers" target="_blank" itemprop="name url">Service Layers</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/service_messaging" title="Service Messaging" name="Service Messaging" target="_blank" itemprop="name url">Service Messaging</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/service_normalization" title="Service Normalization" name="Service Normalization" target="_blank" itemprop="name url">Service Normalization</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/service_perimeter_guard" title="Service Perimeter Guard" name="Service Perimeter Guard" target="_blank" itemprop="name url">Service Perimeter Guard</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/service_refactoring" title="Service Refactoring" name="Service Refactoring" target="_blank" itemprop="name url">Service Refactoring</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/serviceStub.html" title="Service Stub pattern" name="Service Stub pattern" target="_blank" itemprop="name url">Service Stub pattern</a></h3>
+<h3><a href="http://microservices.io/patterns/deployment/service-per-container.html" title="Service instance per container pattern" name="Service instance per container pattern" target="_blank" itemprop="name url">Service instance per container pattern</a></h3>
+<h3><a href="http://microservices.io/patterns/service-registry.html" title="Service registry pattern" name="Service registry pattern" target="_blank" itemprop="name url">Service registry pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/cp4-share-the-prototype.html" title="Share the Prototype pattern" name="Share the Prototype pattern" target="_blank" itemprop="name url">Share the Prototype pattern</a></h3>
+<h3><a href="http://blog.arungupta.me/microservice-design-patterns/" title="Shared Data Microservice pattern" name="Shared Data Microservice pattern" target="_blank" itemprop="name url">Shared Data Microservice pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/SharedDataBaseIntegration.html" title="Shared Database pattern" name="Shared Database pattern" target="_blank" itemprop="name url">Shared Database pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceEvolution/SingleMessageArgument" title="Single Message Argument" name="Single Message Argument" target="_blank" itemprop="name url">Single Message Argument</a></h3>
+<h3><a href="http://microservices.io/patterns/deployment/single-service-per-host.html" title="Single Service Instance per Host pattern" name="Single Service Instance per Host pattern" target="_blank" itemprop="name url">Single Service Instance per Host pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/singleTableInheritance.html" title="Single Table Inheritance pattern" name="Single Table Inheritance pattern" target="_blank" itemprop="name url">Single Table Inheritance pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/single-var-pattern.html" title="Single var pattern" name="Single var pattern" target="_blank" itemprop="name url">Single var pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Singleton_pattern" title="Singleton pattern" name="Singleton pattern" target="_blank" itemprop="name url">Singleton pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/singleton.html" title="Singleton pattern" name="Singleton pattern" target="_blank" itemprop="name url">Singleton pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/SmartProxy.html" title="Smart Proxy pattern" name="Smart Proxy pattern" target="_blank" itemprop="name url">Smart Proxy pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/specialCase.html" title="Special Case pattern" name="Special Case pattern" target="_blank" itemprop="name url">Special Case pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/Sequencer.html" title="Splitter pattern" name="Splitter pattern" target="_blank" itemprop="name url">Splitter pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/state_messaging" title="State Messaging" name="State Messaging" target="_blank" itemprop="name url">State Messaging</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/state_repository" title="State Repository" name="State Repository" target="_blank" itemprop="name url">State Repository</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/State_pattern" title="State pattern" name="State pattern" target="_blank" itemprop="name url">State pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/stateful_services" title="Stateful Services" name="Stateful Services" target="_blank" itemprop="name url">Stateful Services</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/static-members.html" title="Static Members pattern" name="Static Members pattern" target="_blank" itemprop="name url">Static Members pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/strategy.html" title="Strategy pattern" name="Strategy pattern" target="_blank" itemprop="name url">Strategy pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Strategy_pattern" title="Strategy pattern" name="Strategy pattern" target="_blank" itemprop="name url">Strategy pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/switch-pattern.html" title="Switch pattern" name="Switch pattern" target="_blank" itemprop="name url">Switch pattern</a></h3>
+<a name="T">&nbsp;</a><h2 itemprop="name headline">T</h2><hr/>
+<h3><a href="http://martinfowler.com/eaaCatalog/tableDataGateway.html" title="Table Data Gateway pattern" name="Table Data Gateway pattern" target="_blank" itemprop="name url">Table Data Gateway pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/tableModule.html" title="Table Module pattern" name="Table Module pattern" target="_blank" itemprop="name url">Table Module pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/templateView.html" title="Template View pattern" name="Template View pattern" target="_blank" itemprop="name url">Template View pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Template_method_pattern" title="Template method pattern" name="Template method pattern" target="_blank" itemprop="name url">Template method pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/termination_notification" title="Termination Notification" name="Termination Notification" target="_blank" itemprop="name url">Termination Notification</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/TestMessage.html" title="Test Message pattern" name="Test Message pattern" target="_blank" itemprop="name url">Test Message pattern</a></h3>
+<h3><a href="https://carldanley.com/js-module-pattern/" title="The Module pattern" name="The Module pattern" target="_blank" itemprop="name url">The Module pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/globals.html" title="The Problem with Globals pattern" name="The Problem with Globals pattern" target="_blank" itemprop="name url">The Problem with Globals pattern</a></h3>
+<h3><a href="https://carldanley.com/js-revealing-module-pattern/" title="The Revealing Module pattern" name="The Revealing Module pattern" target="_blank" itemprop="name url">The Revealing Module pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/code-reuse-patterns/cp1-default.html" title="The default pattern" name="The default pattern" target="_blank" itemprop="name url">The default pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Thread_pool_pattern" title="Thread pool pattern" name="Thread pool pattern" target="_blank" itemprop="name url">Thread pool pattern</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Thread-local_storage" title="Thread-local storage pattern" name="Thread-local storage pattern" target="_blank" itemprop="name url">Thread-local storage pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceEvolution/TolerantReader" title="Tolerant Reader" name="Tolerant Reader" target="_blank" itemprop="name url">Tolerant Reader</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/TransactionScript" title="Transaction Script" name="Transaction Script" target="_blank" itemprop="name url">Transaction Script</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/transactionScript.html" title="Transaction Script pattern" name="Transaction Script pattern" target="_blank" itemprop="name url">Transaction Script pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/TransactionalClient.html" title="Transactional Client pattern" name="Transactional Client pattern" target="_blank" itemprop="name url">Transactional Client pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/transformView.html" title="Transform View pattern" name="Transform View pattern" target="_blank" itemprop="name url">Transform View pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/trusted_subsystem" title="Trusted Subsystem" name="Trusted Subsystem" target="_blank" itemprop="name url">Trusted Subsystem</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/twoStepView.html" title="Two-Step View pattern" name="Two-Step View pattern" target="_blank" itemprop="name url">Two-Step View pattern</a></h3>
+<a name="U">&nbsp;</a><h2 itemprop="name headline">U</h2><hr/>
+<h3><a href="http://soapatterns.org/design_patterns/ui_mediator" title="UI Mediator" name="UI Mediator" target="_blank" itemprop="name url">UI Mediator</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/ui-widget-requirejs-module.html" title="UI Widget + RequireJS module pattern" name="UI Widget + RequireJS module pattern" target="_blank" itemprop="name url">UI Widget + RequireJS module pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/ui-widget-factory-bridge.html" title="UI Widget factory "bridge" pattern" name="UI Widget factory "bridge" pattern" target="_blank" itemprop="name url">UI Widget factory "bridge" pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/ui-widget-factory-mobile.html" title="UI Widget factory for jQuery mobile pattern" name="UI Widget factory for jQuery mobile pattern" target="_blank" itemprop="name url">UI Widget factory for jQuery mobile pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-plugin-patterns/ui-widget-factory.html" title="UI Widget factory pattern" name="UI Widget factory pattern" target="_blank" itemprop="name url">UI Widget factory pattern</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/unitOfWork.html" title="Unit of Work pattern" name="Unit of Work pattern" target="_blank" itemprop="name url">Unit of Work pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/tree/master/jquery-plugin-patterns/amd-commonjs" title="Universal Module Definition pattern" name="Universal Module Definition pattern" target="_blank" itemprop="name url">Universal Module Definition pattern</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/universal-selector.html" title="Universal Selector pattern" name="Universal Selector pattern" target="_blank" itemprop="name url">Universal Selector pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/utility_abstraction" title="Utility Abstraction" name="Utility Abstraction" target="_blank" itemprop="name url">Utility Abstraction</a></h3>
+<a name="V">&nbsp;</a><h2 itemprop="name headline">V</h2><hr/>
+<h3><a href="http://soapatterns.org/design_patterns/validation_abstraction" title="Validation Abstraction" name="Validation Abstraction" target="_blank" itemprop="name url">Validation Abstraction</a></h3>
+<h3><a href="http://martinfowler.com/eaaCatalog/valueObject.html" title="Value Object pattern" name="Value Object pattern" target="_blank" itemprop="name url">Value Object pattern</a></h3>
+<h3><a href="http://soapatterns.org/design_patterns/version_identification" title="Version Identification" name="Version Identification" target="_blank" itemprop="name url">Version Identification</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/BookInfo" title="Versioning" name="Versioning" target="_blank" itemprop="name url">Versioning</a></h3>
+<h3><a href="http://en.wikipedia.org/wiki/Visitor_pattern" title="Visitor pattern" name="Visitor pattern" target="_blank" itemprop="name url">Visitor pattern</a></h3>
+<a name="W">&nbsp;</a><h2 itemprop="name headline">W</h2><hr/>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/jquery-patterns/window-scroll-event.html" title="Window scroll event pattern" name="Window scroll event pattern" target="_blank" itemprop="name url">Window scroll event pattern</a></h3>
+<h3><a href="http://www.enterpriseintegrationpatterns.com/WireTap.html" title="Wire Tap pattern" name="Wire Tap pattern" target="_blank" itemprop="name url">Wire Tap pattern</a></h3>
+<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/WorkflowConnector" title="Workflow Connector" name="Workflow Connector" target="_blank" itemprop="name url">Workflow Connector</a></h3>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/literals-and-constructors/json.html" title="Working with JSON pattern" name="Working with JSON pattern" target="_blank" itemprop="name url">Working with JSON pattern</a></h3>
+<a name="X">&nbsp;</a><h2 itemprop="name headline">X</h2><hr/>
+<a name="Y">&nbsp;</a><h2 itemprop="name headline">Y</h2><hr/>
+<a name="Z">&nbsp;</a><h2 itemprop="name headline">Z</h2><hr/>
+<a name="_">&nbsp;</a><h2 itemprop="name headline">_</h2><hr/>
+<h3><a href="https://github.com/shichuan/javascript-patterns/blob/master/general-patterns/built-in-prototypes.html" title="(Not) Augmenting Built-in Prototypes pattern" name="(Not) Augmenting Built-in Prototypes pattern" target="_blank" itemprop="name url">(Not) Augmenting Built-in Prototypes pattern</a></h3>
+<h3><a href="http://microservices.io/patterns/3rd-party-registration.html" title="3rd Party Registration pattern" name="3rd Party Registration pattern" target="_blank" itemprop="name url">3rd Party Registration pattern</a></h3>
+
+
+                        <div class="top-wrapper clearfix" itemscope itemtype="http://schema.org/WPFooter">
+                            <a href="#" class="return-top">Return to Top</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-61553779-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html>

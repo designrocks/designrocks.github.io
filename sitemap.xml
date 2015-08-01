@@ -14,6 +14,12 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 		<priority>0.8</priority>
 	</url>
 	<url>
+		<loc>http://design.patterns.rocks/abc.html</loc>
+		<lastmod>2015-08-01</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
 		<loc>http://design.patterns.rocks/changelog.html</loc>
 		<lastmod>2015-07-11</lastmod>
 		<changefreq>daily</changefreq>

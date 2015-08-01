@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="search" title="Search" href="/" />
 <link rel="copyright" title="About" href="/../about.html" />
-<link rel="author" title="About" href="/about.html" />
+<link rel="author" title="About" href="/../about.html" />
 <link rel="home" title="" href="/" id="homelink" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="canonical" href="http://design.patterns.rocks/" />
@@ -40,8 +40,9 @@
         <div class="navbar-collapse" id="navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement">
             <div class="navbar-right">
                 <ul class="nav navbar-nav">
-                    <li class="mi"><a href="../index.html" hreflang="en" title="Design Patterns" itemprop="url name">Index</a></li>
-                    <li class="mp active"><a href="../categories.html" hreflang="en" title="Patterns" itemprop="url name">Patterns</a></li>
+                    <li class="mi"><a href="../index.html" hreflang="en" title="Design Patterns Home" itemprop="url name">Home</a></li>
+                    <li class="mp active"><a href="../categories.html" hreflang="en" title="Design Pattern Categories" itemprop="url name">Patterns</a></li>
+                    <li class="mi"><a href="../abc.html" hreflang="en" title="Design Pattern Index" itemprop="url name">Index</a></li>
                     <li class="mc"><a href="../changelog.html" hreflang="en" title="Changelog" itemprop="url name">Changelog</a></li>
                     <li class="ma"><a href="../about.html" hreflang="en" title="About" itemprop="url name">About</a></li>
                 </ul>
@@ -83,13 +84,13 @@
 	<hr/>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceAPIStyles/RemoteProcedureCallAPI" title="RPC API" name="RPC API" target="_blank" itemprop="name url">RPC API</a></h3>
-	<p itemprop="description">How can clients execute remote procedures over HTTP?</p>
+	<p itemprop="description">Define messages which identify the remote procedures to execute and also include a fixed set of elements that map directly into the parameters of remote procedures. Have the client send the message to a URI designated for the procedure.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceAPIStyles/MessageAPI" title="Message API" name="Message API" target="_blank" itemprop="name url">Message API</a></h3>
-	<p itemprop="description">How can clients send commands, notifications, or other information to remote systems over HTTP while avoiding direct coupling to remote procedures?</p>
+	<p itemprop="description">Define messages which are not derived from the signatures of remote procedures. These messages may carry information on specific topics, tasks to execute, and events. Have the client send the message to a designated URI. Once the message is received at the server, examine its contents to determine the correct procedure to execute.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceAPIStyles/ResourceAPI" title="Resource API" name="Resource API" target="_blank" itemprop="name url">Resource API</a></h3>
-	<p itemprop="description">How can a client manipulate data managed by a remote system, avoid direct coupling to remote procedures, and minimize the need for domain-specific APIs?</p>
+	<p itemprop="description">Assign all procedures, instances of domain data, and files a Uniform Resource Identifier (URI). Leverage HTTP as a complete application protocol to define standard service behaviors. Exchange information by taking advantage of standardized media types and status codes when possible.</p>
 
 
 	<a name="clientserviteraction">&nbsp;</a>
@@ -97,16 +98,16 @@
 	<hr/>
 
 	<h3><a href="http://www.servicedesignpatterns.com/ClientServiceInteractions/RequestResponse" title="Request/Response" name="Request/Response" target="_blank" itemprop="name url">Request/Response</a></h3>
-	<p itemprop="description">What's the simplest way for a web service to process a request and provide a result?</p>
+	<p itemprop="description">Process requests when they're received and return results over the same client connection.</p>
 	
 	<h3><a href="http://www.servicedesignpatterns.com/ClientServiceInteractions/RequestAcknowledge" title="Request/Acknowledge" name="Request/Acknowledge" target="_blank" itemprop="name url">Request/Acknowledge</a></h3>
-	<p itemprop="description">How can a web service safeguard systems from spikes in request load and ensure that requests are processed even when the underlying systems are unavailable?</p>
+	<p itemprop="description">When a service receives a request, forward it to a background process, then return an acknowledgement containing a unique request identifier.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/ClientServiceInteractions/MediaTypeNegotiation" title="Media Type Negotiation" name="Media Type Negotiation" target="_blank" itemprop="name url">Media Type Negotiation</a></h3>
-	<p itemprop="description">How can a web service provide multiple representations of the same logical resource while minimizing the number of distinct URIs for that resource?</p>
+	<p itemprop="description">Allow clients to indicate one or more media type preferences in HTTP request headers. Send requests to services capable of producing responses in the desired format.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/ClientServiceInteractions/LinkedService" title="Linked Service" name="Linked Service" target="_blank" itemprop="name url">Linked Service</a></h3>
-	<p itemprop="description">Once a service has processed a request, how can a client discover the related services that may be called, and also be insulated from changing service locations and URI schemes?</p>
+	<p itemprop="description">Only publish the addresses of a few root web services. Include the addresses of related services in each response. Let clients parse responses to discover subsequent service URIs.</p>
 
 
 	<a name="reqresmgmt">&nbsp;</a>
@@ -114,16 +115,16 @@
 	<hr/>
 
 	<h3><a href="http://www.servicedesignpatterns.com/RequestAndResponseManagement/ServiceController" title="Service Controller" name="Service Controller" target="_blank" itemprop="name url">Service Controller</a></h3>
-	<p itemprop="description">How can the correct web service be executed without having to maintain complex parsing and routing logic?</p>
+	<p itemprop="description">Create a class that identifies a set of related services. Annotate each class method with routing expressions that can be interpreted by a Front Controller.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/RequestAndResponseManagement/DataTransferObject" title="Data Transfer Object (DTO)" name="Data Transfer Object (DTO)" target="_blank" itemprop="name url">Data Transfer Object (DTO)</a></h3>
-	<p itemprop="description">How can one simplify manipulation of request and response data and also minimize dependencies between domain layer entities, request structures, and response structures?</p>
+	<p itemprop="description">Create distinct objects to represent request and response payloads. Consolidate the mapping logic that reads and writes these structures.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/RequestAndResponseManagement/RequestMapper" title="Request Mapper" name="Request Mapper" target="_blank" itemprop="name url">Request Mapper</a></h3>
-	<p itemprop="description">How can a service process data from requests that are structurally different yet semantically equivalent?</p>
+	<p itemprop="description">Create specialized classes that leverage structure-specific APIs to target and move select portions of requests directly to domain layer entities or to a common set of intermediate objects that can be used as input arguments to such entities. Load a particular mapper based on key content found in the request.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/RequestAndResponseManagement/ResponseMapper" title="Response Mapper" name="Response Mapper" target="_blank" itemprop="name url">Response Mapper</a></h3>
-	<p itemprop="description">How can the logic required to construct a response be reused by multiple services?</p>
+	<p itemprop="description">Create a class that consolidates the data mapping and transformation logic used to create a response.</p>
 
 
 	<a name="serviceimpl">&nbsp;</a>
@@ -131,19 +132,19 @@
 	<hr/>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/TransactionScript" title="Transaction Script" name="Transaction Script" target="_blank" itemprop="name url">Transaction Script</a></h3>
-	<p itemprop="description">How can developers quickly implement web service logic?</p>
+	<p itemprop="description">Write custom logic for database access, file manipulation, or other purposes directly within the web service method.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/DatasourceAdapter" title="Datasource Adapter" name="Datasource Adapter" target="_blank" itemprop="name url">Datasource Adapter</a></h3>
-	<p itemprop="description">How can a web service provide access to internal resources like database tables, stored procedures, domain objects, or files with a minimum amount of custom code?</p>
+	<p itemprop="description">Create a web service that uses a specialized Datasource Provider. Leverage developer tools that generate datasource metadata and produce controllers that not only encapsulate and interpret the rules for request processing, but also direct the actions of Datasource Providers and Message Formatters.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/OperationScript" title="Operation Script" name="Operation Script" target="_blank" itemprop="name url">Operation Script</a></h3>
-	<p itemprop="description">How can web services reuse common domain logic without duplicating code?</p>
+	<p itemprop="description">Encapsulate common business logic in domain layer entities that exist outside of the web service. Limit the logic within web services to algorithms that direct the activities of these entities.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/CommandInvoker" title="Command Invoker" name="Command Invoker" target="_blank" itemprop="name url">Command Invoker</a></h3>
-	<p itemprop="description">How can web services with different APIs reuse common domain logic while enabling both synchronous and asynchronous request processing?</p>
+	<p itemprop="description">Create command objects that fully encapsulate common request processing logic. Instantiate and invoke these commands from within the web service, or forward them to an asynchronous background process.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceImplementationStyles/WorkflowConnector" title="Workflow Connector" name="Workflow Connector" target="_blank" itemprop="name url">Workflow Connector</a></h3>
-	<p itemprop="description">How can web services be used to support complex and long-running business processes?</p>
+	<p itemprop="description">Use a workflow engine to manage the life cycle and execution of tasks within complex or long-running business processes. Identify a web service that will trigger each logical business process. Use callback services to receive additional data for these long-running processes, and forward messages from these callback services to the workflow engine.</p>
 
 
 	<a name="serviceinfra">&nbsp;</a>
@@ -151,19 +152,19 @@
 	<hr/>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/ServiceConnector" title="Service Connector" name="Service Connector" target="_blank" itemprop="name url">Service Connector</a></h3>
-	<p itemprop="description">How can clients avoid duplicating the code required to use a specific service and also be insulated from the intricacies of communication logic?</p>
+	<p itemprop="description">Create a library or set of classes that encapsulates the logic a client must implement in order to use a group of related services. Create a high-level interface that abstracts the details of this logic, thereby making the classes easier to use.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/ServiceDescriptor" title="Service Descriptor" name="Service Descriptor" target="_blank" itemprop="name url">Service Descriptor</a></h3>
-	<p itemprop="description">How can development tools acquire the information necessary to use a web service, and how can the code for Service Connectors be generated?</p>
+	<p itemprop="description">Produce a standardized and machine-readable description of related services that identifies URIs, logical operations, messages, server methods, and usage policies.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/AsyncResponseHandler" title="Asynchronous Response Handler" name="Asynchronous Response Handler" target="_blank" itemprop="name url">Asynchronous Response Handler</a></h3>
-	<p itemprop="description">How can a client avoid blocking when sending a request?</p>
+	<p itemprop="description">Dispatch requests on a separate thread of execution apart from the main client thread. Wait for the response on this thread while attending to other matters on the main thread.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/ServiceInterceptor" title="Service Interceptor" name="Service Interceptor" target="_blank" itemprop="name url">Service Interceptor</a></h3>
-	<p itemprop="description">How can common behaviors like authentication, caching, logging, exception handling, and validation be executed without having to modify the client or service code?</p>
+	<p itemprop="description">Encapsulate cross-cutting behaviors within individual classes. Load these classes into pipelines that are managed by client or service frameworks.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceInfrastructures/IdempotentRetry" title="Idempotent Retry" name="Idempotent Retry" target="_blank" itemprop="name url">Idempotent Retry</a></h3>
-	<p itemprop="description">How can a client ensure that requests are delivered to a web service despite temporary network or server failures?</p>
+	<p itemprop="description">Design the client such that common connectivity exceptions are caught. When a connection error occurs, reconnect to the service and resend the request. Limit the number of times such attempts are made. Include a unique identifier in each request so that the service can identify duplicate requests. Alternatively, send the request to a unique URI designated for the specific request.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/BookInfo" title="SOA Infrastructures" name="SOA Infrastructures" target="_blank" itemprop="name url">SOA Infrastructures</a></h3>
 	<p itemprop="description">An overview of a few infrastructures frequently used in Service Oriented Architectures.</p>
@@ -174,16 +175,16 @@
 	<hr/>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceEvolution/SingleMessageArgument" title="Single Message Argument" name="Single Message Argument" target="_blank" itemprop="name url">Single Message Argument</a></h3>
-	<p itemprop="description">How can a web service with an RPC API become less brittle and easily accommodate new parameters over time without breaking clients?</p>
+	<p itemprop="description">Design each service operation such that it only receives a single message parameter that contains all of the data for a request.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceEvolution/DatasetAmendment" title="Dataset Amendment" name="Dataset Amendment" target="_blank" itemprop="name url">Dataset Amendment</a></h3>
-	<p itemprop="description">How can a service augment the information it sends or receives while minimizing the probability of breaking changes?</p>
+	<p itemprop="description">Append optional data to existing request and response data structures.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceEvolution/TolerantReader" title="Tolerant Reader" name="Tolerant Reader" target="_blank" itemprop="name url">Tolerant Reader</a></h3>
-	<p itemprop="description">How can clients or services function properly when some of the content in the messages or media types they receive is unknown or when the data structures vary?</p>
+	<p itemprop="description">Design the client or service to extract only what is needed, ignore unknown content, and expect variant data structures.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/WebServiceEvolution/ConsumerDrivenContracts" title="Consumer-Driven Contract" name="Consumer-Driven Contract" target="_blank" itemprop="name url">Consumer-Driven Contract</a></h3>
-	<p itemprop="description">How can a web service API reflect its clients' needs while enabling evolution and avoiding breaking clients?</p>
+	<p itemprop="description">Client developers write integration tests that express the client's expectations of a service API. These tests are given to the service owner, who incorporates them into the service's test suite.</p>
 
 	<h3><a href="http://www.servicedesignpatterns.com/BookInfo" title="Breaking Changes" name="Breaking Changes" target="_blank" itemprop="name url">Breaking Changes</a></h3>
 	<p itemprop="description">A breaking change is any service change that forces client developers to update their code or change configurations in 'lock-step' with the service deployment. Failure to change the client application at just the right time may cause it to crash. This section provides information to help you recognize the common causes of breaking changes for RESTful services and SOAP/WSDL services.</p>
